@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Matt Andrews</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{{ static_url }}assets/css/reset.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="{{ static_url }}assets/css/style.css?v=4" type="text/css" media="screen" />
+        <link href="http://fonts.googleapis.com/css?family=Signika:400,700" rel="stylesheet" type="text/css" />
+
+        <link rel="shortcut icon" type="image/x-icon" href="{{ static_url }}assets/img/icon/32.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="{{ static_url }}assets/img/icon/144.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="{{ static_url }}assets/img/icon/114.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="{{ static_url }}assets/img/icon/72.png" />
+        <link rel="apple-touch-icon-precomposed" href="{{ static_url }}assets/img/icon/57.png" />
+
+    </head>
+    <body>
+
+        <div class="container">
+
+            <div class="pane pane-first flex-parent">
+                <div class="flex-left">
+                    <h1>Matt Andrews</h1>
+                    <h2>Web developer, writer, music nerd</h2>
+                    <p class="intro">Hi, my name is Matt &ndash; welcome to my vanity homepage. I'm a <strong>client-side web developer</strong> currently at <a href="http://www.theguardian.com">the Guardian</a> in London. When I'm not writing HTML, CSS &amp; JavaScript I'm a keen writer, musician, cyclist and homebrewer. I also speak at conferences and teach a variety of technical classes &ndash; more on these below.</p>
+
+                    <p class="cta">Follow me on Twitter on <a href="http://www.twitter.com/mattpointblank">@mattpointblank</a> or email me on <a href="mailto:matt@mattandrews.info">matt@mattandrews.info</a></p>
+                </div>
+                <div class="flex-right">
+                    <img src="{{ static_url }}assets/img/matt.png" class="matt-photo" />
+                </div>
+            </div>
+
+            <div class="pane pane-divider">
+                <h3>My recent writing</h3>
+            </div>
+
+            <div class="pane pane-second">
+                <div class="pull-left">
+                    <ul class="writing-list">
+                        {% for a in articles[:4] %}
+                            <li>
+                                <h4><a href="{{ a.link }} ">{{ a.title }}</a></h4>
+                                <h6>{{ a.date.strftime('%A %d %B @ %I:%m %p') }}</h6>
+                                {{ a.summary|truncatehtml(length=400)|safe }}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="pull-right">
+                    <a class="twitter-timeline" href="https://twitter.com/mattpointblank" data-widget-id="454967293198336000">Tweets by @mattpointblank</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </div>
+            </div>
+
+            <div class="pane pane-divider">
+                <div class="pull-left pane-divider-split">
+                    <h3 class="pane-divider-split">Talks I've given</h3>
+                </div>
+                <div class="ampersand">&amp;</div>
+                <div class="pull-right">
+                    <h3 class="speaking-schedule">My speaking schedule</h3>
+                </div>
+            </div>
+
+            <div class="pane pane-third">
+                <div class="pull-left">
+                    <ul class="writing-list">
+                        <li class="media">
+                            <h4><a href="http://mattandrews.info/talks/hackshackersberlin-2014/">Surviving the multi-device news challenge</a></h4>
+                            <a href="{{ static_url }}assets/img/talks/hhber1.jpg" class="img">
+                                <img src="{{ static_url }}assets/img/talks/tn_hhber1.jpg" />
+                            </a>
+                            <div class="bd">
+                                <h5>How the Guardian uses APIs and open data</h5>
+                                <h6 class="alt">23rd January 2014 &bull; Hacks & Hackers Berlin</h6>
+                                <p>I'd like to explain to begin with what I mean by "the multi-device news challenge". Here are a couple of big numbers: 322: the number of unique browser versions the Guardian gets traffic from in a month.</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <h4><a href="http://mattandrews.info/talks/canvasconf-2013/">Responsive design at the Guardian</a></h4>
+                            <a href="{{ static_url }}assets/img/talks/canvasconf.jpg" class="img">
+                                <img src="{{ static_url }}assets/img/talks/tn_canvasconf.jpg" />
+                            </a>
+                            <div class="bd">
+                                <h5>Why you should make your website future-friendly &ndash; right now.</h5>
+                                <h6 class="alt">10th October 2013 &bull; CanvasConf 2013</h6>
+                                <p>A few weeks ago I was in central London near the river, waiting to cross the road. Just before the traffic lights changed, a huge yellow and blue truck-like vehicle came rolling past.</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <h4><a href="http://mattandrews.info/talks/port80-2013/">Responsive design at the Guardian</a></h4>
+                            <a href="{{ static_url }}assets/img/talks/port80.jpg" class="img">
+                                <img src="{{ static_url }}assets/img/talks/tn_port80.jpg" />
+                            </a>
+                            <div class="bd">
+                                <h5>How I learned to stop worrying and love the mobile web</h5>
+                                <h6 class="alt">10th May 2013 &bull; Port80 2013</h6>
+                                <p>It's the most talked-about web development technique of the past few years and it's officially reached the mainstream: responsive web design is being used by huge content sites like the Boston Globe, the BBC, Channel 4, and now the Guardian.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pull-right">
+
+                        <h4>Upcoming talks</h4>
+                        {% if current_talks %}
+                            <ul class="writing-list speaking-list">
+                                {% for t in current_talks %}
+                                    <li>
+                                        <h5>{% if t.link %}<a href="{{ t.link }}">{% endif %}{{ t.title }}{% if t.link %}</a>{% endif %}</h5>
+                                        {% if t.subtitle %}<h6 class="alt">{{ t.subtitle}}</h6>{% endif %}
+                                        <p>{{ t.start.strftime('%A %d %B') }}{% if t.end and t.end != t.start %} - {{ t.end.strftime('%A %d %B') }}{% endif %}</p>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% else %}
+                            <p>No upcoming talks.</p>
+                        {% endif %}
+
+                        <h4>Past talks</h4>
+                        <ul class="writing-list speaking-list past-talks">
+                            {% for t in past_talks %}
+                                <li>
+                                    <h5>{% if t.link %}<a href="{{ t.link }}">{% endif %}{{ t.title }}{% if t.link %}</a>{% endif %}</h5>
+                                    {% if t.subtitle %}<h6 class="alt">{{ t.subtitle}}</h6>{% endif %}
+                                    <p>{{ t.start.strftime('%A %d %B') }}{% if t.end and t.end != t.start %} - {{ t.end.strftime('%A %d %B') }}{% endif %}</p>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="pane pane-divider">
+                <h3>Testimonials &amp; links</h3>
+            </div>
+
+            <div class="pane pane-second">
+                <div class="pull-left">
+                    <h4>Feedback from course attendees / conference audiences</h4>
+                    <ul class="writing-list">
+                        <li>&ldquo;Matt is a very enthusiastic and proficient teacher. He frequently checked with us that were following ok and was happy to take questions at all times. All done with a great sense of humour and he remembered everyone's names.&rdquo;</li>
+
+                        <li>&ldquo;Matt's course handouts and PDFs are excellent, well laid out and full of relevant and helpful information. An invaluable resource for future reference.&rdquo;</li>
+
+                        <li>&ldquo;Matt is a clear, well-organised presenter, with excellent slides and handouts. He speaks – on his own admission – quickly and you have to pay close attention. But overall an inspiring teacher – with solid experience to draw on.&rdquo;</li>
+
+                        <li>&ldquo;Matt creates a fun atmosphere and his enthusiasm is infectious. He communicates the concepts in very clear and down to earth fashion.&rdquo;</li>
+
+                        <li>&ldquo;Really good to learn from someone who knew the subject so well and uses it in such a stimulating setting.&rdquo;</li>
+
+                        <li>&ldquo;Matt was excellent – both in how he explained things and made them accessible and his relaxed personal style.&rdquo;</li>
+
+                        <li>&ldquo;@mattpointblank's talk was one of the best I've ever seen, anywhere. Let's hope @canvasconf stick some videos online.&rdquo;</li>
+                    </ul>
+                </div>
+
+                <div class="pull-right">
+                    <h4>Other places to find me</h4>
+                    <ul class="social">
+                        <li class="social-twitter"><a href="http://www.twitter.com/mattpointblank">Twitter</a></li>
+                        <li class="social-github"><a href="http://www.github.com/mattandrews">GitHub</a></li>
+                        <li class="social-instagram"><a href="http://www.instagram.com/mattpointblank">Instagram</a></li>
+                        <li class="social-stackoverflow"><a href="http://stackoverflow.com/users/176615/matt-andrews">StackOverflow</a></li>
+                        <li class="social-lastfm"><a href="http://www.last.fm/user/guitarromantic/">Last.fm</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-96842-9', 'mattandrews.info');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>
