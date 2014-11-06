@@ -168,6 +168,7 @@ def homepage():
 
     return render_template('template.html', articles=articles, static_url=static_url, past_talks=past_talks, current_talks=current_talks)
 
+# runs on 8002 on prod
 @app.route("/cachebust")
 def decache():
     with app.app_context():

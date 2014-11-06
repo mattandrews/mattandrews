@@ -127,30 +127,44 @@
 
                 <div class="pull-right">
 
-                        {% if current_talks %}
-                            <h4>Upcoming talks &amp; classes</h4>
-                                <ul class="writing-list speaking-list">
-                                    {% for t in current_talks %}
-                                        <li>
-                                            <h5>{% if t.link %}<a href="{{ t.link }}">{% endif %}{{ t.title }}{% if t.link %}</a>{% endif %}</h5>
-                                            {% if t.subtitle %}<h6 class="alt">{{ t.subtitle}}</h6>{% endif %}
-                                            <p>{{ t.start.strftime('%A %d %B') }}{% if t.end and t.end != t.start %} - {{ t.end.strftime('%A %d %B') }}{% endif %}</p>
-                                        </li>
-                                    {% endfor %}
-                                </ul>
-                        {% endif %}
+                    {% if current_talks %}
+                        <h4>Upcoming talks &amp; classes</h4>
+                            <ul class="writing-list speaking-list">
+                                {% for t in current_talks %}
+                                    <li>
+                                        <h5>{% if t.link %}<a href="{{ t.link }}">{% endif %}{{ t.title }}{% if t.link %}</a>{% endif %}</h5>
+                                        {% if t.subtitle %}<h6 class="alt">{{ t.subtitle}}</h6>{% endif %}
+                                        <p>{{ t.start.strftime('%A %d %B') }}{% if t.end and t.end != t.start %} - {{ t.end.strftime('%A %d %B') }}{% endif %}</p>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                    {% endif %}
 
-                        <h4>Past talks &amp; classes</h4>
-                        <ul class="writing-list speaking-list past-talks">
-                            {% for t in past_talks %}
-                                <li>
-                                    <h5>{{ t.title }}</h5>
-                                    {% if t.subtitle %}<h6 class="alt">{{ t.subtitle}}</h6>{% endif %}
-                                    <p>{{ t.start.strftime('%A %d %B') }}{% if t.end and t.end != t.start %} - {{ t.end.strftime('%A %d %B') }}{% endif %}</p>
-                                </li>
-                            {% endfor %}
-                        </ul>
+                    <h4>Past talks &amp; classes</h4>
+                    <ul class="writing-list speaking-list past-talks">
+                        {% for t in past_talks %}
+                            <li>
+                                <h5>{{ t.title }}</h5>
+                                {% if t.subtitle %}<h6 class="alt">{{ t.subtitle}}</h6>{% endif %}
+                                <p>{{ t.start.strftime('%A %d %B') }}{% if t.end and t.end != t.start %} - {{ t.end.strftime('%A %d %B') }}{% endif %}</p>
+                            </li>
+                        {% endfor %}
                     </ul>
+
+                    <h4>Videos of talks</h4>
+
+                    <h5 class="vid-header">Ignite talk: how to homebrew beer</h5>
+                    <h6 class="alt">Easter 2014</h6>
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="//www.youtube.com/embed/6_0IjxFjkI0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+                    <h5 class="vid-header">Ignite talk: North Korea &ndash; the Hermit Kingdom</h5>
+                    <h6 class="alt">Christmas 2013</h6>
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="//www.youtube.com/embed/GUQXKr9EmsE" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
                 </div>
 
             </div>
