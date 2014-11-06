@@ -50,6 +50,13 @@ def homepage():
         {
             'title':    'Building websites using HTML, CSS and JavaScript',
             'subtitle': 'Guardian Masterclass',
+            'start':    datetime(2014, 9, 3),
+            'end':      datetime(2014, 9, 24),
+            'link':     'http://www.theguardian.com/guardian-masterclasses/building-websites-html-css-javascript-course'
+        },
+        {
+            'title':    'Building websites using HTML, CSS and JavaScript',
+            'subtitle': 'Guardian Masterclass',
             'start':    datetime(2014, 4, 16),
             'end':      datetime(2014, 5, 7),
             'link':     'http://www.theguardian.com/guardian-masterclasses/building-websites-html-css-javascript-course'
@@ -60,13 +67,14 @@ def homepage():
             'start':    datetime(2014, 4, 28),
             'link':     'http://www.theguardian.com/guardian-masterclasses/what-developers-wish-you-knew-matt-andrews-digital-course'
         },
-        {
-            'title':    'Building for the web: Intermediate coding',
-            'subtitle': 'Guardian Masterclass',
-            'start':    datetime(2014, 6, 21),
-            'end':      datetime(2014, 6, 22),
-            'link':     'http://www.theguardian.com/guardian-masterclasses/building-for-the-web-intermediate-coding-digital-course'
-        },
+        # bastards
+        # {
+        #     'title':    'Building for the web: Intermediate coding',
+        #     'subtitle': 'Guardian Masterclass',
+        #     'start':    datetime(2014, 6, 21),
+        #     'end':      datetime(2014, 6, 22),
+        #     'link':     'http://www.theguardian.com/guardian-masterclasses/building-for-the-web-intermediate-coding-digital-course'
+        # },
         {
             'title':    'Building websites using HTML, CSS and JavaScript',
             'subtitle': 'Guardian Masterclass',

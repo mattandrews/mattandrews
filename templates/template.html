@@ -68,6 +68,28 @@
                 <div class="pull-left">
                     <ul class="writing-list">
                         <li class="media">
+                            <h4>Online "newspapers" and changing reading &amp; writing habits</h4>
+                            <a href="{{ static_url }}assets/img/talks/RCA.jpg" class="img">
+                                <img src="{{ static_url }}assets/img/talks/tn_RCA.jpg" />
+                            </a>
+                            <div class="bd">
+                                <h5>How digital journalism changes how we read and write online</h5>
+                                <h6 class="alt">5th November 2014 &bull; the Royal College of Art, London</h6>
+                                <p>I gave a talk and held a group discussion for MA students studying Critical Writing in Art and Design, covering ideas developed by the Guardian and others which change the way we consume and produce news on the internet.</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <h4><a href="http://schedule.mozillafestival.org/#session/-1ugaCYedJS">Moderation in Moderation</a></h4>
+                            <a href="{{ static_url }}assets/img/talks/mozfest.jpg" class="img">
+                                <img src="{{ static_url }}assets/img/talks/tn_mozfest.jpg" />
+                            </a>
+                            <div class="bd">
+                                <h5>Working with online communities</h5>
+                                <h6 class="alt">26th October 2014 &bull; Mozilla Festival 2014, London</h6>
+                                <p>I proposed and facilitated an hour-long session at the annual Mozilla Festival on their Source Code for Journalism track. Along with some Guardian colleagues we helped a few dozen attendees work out the challenges their online communities faced work together to solve them. <a href="http://www.theguardian.com/info/developer-blog/2014/oct/31/mozfest-2014-creative-chaos-in-the-best-possible-way">Read more...</a></p>
+                            </div>
+                        </li>
+                        <li class="media">
                             <h4><a href="http://mattandrews.info/talks/hackshackersberlin-2014/">Surviving the multi-device news challenge</a></h4>
                             <a href="{{ static_url }}assets/img/talks/hhber1.jpg" class="img">
                                 <img src="{{ static_url }}assets/img/talks/tn_hhber1.jpg" />
@@ -75,7 +97,7 @@
                             <div class="bd">
                                 <h5>How the Guardian uses APIs and open data</h5>
                                 <h6 class="alt">23rd January 2014 &bull; Hacks & Hackers Berlin</h6>
-                                <p>I'd like to explain to begin with what I mean by "the multi-device news challenge". Here are a couple of big numbers: 322: the number of unique browser versions the Guardian gets traffic from in a month.</p>
+                                <p>&quot;I'd like to explain to begin with what I mean by "the multi-device news challenge". Here are a couple of big numbers: 322: the number of unique browser versions the Guardian gets traffic from in a month.&quot; <a href="http://mattandrews.info/talks/hackshackersberlin-2014/">Read more...</a></p>
                             </div>
                         </li>
                         <li class="media">
@@ -86,7 +108,7 @@
                             <div class="bd">
                                 <h5>Why you should make your website future-friendly &ndash; right now.</h5>
                                 <h6 class="alt">10th October 2013 &bull; CanvasConf 2013</h6>
-                                <p>A few weeks ago I was in central London near the river, waiting to cross the road. Just before the traffic lights changed, a huge yellow and blue truck-like vehicle came rolling past.</p>
+                                <p>&quot;A few weeks ago I was in central London near the river, waiting to cross the road. Just before the traffic lights changed, a huge yellow and blue truck-like vehicle came rolling past.&quot; <a href="http://mattandrews.info/talks/canvasconf-2013/">Read more...</a></p>
                             </div>
                         </li>
                         <li class="media">
@@ -97,7 +119,7 @@
                             <div class="bd">
                                 <h5>How I learned to stop worrying and love the mobile web</h5>
                                 <h6 class="alt">10th May 2013 &bull; Port80 2013</h6>
-                                <p>It's the most talked-about web development technique of the past few years and it's officially reached the mainstream: responsive web design is being used by huge content sites like the Boston Globe, the BBC, Channel 4, and now the Guardian.</p>
+                                <p>&quot;It's the most talked-about web development technique of the past few years and it's officially reached the mainstream: responsive web design is being used by huge content sites like the Boston Globe, the BBC, Channel 4, and now the Guardian.&quot; <a href="http://mattandrews.info/talks/port80-2013/">Read more...</a></p>
                             </div>
                         </li>
                     </ul>
@@ -105,26 +127,24 @@
 
                 <div class="pull-right">
 
-                        <h4>Upcoming talks</h4>
                         {% if current_talks %}
-                            <ul class="writing-list speaking-list">
-                                {% for t in current_talks %}
-                                    <li>
-                                        <h5>{% if t.link %}<a href="{{ t.link }}">{% endif %}{{ t.title }}{% if t.link %}</a>{% endif %}</h5>
-                                        {% if t.subtitle %}<h6 class="alt">{{ t.subtitle}}</h6>{% endif %}
-                                        <p>{{ t.start.strftime('%A %d %B') }}{% if t.end and t.end != t.start %} - {{ t.end.strftime('%A %d %B') }}{% endif %}</p>
-                                    </li>
-                                {% endfor %}
-                            </ul>
-                        {% else %}
-                            <p>No upcoming talks.</p>
+                            <h4>Upcoming talks &amp; classes</h4>
+                                <ul class="writing-list speaking-list">
+                                    {% for t in current_talks %}
+                                        <li>
+                                            <h5>{% if t.link %}<a href="{{ t.link }}">{% endif %}{{ t.title }}{% if t.link %}</a>{% endif %}</h5>
+                                            {% if t.subtitle %}<h6 class="alt">{{ t.subtitle}}</h6>{% endif %}
+                                            <p>{{ t.start.strftime('%A %d %B') }}{% if t.end and t.end != t.start %} - {{ t.end.strftime('%A %d %B') }}{% endif %}</p>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
                         {% endif %}
 
-                        <h4>Past talks</h4>
+                        <h4>Past talks &amp; classes</h4>
                         <ul class="writing-list speaking-list past-talks">
                             {% for t in past_talks %}
                                 <li>
-                                    <h5>{% if t.link %}<a href="{{ t.link }}">{% endif %}{{ t.title }}{% if t.link %}</a>{% endif %}</h5>
+                                    <h5>{{ t.title }}</h5>
                                     {% if t.subtitle %}<h6 class="alt">{{ t.subtitle}}</h6>{% endif %}
                                     <p>{{ t.start.strftime('%A %d %B') }}{% if t.end and t.end != t.start %} - {{ t.end.strftime('%A %d %B') }}{% endif %}</p>
                                 </li>
@@ -156,6 +176,8 @@
                         <li>&ldquo;Matt was excellent – both in how he explained things and made them accessible and his relaxed personal style.&rdquo;</li>
 
                         <li>&ldquo;@mattpointblank's talk was one of the best I've ever seen, anywhere. Let's hope @canvasconf stick some videos online.&rdquo;</li>
+
+                        <li>&ldquo;Brilliantly paced, well considered and comprehensive presentations.&rdquo;</li>
                     </ul>
                 </div>
 

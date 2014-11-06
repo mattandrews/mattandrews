@@ -25,3 +25,4 @@ def deploy():
         with prefix('source ve/bin/activate'):
             run("pip install -r requirements.txt")
         sudo("supervisorctl restart matt")
+        # todo: cachebust here?
