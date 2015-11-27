@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Blossoming of the Web | Hacks &amp; Hackers Birmingham</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/tigerstyle.css" />
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css' />
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-96842-15', 'mattandrews.info');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+<body>
+
+    <article>
+
+        <header>
+            <h1>The Blossoming of the Web</h1>
+            <h4>New technologies and digital journalism</h4>
+            <h5>Matt Andrews &ndash; <a href="http://www.twitter.com/mattpointblank">@mattpointblank</a></h5>
+            <h6>24th November 2015 &bull; Hacks &amp; Hackers Birmingham</h6>
+        </header>
+
+        <p>This talk is mixed bag of new(ish) developments in technology which intersect with journalism. I'm going to talk through six examples of things that I think are interesting that you should care about if you're a hack, a hacker, or that semi-mythical unicorn who claims to be both.</p>
+
+        <h3>Hacks</h3>
+        <p>I've divided the talk into two halves: Hacks, and Hackers. Let's start with three things that the Hacks might be interested in.</p>
+
+        <h2>1. Google AMP</h2>
+
+        <p>First up is a new project by Google: <a href="https://www.ampproject.org/">Accelerated Mobile Pages</a> (AMP). It's gained some attention recently and, in my opinion, is of real interest to anyone connected with online publishing.</p>
+
+        <p>Google's basic premise with AMP is that the web is too slow. Specifically, they <a href="https://www.ampproject.org/how-it-works/">lay the blame for this</a> at the feet of JavaScript:</p>
+
+        <blockquote>"Once arbitrary JavaScript is in play, most bets are off because anything could happen at any time and it is hard to make any type of performance guarantee." (Malte Ubl, AMP project Tech Lead)
+        </blockquote>
+
+        <p>I suspect that the "arbitrary JavaScript" they refer to here is mostly confined to advertising/tracking code, which tends to proliferate on publishers' sites and often uses things like scrolljacking and animated/video elements which can slow down page rendering. This obviously has some major implications for news publishers wanting to AMP-ify their sites.</p>
+
+        <p>Here's a demo of AMP recorded live from my mobile phone. It's worth noting that this was done over wifi (because, ironically, I couldn't get a good enough 3G signal to show a typical loading scenario), but it still illustrates the concept and the new UI Google has produced for AMP-powered content.</p>
+
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/1wZZfmCw-Ag" frameborder="0" allowfullscreen></iframe>
+
+        <p>In case you didn't catch it from the clip, here's a side-by-side comparison of the BBC News site, showing the AMP version alongside the normal responsive web version. The differences aren't enormous but the AMP version is simplified and feature-limited.</p>
+
+        <img src="assets/img/HHBrum.007.jpeg" class="slide" />
+        <p class="caption">The same BBC news story on AMP and BBC web, respectively.</p>
+
+        <p>So how does AMP limit publishers? Here's a handy table to summarise:</p>
+
+        <img src="assets/img/HHBrum.008.jpeg" class="slide" />
+        <p class="caption">A summary of HTML vs AMP</p>
+
+        <p>It's worth clarifying here that publishers <em>can</em> embed ads and video, they just have to be secure (eg. served via HTTPS). This probably isn't an issue for larger news sites which are in the process of moving to secure endpoints, but smaller publishers without strong technical expertise
+            may find this harder to implement.</p>
+
+        <p>Analytics is an interesting challenge: Google allow 90s-era tracking pixels which record basic page impressions, but little else. These days data gathering in the browser is a sophisticated operation and much of the data captured is client-specific: browser settings/feature support, screen dimensions and other things. Not all of this is available to a simple tracking pixel so data achieved from these trackers will be primitive compared to a full-fat website.</p>
+
+        <p>Despite these challenges, though, lots of major publishers are involved. The BBC, FT, Guardian and Daily Mail are among the large British publishers already implementing AMP versions of their content, and intriguingly, tech companies like LinkedIn and Twitter are joining too.</p>
+
+        <p>Google are trying to share the wealth here, at least figuratively &ndash; anyone can implement an AMP-friendly platform. If you wanted to build your own search engine which referred users to AMP-enhanced pages, all of the code is here for you to do
+            that.</p>
+
+        <h2>2. Facebook Instant Articles</h2>
+
+        <p>It's hard to talk about AMP without mentioning Facebook's own, earlier implementation of a similar concept. Launched earlier this year, <a href="https://developers.facebook.com/docs/instant-articles">Instant Articles</a> offers users a similarly speedy version of the mobile which, which Facebook bemoan in their launch blogpost:</p>
+
+        <blockquote>"Mobile web articles can take an average of eight seconds to load, by far one of the slowest parts of the Facebook app."</blockquote>
+
+        <p>Here's a quick marketing video from Facebook showing how Instant Articles works in their iPhone app:</p>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/j39MBWV6e5k" frameborder="0" allowfullscreen></iframe>
+
+        <p>What I think is interesting here is that Facebook's concern for the slowness of the mobile web is centered around <em>the experience of the users of their apps</em>. They're effectively trying to speed up the entire mobile web in order to improve the rendering time of the slowest part of their native app. That's quite a dedication to performance.</p>
+
+        <p>Obviously Google, too, have something to gain from AMP making Google Search seem even more instantaneous. But there's more self-serving in Facebook's Instant Articles. Google's AMP is open source and implementable by anyone. Facebook's Instant Articles also claim to be made of open source standards, but we see little Facebook-specific snippets creep into the otherwise-kosher HTML5 they suggest:</p>
+
+<pre>
+    &lt;figure data-feedback=""fb:likes,fb:comments""&gt;
+        &lt;img src=""http://mydomain.com/path/to/img.jpg"" class=""no-margin""&gt;
+        &lt;figcaption class=""op-left" op-large"=""&gt;
+            &lt;h1&gt;This is an image markup example&lt;/h1&gt;
+            &lt;cite&gt;Photo by Jane Photographer&lt;/cite&gt;
+        &lt;/figcaption&gt;
+        &lt;audio autoplay=""&gt;
+            &lt;source src=""http://mydomain.com/path/to/audio.mp3""&gt;
+        &lt;/audio&gt;
+    &lt;/figure&gt;</pre>
+
+        <p>That data-feedback attribute? Non-standard, used to augment that particular piece of content when shown as an Instant Article on Facebook. I mean, fine &ndash; this is an easy way to let publishers add social features to their content. But it's not really the open web.</p>
+
+        <p>So how do these two efforts square up? Here's another table:</p>
+
+        <img src="assets/img/HHBrum.015.jpeg" class="slide" />
+        <p class="caption">Features and ethos: Google AMP vs Facebook Instant Articles</p>
+
+        <p>Facebook lose points immediately for only being on iPhone. Instant Articles are currently only on iPhone, with Android support not yet implemented. No mention of the mobile web yet, where Google started their efforts. The difference is in their implementations: AMP is still HTML (albeit augmented by Google's JavaScript) and therefore renderable in a browser. Facebook are being characteristically vague about how they're serving Instant Articles, but it seems they're cached somehow and rendered out to the client according to customisation options chosen by the publisher.</p>
+
+        <p>That also covers the openness comparison: to publish your content as Instant Articles you need to be approved by Facebook, whereas you can start publishing AMP pages right now and Google will show them. Similarly, you control your rendering of AMP on your server, whereas with Instant Articles you're sending Facebook an RSS feed of your content which it ingests and spits out to (some of) its users. </p>
+
+        <p>There's no clear victor here just yet as it's too early for adoption number to be clear, but the fact we're even seeing this debate happen and these products emerge is fascinating in itself. My money's on Google because they're better at evangelising open standards like this (and have the heft to make them de-facto: see their work on the Blink rendering engine in Chrome). Facebook, on the other hand, have been here before: I myself worked on <a href="http://www.currybet.net/cbet_blog/2012/02/newsrewired-guardian-facebook.php">the Guardian's Facebook app</a> which aimed to keep users inside the social network while reading Guardian content. That app was killed a year or so after we launched it due to declining interest from users (and Facebook). Have they learned the lessons and pivoted successfully? Time will tell.</p>
+
+        <h2>3. Google Cardboard</h2>
+
+        <p>This is another instance of Google having the scale (and budget) to alter the tech landscape in their chosen direction: here they're bringing cheap but impactful virtual reality to the masses, all for a tenner.</p>
+
+        <p>Yep: for about &pound;9.99 you can snag one of the many (unofficial) Cardboard devices from Amazon, or if you're a super-nerd, construct your own. It's a basic cardboard frame which holds a smartphone and has a couple of lens (of different thicknesses/focal depths) for simple 3D viewing.</p>
+
+        <p>It's difficult in a text article to get across the experience of wearing the headset and experiencing a virtual reality, but Google's efforts to integrate 360&deg; video into YouTube for desktop and mobile means you can get a basic idea even without Cardboard. The video below, by the Discovery channel, is filmed with 360&deg; cameras and lets you pan around with the mouse (on desktop) or move your device through 3D space (on mobile) and see the entire field of view.</p>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/T-aOVE22lEw" frameborder="0" allowfullscreen></iframe>
+
+        <p>It's not just cutesy animal stuff though: <a href="http://www.nytimes.com/2015/10/21/business/media/the-times-partners-with-google-on-virtual-reality-project.html?_r=0">the New York Times recently announced a partnership with Google</a> where they'll be sending out <strong>a million Cardboard devices</strong> to NYT subscribers. Again, Google's massive scale makes this do-able, but it speaks to the Times' belief that virtual reality can make for incredible storytelling. Their app tells a story about refugees fleeing war: a strong, classic piece of journalism &ndash; and now being told through virtual reality headsets. If you work in publishing, or particularly in multimedia, you need to get on board with this right now &ndash; buy a cheap Cardboard headset and immerse yourself.</p>
+
+        <h3>Hackers</h3>
+
+        <p>For the second half of this article I'd like to talk about some web technologies that are exciting me from a more technical viewpoint. Hopefully they'll still be of interest to journalists as well as developers, particularly where they relate to the mechanics of web publishing.</p>
+
+        <h2>1. Web Push Notifications</h2>
+
+        <p>Google, once again, are pushing the web forward. Here they've <a href="https://developers.google.com/web/updates/2015/03/push-notificatons-on-the-open-web">begun to implement</a> mobile push notifications &ndash; in the browser.</p>
+
+        <p>If you're not sure what I'm referring to, here's the kind you've probably seen before &ndash; iOS notifications on the left, Android on the right.</p>
+
+        <img src="assets/img/HHBrum.022.jpeg" class="slide" />
+        <p class="caption">Examples of native app notifications on mobile</p>
+
+        <p>In order to send one of these to your user, there are a number of hoops you have to jump through. First is building a mobile app: not easy if you don't have the resources, and in the case of iOS, you even have to pay for the privilege. Next you have to actually get your user to install it &ndash; again, trickier if you're a small publisher whose users might not want to bother with a local/niche interest app. All of this is a barrier to entry, and if your user is on a platform you haven't developed for (maybe your budget only stretched to Android?) then forget it.</p>
+
+        <p>Web push notifications, on the other hand, are available to everyone &ndash; at least, in theory. If your browser supports them (which, at the time of writing, means Chrome 42 and Firefox 44 only) you can get an experience like this:</p>
+
+        <p>What does this mean for publishers? It means that with a fairly trivial amount of code, you can get permission from your user to notify them about things, and then you can alert them to breaking news or important information &ndash; <strong>even after they've closed the page and left your site</strong>. Now, with great power comes great responsibility, but crucially, this lowers the barrier to entry for publishers to tell their users things they care about.</p>
+
+        <h2>2. WebSockets</h2>
+
+        <p>Now, this isn't quite bleeding-edge tech anymore: most of us will have used them (probably unknowingly) in the past year or two, particularly on collaborative apps like Google Docs or liveblog content like BBC Sport.</p>
+
+        <p>Here's an example. At the Guardian, they currently use classic AJAX requests to update their spot liveblogs. This screengrab shows a regular network request (every 15 seconds or so) pinging their Content API to see if anything has happened.</p>
+
+        <img src="assets/img/HHBrum.026.jpeg" class="slide" />
+        <p class="caption">The Guardian website liveblog, with the developert tools open</p>
+
+        <p>This was the standard way to build this kind of page in the classic HTTP world: a client connects, requests a page, the page is served back and the connection closed. After that, the client makes repeated connections to request new data.</p>
+
+        <p>This technique is perhaps the technical equivalent of knocking on your friend's front door repeatedly every 15 seconds to see if they're home from work yet. There's a better way, though.</p>
+
+        <p>WebSockets open a permanent two-way connection between the client and server. Both sides of the connection can send messages on-demand, without a need to constantly poll for updates. This has the benefit of reducing the requests to your data layer: in the Guardian liveblog example, if a thousand users are on the page concurrently that's a thousand requests every 15 seconds for new data. By using WebSockets, only the server itself needs to make those requests, sending the results back to every connected client. 1 request every 15 seconds (or, one for every application server). </p>
+
+        <p>There are some downsides: WebSockets aren't supported everywhere (IE only got them in version 10), but the fantastic <a href="http://socket.io">socket.io</a> library makes them effectively work everywhere.</p>
+
+        <p>I built <a href="http://guarded-thicket-3085.herokuapp.com/">a silly demo</a> to show how WebSockets can be used to make interactive pages too, where multiple clients can connect to the same socket instance and communicate with one another. Load this URL on a desktop browser, then connect to it from a mobile phone (use a QR code reader to read the code on the page and follow the URL). When you press the onscreen button on your mobile, the desktop instance should respond immediately. Google have already built some impressive multiplayer browser games using the very same technique.</p>
+
+        <h2>3. ServiceWorker</h2>
+
+        <p>This is a pretty new browser API that's <a href="http://www.html5rocks.com/en/tutorials/service-worker/introduction/">still in development</a> (currently only Chrome, Firefox and Opera support it). On the surface it seems fairly abstract: spawn a background worker to perform tasks by proxy of the host website. In detail, though, it effectively enables a host of offline web features.</p>
+
+        <p>The API allows you to specify files to save locally and then the ServiceWorker intercepts every subsequent request to the same site. This in effect means if the user goes offline and tries to request another page, you can detect this and serve them something offline.</p>
+
+        <p>The Guardian are doing just this, <a href="https://www.theguardian.com/info/developer-blog/2015/nov/04/building-an-offline-page-for-theguardiancom">loading an offline crossword</a> for users without a connection:</p>
+
+        <img src="assets/img/HHBrum.032.jpeg" class="slide" />
+        <p class="caption">The offline page for the Guardian's website.</p>
+
+        <p>The potential is massive though: it could cache the top five current news stories and offer them, or use the Guardian's "saved for later" feature to actually download those articles for offline reading. The potential for webapps is huge too: visit it once, then it's usable even when you have no network connection.</p>
+
+        <h3>Conclusions</h3>
+
+        <p>There are three things I hope you'll take away from this talk:</p>
+
+        <h2>1. The web is too slow</h2>
+
+        <p>(or so the big players reckon)</p>
+
+        <p>It's fascinating to see large companies like Google and Facebook try to take on the challenge of speeding up the mobile web. Both have form in this area and the reach and budget to make a serious go of it. The part I find most fascinating is the audacity of the idea, particularly Google's AMP proposition. They're effectively trying to wipe the client-side slate clean of everything the last decade has brought us, rather than wait for the W3C or other standards bodies to improve things.</p>
+
+            <p>It's an extreme approach and one that likely won't reach smaller, slower companies and their websites. But Google are pioneers when it comes to changing everyone's thinking on how things work (take GMail, Android and quite a few other products) and if anyone can pull it off, it's them.</p>
+
+        <p>On the other hand, is this just a power-play? Are Google and Facebook trying to effectively replace HTML with their own semi-proprietary solutions? Facebook in particular seem only interested in passing on the benefits to their users, rather than to the web at large.</p>
+
+        <h2>2. Wearables and VR are coming</h2>
+
+        <p>Or, to be honest, they're already here, and are only getting bigger. Oculus Rift, bought by Facebook, will be released early next year, and the impact it'll have on gaming will be enormous. Things like Google Cardboard aren't going to turn a nation into VR evangelists overnight but they're exciting, cheap and usable: within seconds of putting it on you get the idea immediately and understand how it works &ndash; and if you're canny, you start thinking of possibilities. If you're a storyteller, this is huge &ndash; imagine a drama you can interact with, rub shoulders with the cast, dig out hidden secrets and previously-unexplored territory. It's coming and it's awesome.</p>
+
+        <h2>3. The web is starting to rival native apps</h2>
+
+        <p>Google are super hot on this agenda and it shows. Their break from Apple in the form of dumping Webkit for Blink illustrates their commitment to bringing native app-like features to the open web. Whether you agree with their sometimes nonstandard methodologies or small army of earnest young men evangelising their tooling is your call, but it's hard to argue that they're not pushing things in the right direction. Apps are great but they shouldn't be the only way to do things: it's exciting to see what's coming down the track, and let's hope other browser manufacturers (hint hint, Apple) start to wake up to the possibilities. </p>
+
+        <p>I called this talk the blossoming of the web because it feels as though we're&mdash;slowly but surely&mdash;passing the awkward teenage years of the web and reaching a kind of maturity, even beauty, when it comes to the platform. Revolutions like web standards, jQuery and responsive web design have came taught us innovation and reinvention, and it genuinely feels like the APIs, the people and the creativity are coming together in harmony, or something approaching it. It's an exciting time to be making things for this blossoming web and I hope some of these things have excited you with their possibilities. </p>
+
+
+        <h5>&mdash; Matt Andrews</h5>
+        <h6><a href="http://mattandrews.info">mattandrews.info</a> &bull; <a href="http://www.twitter.com/mattpointblank">@mattpointblank</a></h6>
+
+        <h3>Notes</h3>
+        <p>Many thanks to <a href="https://twitter.com/aguspalacio">Agustin Palacio</a> for organising the meetup and hosting the event.</p>
+
+    </article>
+</body>
+
+</html>

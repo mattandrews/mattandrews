@@ -1,0 +1,119 @@
+body {
+    font-size: 100%;
+    /*font-family: georgia;*/
+    font-family: 'Merriweather', georgia;
+    color: #333333;
+}
+
+article {
+    width: 85%;
+    max-width: 700px;
+    margin: 3em auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+p, li, blockquote {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+li {
+    margin: 1.2em 0;
+}
+
+ul li {
+    list-style-type: square;
+}
+
+ul, ol {
+    margin-left: 0;
+    padding-left: 2em;
+    list-style-position: outside;
+}
+
+blockquote {
+    font-size: 1.4em;
+    border-left: 0.4em solid #eeeeee;
+    padding: 0.3em 1em;
+}
+
+h1 {
+    font-size: 1.9em;
+    font-weight: bold;
+    margin-bottom: 0.2em;
+}
+
+h2 {
+    font-size: 1.8em;
+    line-height: 1.4;
+    margin-bottom: 0.2em;
+    margin-left: -0.8em;
+}
+
+h3 {
+    font-size: 1.5em;
+    border-bottom: 0.05em solid #cccccc;
+    padding-bottom: 0.3em;
+}
+
+h4 {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: 0.4em;
+}
+
+h5 {
+    font-size: 0.8em;
+    margin-bottom: 0.7em;
+    color: #999;
+}
+
+h6 {
+    font-size: 0.7em;    
+    color: #cccccc;
+    margin-bottom: 2em;
+}
+
+code {
+    font-size: 1.2em;
+}
+
+.slide {
+    max-width: 100%;
+}
+
+a {
+    color: #c21f21;
+}
+
+a:active,
+a:visited,
+a:hover {
+    color: #721b31;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+.caption {
+    margin: 0.4em 0 0 0;
+    font-size: 0.8em;
+    opacity: 0.6;
+}
+
+sup {
+    font-size: 0.6em;
+    margin-left: 0.2em;
+    font-family: arial;
+}
+
+sup a {
+    text-decoration: none;
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Surviving the multi-device news challenge | Hacks &amp; Hackers Berlin</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/tigerstyle.css" />
+        <link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css' />
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-96842-15', 'mattandrews.info');
+          ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body>
+
+        <article>
+
+            <header>
+                <h1>Surviving the multi-device news challenge</h1>
+                <h4>How the Guardian uses APIs and open data</h4>
+                <h5>Matt Andrews &ndash; <a href="http://www.twitter.com/mattpointblank">@mattpointblank</a></h5>
+                <h6>23rd January 2014 &bull; Hacks &amp; Hackers Berlin</h6>
+            </header>
+
+            <h2>Introduction</h2>
+            <p>I'd like to explain to begin with what I mean by "the multi-device news challenge". Here are a couple of big numbers:</p>
+            <p><strong>322:</strong> the number of unique browser versions the Guardian gets traffic from in a month.</p>
+            <p><strong>6236:</strong> the number of unique devices that traffic comes from per month.</p>
+            <p><strong>82m:</strong> the number of unique readers sending us that traffic</p>
+            <h6>(all stats for September 2013).</h6>
+
+            <p>This is the multi-device challenge: anyone producing content for the web is facing it, and it's getting harder.</p>
+            
+            <p>The last time I was here in Berlin it was 2007 and things were pretty different, particularly when it came to my taste in hairstyles. A few other things have changed since then too:</p>
+            <p>I now work at the Guardian newspaper in London. My job all day is basically this &ndash; playing around with HTML, CSS and JavaScript as a front-end developer. That code is a small part of this tool which I'm helping build: it's called Composer and it's used by Guardian journalists to create all sorts of content on our website. I'll be talking more about that later.</p>
+
+            <img src="assets/img/hhber.009.jpg" class="slide" />
+            <p class="caption">Composer, the Guardian's new content publishing app.</p>
+
+            <p>I'm here today with one aim: to convince you to make APIs for everything.</p>
+            
+            <h3>Wait, what's an API? Why does a newsroom need one?</h3>
+
+            <p>Hopefully the hackers in the room will already be familiar with what an API is, but for those who aren't: what on earth is an API and why would a newspaper use one?</p>
+            <p>Well, to answer the first question: an API is an Application Programming Interface. In the Guardian's case, our main one looks like this:</p>
+
+            <img src="assets/img/hhber.012.jpg" class="slide" />
+            <p class="caption">Some JSON from the Guardian's Content API.</p>
+
+            <p>But that's boring. All we really need to know is that APIs are about communication. They're a way of building a layer that can mediate between different things and answer questions. For example:</p>
+            <ul><li>show me the top five most-read articles</li><li>what are the current football scores?</li><li>add this reader's comment to the database</li></ul>
+            <p>We use that data I showed a second ago to power all sorts of things, including the Guardian's new responsive redesign.</p>
+            
+            <h3>Three topics I'll cover:</h3>
+            <ol><li>Why should you have an API?</li></ol>
+            <ol><li>What will an API change about your process?</li></ol>
+            <ol><li>How can you create an API for your data?</li></ol>
+            <p>I'll speak for around 25 minutes and then open things up for questions.</p>
+            
+            <h2>1. Why should I have an API?</h2>
+
+            <p>The very first topic, then: why should you have an API?</p>
+            <p>It's a simple answer: because APIs make building new things <em>trivial</em>.</p>
+            <p>Here's a quick example of a bunch of different applications we've built using the Guardian's Content API:</p>
+            <ul><li>the new responsive desktop website</li><li>... which also has a mobile view, too</li><li>the former Guardian Facebook app</li><li>our iPhone app</li><li>our Android app</li><li>our Kindle app</li></ul>
+            <p>...plus a whole host of others. Not one of these applications required us to write any database code at all. All the data we wanted was already in our API, organised by section, tag, author and other filters. If you want to get the latest headlines for Sport which were marked by our editors as "lead content", it's a single API request.</p>
+            <p>Using APIs like this can be a huge benefit for scalability. Scaling software means making it capable of vast growth, allowing it to stand up when lots of traffic arrives. For a news website this is really important. Our API helps the Guardian do this and I'll quickly walk you through why that is:</p>
+            <p>Without an API, each platform you build on has to repeat code and connect to a database, re-implementing the same techniques for the same results each time. Each platform is separate and can't share cached data when the output belongs in different formats.</p>
+            <p>Introducing an API into this equation really simplifies things: now the back-end database could be swapped out and the client apps don't need to care about the data's source: they just go via the API. Scaling and caching can happen solely at the API layer, rather than on each separate platform. One API can support dozens of types of clients.</p>
+
+            <h3>Thinking in multiple contexts</h3>
+
+            <p>Another reason you should have an API: it forces you to think in multiple contexts.</p>
+            <p>What do I mean by that? Here's a quick example.</p>
+            <p>This is the Guardian's current desktop site. The article itself and the photo are designed to fit a 460 pixel wide template. This has been the case for at least five years or so.</p>
+
+            <img src="assets/img/hhber.025.jpg" class="slide" />
+            <p class="caption">The article design fixed to a 460px wide content template.</p>
+
+            <p>In the CMS we use to power this website, the tools themselves reinforce that concept:</p>
+
+            <img src="assets/img/hhber.027.jpg" class="slide" />
+            <p class="caption">The Guardian's legacy CMS, enforcing the 460px display limit.</p>
+
+            <p>Editors are so used to thinking of the website as being this 460 pixel column that everything we did was geared up to provide it for them.</p>
+            <p>The problem, of course, is that these days we see traffic from a huge array of different devices and screens:</p>
+            <p>This diagram shows common screen sizes for various devices. You can see that for quite a few of them, that 460 pixel template isn't suitable.</p>
+
+            <img src="assets/img/hhber.028.jpg" class="slide" />
+            <p class="caption">Lots of different device contexts.</p>
+
+            <p>Once you switch from storing blobs of HTML for articles into a structured data format like our API, it forces you to think in these different contexts. An API is an abstracted way of representing your content: you have to break it down into logical elements: headlines, standfirsts, tags, etc. In our case, we break down images into different sizes like this:</p>
+
+            <img src="assets/img/hhber.029.jpg" class="slide" />
+            <p class="caption">JSON representing image sizes</p>
+
+            <p>It also helps that our API is used in that wide variety of contexts: every time we make a change to it, we have to think about what impact it might have. "How will this look in the API?" is a common question in our teams: we want to make sure we don't build assumptions into our products. Not every device will support Flash; not every screen is a 19" monitor.</p>
+
+            <h3>External collaborators</h3>
+
+            <p>Another benefit to having an API: other people can make things with your data.</p>
+            <p>The Guardian's Content API is open and public. Any of you sitting here now could make a request to it and get back our content: headline, images, article text and all. You might wonder why this is a good thing: surely this means other people can make their own bootleg versions of the Guardian?!</p>
+            <p>Well, yes: and that's fine. This is from the Google Play store: there are at least five Guardian-related Android apps &ndash; but we only made two of them. Those other three were made by random developers. They use our API to grab our content and present it to readers.</p>
+
+            <img src="assets/img/hhber.032.jpg" class="slide" />
+            <p class="caption">Different Android apps for the Guardian, official and otherwise.</p>
+
+            <p>Again, you may think this sounds terrible: surely the Guardian wants to control how its news is presented? Well, perhaps, but we know that people consume our content in different ways. If someone else wants to take the time to build another way of consuming our journalism, we still benefit: if someone is reading your content, <em>they're reading your content</em>. Doesn't matter if it's on the official app or a community version. As long as the content is clearly branded as the Guardian (which is one of our requirements for using the API), we still win.</p>
+
+            <h2>2. How do APIs change your processes?</h2>
+            
+            <p>The second thing I'd like to talk about is how APIs can change your processes. What will be different once you start using one?</p>
+            <p>The primary difference is that you stop thinking of your website as a monolithic structure; a huge, interlinked bag of stuff, tightly coupled.</p>
+            <p>APIs help you "decouple" things: you can break different parts of your site up into logical blocks which are independent of one another. Let me give you an example:</p>
+
+            <img src="assets/img/hhber.038.jpg" class="slide" />
+            <p class="caption">The Guardian's legacy CMS</p>
+
+            <p>This is the Guardian's old CMS. It's a terrifying mess of arcane code and complexity. It does <em>everything</em>. Seriously. It can:</p>
+            <ul><li>post new articles to the website</li><li>manage tags which we add to our content</li><li>upload images and search existing photo libraries</li><li>send emails to subscribers</li><li>create polls, competitions and quizzes</li><li>create a cached copy of the website in case it crashes</li><li>make new "microapps" which allow any new code to run on the site</li><li>create microsites which advertise commercial partners</li></ul>
+            <p>... and a host of other improbable things. That CMS was also tied into our frontend code, eg. the templates and design which made up the desktop website.</p>
+            <p>What that meant was that when we wanted to update that frontend: e.g., change a font colour somewhere, we had to take down that entire CMS for 15 minutes while we deployed the changes.</p>
+
+            <img src="assets/img/hhber.046.jpg" class="slide" />
+            <p class="caption">A change that once upon a time required turning off the CMS for 15 minutes.</p>
+
+            <p>Can you imagine walking into the Guardian newsroom on a Monday morning and saying "sorry guys, could you just stop posting content for a bit while I change a font somewhere?". We did this every two weeks.</p>
+            <p>Our APIs mean we can abstract that process and break it apart. Composer, the new CMS we're building, pushes new content directly into our main Content API. It works independently of the front-end of the website, eg. the user-facing aspect of it. </p>
+            <p>This also means that publishing becomes multi-faceted: we can hook up any number of web publishing tools to our APIs as necessary. We don't have to view publishing as a one-to-one relationship. Building a single tool for journalists to use implies there's just one way to publish online. With an API, you can make it the "source of truth": as long as the data makes it to the API and is usable by its clients, the tools to input that data can be varied and different.</p>
+
+            <img src="assets/img/hhber.048.jpg" class="slide" />
+            <p class="caption">The publishing options open up when you have a good API.</p>
+
+            <h3>Open linked data</h3>
+
+            <p>It's also changed how we show related items and additional content. In the past we've tried things like embedding HTML widgets in content which do things like show videos or factboxes   and other extra details. As with the template earlier, these bits of content often assume certain contexts that we just can't depend on anymore. By using linked data we can make this smarter.</p>
+
+            <img src="assets/img/hhber.049.jpg" class="slide" />
+            <p class="caption">Some of the ways the Guardian represents linked data.</p>
+
+            <p>For example: a lot of our content uses tags to show its relationship: an article can be tagged as a review, as relating to David Bowie, as being a gallery, etc. But we also have a concept of "external tags": these are things outside the Guardian's taxonomy but useful still. For example, we can tag content with an ISBN, linking it to a published book. We can add tags for third party APIs, like the PA sport data, so we can show information about a live football match alongside the article. We can show information about albums by using MusicBrainz IDs to link our content. This kind of thing abstracts our content outwards: now other people can query Guardian content which has a MusicBrainz ID and do interesting things with it.</p>
+
+            <img src="assets/img/hhber.050.jpg" class="slide" />
+            <p class="caption">MusizBrainz IDs in the Guardian's API.</p>
+
+            <p>Once we get away from the idea of the web being a single thing, like a page of a newspaper we just arrange things on, we start to see why structured data with rich metadata around it is really important. </p>
+            <p>Take page layout: In the past, if you wanted an inline image, you'd have to insert one that was 200 pixels or less wide. This would be an implicit hint to our templates that it should sit alongside text. Again, this doesn't work anymore for all contexts. Instead, we're looking at how we can make these layout hints <strong>explicit</strong>: what if you could add metadata to embeddable objects to say "this thing should sit inline with this paragraph", which was then available in an API? Then you could be smarter and make different layout decisions based on the context you know up-front (the editorial story) and the context you know when rendering the page (the user's platform).</p>
+            
+            <h3>Hacking &amp; experimenting</h3>
+
+            <img src="assets/img/hhber.052.jpg" class="slide" />
+            <p class="caption">This is how simple it can be to get started with our API</p>
+
+            <p>Another thing that changes once you have an API is creativity. I'm a front-end developer. The minute I have to start connecting to databases, writing SQL queries and caching, things are going to end badly. With a good API, though, I can quickly and simply grab what I need. This means that when we run departmental Hack Days at the Guardian, people can get up and running with real, live data in a matter of minutes.</p>
+
+            <img src="assets/img/hhber.059.jpg" class="slide" />
+            <p class="caption">Some Guardian developers making a Google Glass app with our API</p>
+
+            <p>At our hack day last week, some of our Android team built a prototype Google Glass app for the Guardian using our API. Could you imagine how much slower development would be on exciting new features if we had to write the same "boilerplate" code every time?</p>
+            
+            <h2>Writing your own API</h2>
+
+            <p>The final thing I'd like to talk about, briefly, is how you go about writing your own API.</p>
+            <p>Now, I'm far from an expert on the topic: my only credentials for this are hacking together a data feed for SXSW 2011 when the official site didn't provide data for the gigs by various bands.</p>
+            <p>Before thinking about programming languages, hosting details or technical implementations, though, the first thing to work out is your content model.</p>
+            <p>Sit down in a room with journalists of all levels, if you're a developer, or grab a mix of your developers if you're a hack. Stay locked in that room with as much coffee as is necessary before you can work out what the constituent parts are of your content.</p>
+            <p>Think of it as a consumer: if you were a third party wanting to build things with your stuff, how would you expect it to work? If you're anything like us, you have a few weird quirks or inexplicable features which only your team worries about: for us it's things like remembering that in the Guardian American edition, we have to say "Sports", not "Sport". Can your API handle that kind of thing automatically? If your imaginary user shouldn't need to worry about it, you'll need to build it in.</p>
+
+            <img src="assets/img/hhber.056.jpg" class="slide" />
+            <p class="caption">Just one of the international considerations the Guardian has to make.</p>
+
+            <p>If you can, another tip is to build it with openness in mind. Your bosses, particularly the ones in charge of syndication, might not be too keen on programatically making all your journalism available for anyone to import. But then, your content's already on the web, right? If someone wants to steal it and they're committed enough, they can. We do things like embed ads into the article body text for external developers using our APIs. That way we still get some commercial benefit as well as the readership benefit when someone builds using our stuff.</p>
+
+            <img src="assets/img/hhber.057.jpg" class="slide" />
+            <p class="caption">Copying on the web has been around a lot longer than APIs...</p>
+
+            <p>Once you've come up with a model and figured out what to build it in, make it easy to query. The Guardian has a fairly unusable but popular console tool for exploring the API. Don't make it hard for developers to use your data or they'll give up and go somewhere else. The barrier to entry should be so embarrassingly  low that everyone will want to start thinking up interesting things to do with your data rather than wondering what database library they'll use to connect to your content.</p>
+
+            <img src="assets/img/hhber.058.jpg" class="slide" />
+            <p class="caption">The Guardian's just-about-usable Content API explorer console.</p>
+
+            <p>Build it simple to start with. An insider tip: there's an internal Guardian API we use for analytics which requires an API key to use. One of the developers admitted to me privately that any string is a valid API key: all they use the key for is to track usage. If a certain key starts causing trouble they can just block it. This might not work for every use case, but when you're just beginning it can save you time writing complex rate limiting code when you might not need it for six months. What's the minimum work you can do to get something useful built?</p>
+            
+            <h2>Concluding thoughts</h2>
+
+            <p>So, to conclude. </p>
+            <p>It's actually really straightforward: build an API. Now! If you work for a news organisation, hassle your bosses about letting you create one. Or just go ahead and make one anyway. </p>
+            <p>Maybe you already have an API &ndash; great? Is it open? If not, why not? There are lots of benefits to opening up your content to everyone: take advantage of them.</p>
+            <p>Why do you need an API? Once again:</p>
+            <ul><li>building new things is much easier &amp; quicker</li><li>they help you scale up</li><li>they get you thinking cross-platform by default</li><li>other people can do cool stuff with your data</li></ul>
+            <p>Finally, one more big number to close with:</p>
+            <p><strong>1.</strong> One person: that's you. Go and help your news organisation prepare for the future.</p>
+
+            <p>Thank you very much for listening.</p>
+
+            <h5>&mdash; Matt Andrews</h5>
+            <h6><a href="http://mattandrews.info">mattandrews.info</a> &bull; <a href="http://www.twitter.com/mattpointblank">@mattpointblank</a></h6>
+
+            <h3>Notes</h3>
+            <p>Many thanks to Annabel Church and the rest of the Hacks &amp; Hackers Berlin team for organising the event, and to Nic Long at the Guardian for helping me research and fact-check this talk</p>
+
+        </article>
+    </body>
+</html> 
