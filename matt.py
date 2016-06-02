@@ -48,6 +48,13 @@ def homepage():
 
     talks = [
         {
+            'title':    'Coding For The Web 101',
+            'subtitle': 'The Birmingham and Midland Institute',
+            'start':    datetime(2016, 2, 18),
+            'end':      datetime(2016, 3, 17),
+            'link':     'https://www.eventbrite.co.uk/e/coding-for-the-web-101-tickets-20920815723'
+        },
+        {
             'title':    'Building websites using HTML, CSS and JavaScript',
             'subtitle': 'Guardian Masterclass',
             'start':    datetime(2014, 9, 3),
