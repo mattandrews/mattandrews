@@ -1,0 +1,49 @@
+---
+layout: post
+title: 'Twitter''s #ukopenhouse London - my notes'
+categories: threechords
+wordpress_url: http://www.threechords.org/blog/?p=139
+date: '2012-04-25 11:58:49 +0100'
+---
+<p>Last night I attended the first of <a href="http://www.eventbrite.com/event/3328623001">Twitter UK's Open House</a> sessions on their engineering work. It was a free event at LBi's London office and sold out very quickly. I managed to get tickets and went along, with little idea of what to expect, but quite excited to hear from the makers of Bootstrap, whose work has been inspiring <a href="https://github.com/guardian/pasteup">my own work at the Guardian</a>. Here are my notes (written to circulate amongst the rest of the Guardian's client-side team) from the three talks.</p>
+<p><strong>Please note</strong>: these writeups are my personal opinion and not my employers', and I was sitting right at the back so any inaccurate statements are probably my fault and not the speakers'. Probably.</p>
+<h2>1. Dan Webb (Twitter) - "pushState or bust"</h2>
+<ul>
+<li>Dan talked about Twitter's decision to go with hashbang URLs and went through a checklist of how this "breaks the web" (in terms of things like bookmarks, SEO, browser history, accessibility, etc). Hashbangs broke most of these things.</li>
+<li>He then talked about how they're now switching this to use <a href="https://developer.mozilla.org/en/DOM/Manipulating_the_browser_history#The_pushState().C2.A0method">pushState</a> and used the classic example of <a href="https://github.com/blog/760-the-tree-slider">GitHub</a> to show how it's properly done.</li>
+<li>He also revealed that they've had problems with this approach, namely that Google can't see the content because it's not exposed via hashbangs (I didn't quite follow this, can only assume they do something similar to Gawker where no HTML content is actually displayed without JS enabled, otherwise surely Google can crawl normal links). He added that they serve Googlebot with "old Twitter" in order for it to be crawlable.</li>
+<li>He said the typical fallback for non-pushState browsers was to fallback to hashbangs, but said this was even worse, because then you have to support the old hacky URLs without any of the benefits of using them.</li>
+<li>What they ended up doing was falling back to "full page reloads" (erm, just normal links pointing to normal webpages. <em>cRaZy!11</em>)</li>
+<li>They check on each page request whether the request came from AJAX or a normal request - if AJAX, they send the response as JSON (and presumably only serve the HTML for the parts that changed rather than the header/footer etc).</li>
+<li>Someone asked if they use WebSockets or <a href="http://socket.io/">Socket.IO</a> for live updates, and he revealed they just use normal XHR. When the questioner asked if the frequent polling for updates broke things, he said they don't poll on regular intervals but "respond to user clicks", which is quite interesting. He added that they were "looking into being more real time".</li>
+<li><strong>My summary:</strong> basically he just sums up <a href="http://danwebb.net/2011/5/28/it-is-about-the-hashbangs" target="_blank">his own blog entry on why hashbangs are shit</a> and then made some (to me) "duh" points about how to implement pushState in an accessible way. I couldn't quite believe that he was highlighting "full page reloads" as some revolutionary genius technique for making AJAX-powered content accessible, but there we are.</li>
+</ul>
+<h2>2. Tom Woolway &amp; James Whittaker (Tweetdeck) - "Blackbird: One codebase to rule them all"</h2>
+<ul>
+<li>This was a lot more interesting than I expected it to be. Found out I've apparently been using the old version of Tweetdeck (with the yellow icon). Bit confused now about whether the new "Twitter" app for Android is now incorporating Tweetdeck... they revealed that Twitter's internal name for their app is Blackbird.</li>
+<li>They use <a href="http://sass-lang.com/">SASS</a> (and apologised to <a href="http://lesscss.org/">LESS</a> fans), <a href="http://compass-style.org/">Compass</a>, <a href="http://mustache.github.com/">Mustache</a> (planning to switch to Twitter's own <a href="http://twitter.github.com/hogan.js/">Hogan</a>), <a href="http://modernizr.com/">Modernizr</a> and <a href="http://documentcloud.github.com/underscore/">Underscore</a> on the client-side.</li>
+<li>They have quite a wide stack to support:</li>
+<ul>
+<li><strong>Mac</strong>: uses webviews, shares code with Twitter for Mac</li>
+<li><strong>Windows</strong>: uses something called <a href="http://qt.nokia.com/products/">Qt</a> (pronounced "cute", apparently), which is a cross-platform app framework</li>
+<li><strong>Web client</strong>: served lightweight via <a href="http://twistedmatrix.com">Twisted</a></li>
+<li><strong>Future</strong>: embedded Chromium? (I accidentally smashed a wine glass at this point so details are sketchy, sorry)</li>
+</ul>
+<li>They generate custom builds of the app for different platforms and browsers. They use Compass to generate cross-browser CSS (from what I could make out, they can just write stuff like "border-radius" and Compass turns it into "-moz-border-radius" etc). They also have switches on their build tool to enable/disable CSS features (presumably for their Chrome app they don't bother including Modernizr or whatever).</li>
+<li>They use <a href="http://docs.jquery.com/QUnit">qUnit</a> for testing but have recently started using <a href="http://phantomjs.org/">PhantomJS</a>, that new "headless browser" tool which means you can run javascript in a browser and test against it.</li>
+<li><strong>My summary</strong>: interesting talk, although they both pronounced it "twidder" despite being Brits. One of them saw me tweet about this and <a href="https://twitter.com/tomwoolway/status/194870105136562178">blamed it on constantly talking to Californians</a>. Found the idea of them having different builds quite interesting although I guess when you diversify on platforms specifically then this is a no-brainer.</li>
+</ul>
+<h2>3. Jacob Thornton &amp; Mark Otto (Twitter) - "Bootstrap: Defender of the universe"</h2>
+<ul>
+<li>This was the one everyone was there for (probably 100 people in the room). I have the least amount of notes about this one because it was far and away the least interesting talk.</li>
+<li>Mark (<a href="https://twitter.com/mdo">@mdo</a>) began and talked about how Bootstrap is a "nights and weekends" project, which is interesting in itself. He didn't elaborate on this but I take it to mean that Twitter don't value it. I was wondering how Twitter see Bootstrap's goals: is it to get their name everywhere and make developers happy with them, or is it to "do a Facebook" and get their design and look/feel everywhere (like FB do with the ubiquitous Like button)? They didn't say more on this.</li>
+<li>Talking switched to Jacob (<a href="https://twitter.com/fat">@fat</a>), who said something like "yeah, javascript is like... my jam, or something". This basically set the tone for the next 15 minutes as he drawled on vaguely about Bootstrap.</li>
+<li>He made one reference to what I'm calling "<a href="https://github.com/twitter/bootstrap/issues/3057">semicolongate</a>" as he talked about integrating JSHint into their build, "which is run by the community, instead of crazy Mr. Crockford".</li>
+<li>Mark talked about pushing updates to Bootstrap from places outside of San Francisco, where Jacob hilariously recounted "I was really hungover" when they pushed from SXSW. <a href="http://www.urbandictionary.com/define.php?term=brogramming">Brogramming</a>.</li>
+<li>The worst part was possibly a slide about mobile where Jacob just seemed to forget how to talk. I honestly wondered if he was drunk/high or something at this point. He trailed off multiple times and said something like "I can't really remember what this is... but mobile is really important". When Mark went to take over, Jacob said "it's cool bro, I got this" or something. People laughed and I guess it was funny in a sense but I kinda sensed a bit of "WTF?" going around the room.</li>
+<li>They finished up and talked about some features for the future, then Jacob tried to convince the audience into "peer pressuring" Mark into showing off his talent for doing "handfarts". At this point a guy in the audience got up and left (although this could've been unrelated). Mark didn't do it (although the Tweetdeck/Twitter lackeys on the front row all excitedly tweeted about how hilarious it was) and then it was time for questions.</li>
+<li>Someone asked if they were concerned about becoming as ubiquitous for UI as jQuery has become for javascript. Mark said they were concerned about that, Jacob said he thought it would be awesome.</li>
+<li><strong>My summary:</strong>  Mark seemed interesting (he works mostly on Twitter.com), and the stuff he didn't say was arguably more interesting. Jacob: Well, every prejudice I had about him after reading his Crockford slanging match on GitHub was basically confirmed. I'm sure the guy can write good Javascript but he couldn't give a talk. I wasn't really sure what Twitter US had sent them over here for, but to be fair, I'm not entirely sure what I expected either</li>
+</ul>
+<p>---</p>
+<p>Well, that's pretty much what I got from the evening. I enjoyed the event and was grateful for Twitter for putting it on. Perhaps it's unfair to mentally compare the Bootstrap talk to the kind of thing you get at paid-for web conferences, although I went to the (also free) <a href="http://londonjs-10.eventbrite.co.uk/">LondonJS meetup just last week</a> and this was much more beneficial: lots of code examples, well-produced presentations (by the seasoned pro Jake Archibald) and I came away feeling I'd been both educated and entertained instead of just one of those things.</p>
