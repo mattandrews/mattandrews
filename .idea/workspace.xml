@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37387850-ae83-4626-b125-74a5b9269ec6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2015-02-25-debut.markdown" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/default.html" afterPath="$PROJECT_DIR$/_layouts/default.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/home.html" afterPath="$PROJECT_DIR$/_layouts/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/page.html" afterPath="$PROJECT_DIR$/_layouts/page.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/post.html" afterPath="$PROJECT_DIR$/_layouts/post.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/talks/port80-2013/fonts/Merriweather/OFL.txt" afterPath="$PROJECT_DIR$/talks/port80-2013/fonts/Merriweather/OFL.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/talks/port80-2013/fonts/Merriweather_Sans/OFL.txt" afterPath="$PROJECT_DIR$/talks/port80-2013/fonts/Merriweather_Sans/OFL.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sass/theme.scss" afterPath="$PROJECT_DIR$/_sass/theme.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,22 +22,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="matt.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/matt.py">
+      <file leaf-file-name="2013-10-10-responsive-design-at-the-guardian.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2013-10-10-responsive-design-at-the-guardian.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+            <state relative-caret-position="617">
+              <caret line="215" column="46" lean-forward="false" selection-start-line="215" selection-start-column="46" selection-end-line="215" selection-end-column="46" />
+              <folding>
+                <element signature="e#3832#3839#0" expanded="false" />
+                <element signature="e#6966#6971#0" expanded="false" />
+                <element signature="e#12608#12615#0" expanded="false" />
+                <element signature="e#13218#13225#0" expanded="false" />
+                <element signature="e#13234#13241#0" expanded="false" />
+                <element signature="e#16676#16683#0" expanded="false" />
+                <element signature="e#16797#16804#0" expanded="false" />
+                <marker date="1493675343000" expanded="false" signature="20307:20311" ph="&lt;" />
+                <marker date="1493675343000" expanded="false" signature="20317:20321" ph="&gt;" />
+                <marker date="1493675343000" expanded="false" signature="21529:21536" ph="–" />
+                <marker date="1493675343000" expanded="false" signature="22456:22463" ph="–" />
+                <marker date="1493675343000" expanded="false" signature="22747:22754" ph="–" />
+                <marker date="1493675343000" expanded="false" signature="22776:22783" ph="–" />
+                <marker date="1493675343000" expanded="false" signature="23263:23270" ph="–" />
+                <marker date="1493675343000" expanded="false" signature="23292:23299" ph="–" />
+                <marker date="1493675343000" expanded="false" signature="28140:28147" ph="—" />
+                <marker date="1493675343000" expanded="false" signature="28226:28232" ph="•" />
+                <marker date="1493675343000" expanded="false" signature="28317:28322" ph="&amp;" />
+                <marker date="1493675343000" expanded="false" signature="29736:29743" ph="–" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_layouts/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="48" column="40" lean-forward="false" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="2014-01-23-surviving-the-multi-device-news-challenge.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2014-01-23-surviving-the-multi-device-news-challenge.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="92">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding>
+                <element signature="e#85#90#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,19 +78,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>\n  login\: admin</find>
-      <find>author\:\n\n  url\: \'\'</find>
-      <find>\nauthor_login\: admin\nauthor_email\: matt\@mattandrews\.info</find>
-      <find>status\: publish\npublished\: true</find>
-      <find>wordpress_id: 3</find>
-      <find>wordpress_id:</find>
-      <find>wordpress_id: \</find>
-      <find>wordpress_id: \d</find>
-      <find>wordpress_id: \d+</find>
-      <find>date_gmt: '</find>
-      <find>date_gmt: '.</find>
-      <find>date_gmt: '.*</find>
-      <find>date_gmt: '.*'</find>
       <find>layout: post</find>
       <find>\n\nwordpress_url</find>
       <find>categories: wordpress</find>
@@ -80,6 +95,19 @@
       <find>\\-\\-\\-</find>
       <find>layout: post\\ntitle</find>
       <find>'---\n</find>
+      <find>categories: guardian</find>
+      <find>ro</find>
+      <find>royal</find>
+      <find>royal</find>
+      <find>royal co</find>
+      <find>royal col</find>
+      <find>royal coll</find>
+      <find>categories: teaching</find>
+      <find>categories: t</find>
+      <find>categories: talk</find>
+      <find>categories: talks</find>
+      <find>img/canvas2013</find>
+      <find>ismodner</find>
     </findStrings>
     <replaceStrings>
       <replace>categories: wordpress\nwordpress_url</replace>
@@ -95,6 +123,7 @@
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/_site</dir>
+      <dir>$PROJECT_DIR$/_posts</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -103,12 +132,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_site/index.html" />
-        <option value="$PROJECT_DIR$/_posts/2017-04-27-inherited-taste.markdown" />
-        <option value="$PROJECT_DIR$/_posts/2017-03-23-introducing.markdown" />
-        <option value="$PROJECT_DIR$/_posts/2017-02-23-world-building.markdown" />
-        <option value="$PROJECT_DIR$/_posts/2017-01-26-genre-mashups.markdown" />
-        <option value="$PROJECT_DIR$/_posts/2016-11-29-word-of-mouth.markdown" />
         <option value="$PROJECT_DIR$/_posts/2016-10-25-suffering-for-art.markdown" />
         <option value="$PROJECT_DIR$/_posts/2016-09-14-cult-failures.markdown" />
         <option value="$PROJECT_DIR$/_posts/2015-11-11-re-runs.markdown" />
@@ -122,7 +145,6 @@
         <option value="$PROJECT_DIR$/TODO.md" />
         <option value="$PROJECT_DIR$/_includes/header.html" />
         <option value="$PROJECT_DIR$/_includes/footer.html" />
-        <option value="$PROJECT_DIR$/_sass/theme.scss" />
         <option value="$PROJECT_DIR$/default_settings.py" />
         <option value="$PROJECT_DIR$/deploy.sh" />
         <option value="$PROJECT_DIR$/fabfile.py" />
@@ -130,15 +152,48 @@
         <option value="$PROJECT_DIR$/_layouts/post.html" />
         <option value="$PROJECT_DIR$/_layouts/page.html" />
         <option value="$PROJECT_DIR$/_layouts/default.html" />
-        <option value="$PROJECT_DIR$/_layouts/home.html" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_7.txt" />
         <option value="$PROJECT_DIR$/_posts/2011-01-19-broadcast-media-dumbing-down-or-catering-for-demand.html" />
         <option value="$PROJECT_DIR$/_posts/2009-07-28-the-new-internet-the-death-of-culture.html" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_8.txt" />
+        <option value="$PROJECT_DIR$/_posts/2014-03-17-30-under-30-the-top-young-people-in-digital-media-video.html" />
+        <option value="$PROJECT_DIR$/_posts/2014-03-16-the-top-30-young-people-in-digital-media-nos-30-11.html" />
+        <option value="$PROJECT_DIR$/_posts/2010-12-16-switching-to-google-hosted-jquery.html" />
+        <option value="$PROJECT_DIR$/_posts/2011-03-11-sxsw-2011-how-we-made-our-interactive-band-tracker.html" />
+        <option value="$PROJECT_DIR$/_posts/2011-03-15-sxsw-2011-music-and-hack-days-where-the-girls-aren't.html" />
+        <option value="$PROJECT_DIR$/_posts/2011-11-15-business-designed.html" />
+        <option value="$PROJECT_DIR$/_posts/2011-12-05-my-favourite-film-the-goonies.html" />
+        <option value="$PROJECT_DIR$/_posts/2011-12-07-music-hack-day-london-2011-a-developer's-view.html" />
+        <option value="$PROJECT_DIR$/_posts/2012-07-16-discovery-week-diary-day-one.html" />
+        <option value="$PROJECT_DIR$/_posts/2012-07-18-discovery-week-diary-day-two.html" />
+        <option value="$PROJECT_DIR$/_posts/2012-10-18-responsive-design-at-the-guardian-an-introduction.html" />
+        <option value="$PROJECT_DIR$/_posts/2013-05-01-google-glass-–-what-is-it-good-for?-|-matt-andrews.html" />
+        <option value="$PROJECT_DIR$/_posts/2013-08-15-young-rewired-state-2013-mentoring-the-tech-stars-of-tomorrow.html" />
+        <option value="$PROJECT_DIR$/_posts/2013-12-20-dennis-rodman-is-'having-fun'-in-north-korea-at-the-expense-of-human-rights-|-matt-andrews.html" />
+        <option value="$PROJECT_DIR$/_posts/2014-01-17-guardian-hack-day-january-2014-—-live-blog.html" />
+        <option value="$PROJECT_DIR$/_posts/2014-03-27-how-can-mozilla-turn-a-blind-eye-to-its-ceo's-support-of-prop-8-?.html" />
+        <option value="$PROJECT_DIR$/_posts/2014-07-15-guardian-hack-day-july-2014-—-live-blog.html" />
+        <option value="$PROJECT_DIR$/_posts/2014-09-30-#dareconf-2014-review-people-skills-for-digital-workers.html" />
+        <option value="$PROJECT_DIR$/_posts/2014-10-31-mozfest-2014-creative-chaos-–-in-the-best-possible-way.html" />
+        <option value="$PROJECT_DIR$/_posts/2015-02-27-guardian-hack-day-february-2015-–-liveblog.html" />
+        <option value="$PROJECT_DIR$/talks.js" />
+        <option value="$PROJECT_DIR$/_posts/2013-05-10-responsive-design-at-the-guardian.html" />
+        <option value="$PROJECT_DIR$/_posts/2014-01-23-surviving-the-multi-device-news-challenge.html" />
+        <option value="$PROJECT_DIR$/_layouts/home.html" />
+        <option value="$PROJECT_DIR$/_sass/syntax.scss" />
+        <option value="$PROJECT_DIR$/_sass/theme.scss" />
+        <option value="$PROJECT_DIR$/_posts/2013-10-10-responsive-design-at-the-guardian.html" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -166,7 +221,20 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scratches">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scratches" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyRootNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -189,7 +257,141 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_layouts" />
+              <option name="myItemId" value="talks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mattandrews" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mattandrews" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="talks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="canvasconf-2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mattandrews" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mattandrews" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="talks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="canvasconf-2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mattandrews" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mattandrews" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="talks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="canvasconf-2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mattandrews" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mattandrews" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mattandrews" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mattandrews" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mattandrews" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mattandrews" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="canvas2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mattandrews" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mattandrews" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_sass" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -203,9 +405,18 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="TEXT" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/img/canvas2013" />
+      <recent name="$PROJECT_DIR$/_posts" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/img/canvas2013" />
       <recent name="$PROJECT_DIR$/_posts" />
     </key>
   </component>
@@ -304,18 +515,18 @@
       <workItem from="1493478790486" duration="5727000" />
       <workItem from="1493631622166" duration="24000" />
       <workItem from="1493631664253" duration="33000" />
-      <workItem from="1493631717585" duration="2631000" />
+      <workItem from="1493631717585" duration="7383000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22963000" />
+    <option name="totallyTimeSpent" value="27715000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="873" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17829457" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27413672" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980132" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -362,76 +573,15 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/2017-02-23-world-building.markdown" />
-    <entry file="file://$PROJECT_DIR$/_posts/2017-01-26-genre-mashups.markdown" />
-    <entry file="file://$PROJECT_DIR$/_posts/2016-11-29-word-of-mouth.markdown" />
-    <entry file="file://$PROJECT_DIR$/_posts/2016-10-25-suffering-for-art.markdown" />
-    <entry file="file://$PROJECT_DIR$/_posts/2016-09-14-cult-failures.markdown" />
-    <entry file="file://$PROJECT_DIR$/_posts/2015-11-11-re-runs.markdown" />
-    <entry file="file://$PROJECT_DIR$/_posts/2015-04-07-artists-who-went-solo.markdown" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_6.txt">
+    <entry file="file://$PROJECT_DIR$/_posts/2014-03-17-30-under-30-the-top-young-people-in-digital-media-video.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="104" />
+        <state relative-caret-position="207">
+          <caret line="6" column="408" lean-forward="true" selection-start-line="6" selection-start-column="408" selection-end-line="6" selection-end-column="408" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="23">
-            <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/cover_art.html" />
-    <entry file="file://$PROJECT_DIR$/TODO.md" />
-    <entry file="file://$PROJECT_DIR$/_posts/2015-02-25-debut.markdown">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="276">
-            <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="106" lean-forward="false" selection-start-line="13" selection-start-column="106" selection-end-line="13" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/img/hero--wide.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="22" lean-forward="true" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/img/hero--wide2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/main.scss">
+    <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-the-top-30-young-people-in-digital-media-nos-30-11.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
@@ -439,181 +589,319 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/reset.css">
+    <entry file="file://$PROJECT_DIR$/_posts/2010-12-16-switching-to-google-hosted-jquery.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="184">
+          <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+    <entry file="file://$PROJECT_DIR$/_posts/2011-03-11-sxsw-2011-how-we-made-our-interactive-band-tracker.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="161">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/theme.scss">
+    <entry file="file://$PROJECT_DIR$/_posts/2011-03-15-sxsw-2011-music-and-hack-days-where-the-girls-aren't.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+        <state relative-caret-position="115">
+          <caret line="5" column="58" lean-forward="true" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/talks/port80-2013/css/theme/template/theme.scss">
+    <entry file="file://$PROJECT_DIR$/_posts/2011-11-15-business-designed.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="69">
+          <caret line="3" column="93" lean-forward="false" selection-start-line="3" selection-start-column="93" selection-end-line="3" selection-end-column="93" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/template.html">
+    <entry file="file://$PROJECT_DIR$/_posts/2011-12-05-my-favourite-film-the-goonies.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="37" column="29" lean-forward="true" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+        <state relative-caret-position="69">
+          <caret line="3" column="65" lean-forward="false" selection-start-line="3" selection-start-column="65" selection-end-line="3" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/default_settings.py">
+    <entry file="file://$PROJECT_DIR$/_posts/2011-12-07-music-hack-day-london-2011-a-developer's-view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="69">
+          <caret line="3" column="111" lean-forward="false" selection-start-line="3" selection-start-column="111" selection-end-line="3" selection-end-column="111" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deploy.sh">
+    <entry file="file://$PROJECT_DIR$/_posts/2012-07-16-discovery-week-diary-day-one.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="117" lean-forward="false" selection-start-line="2" selection-start-column="117" selection-end-line="2" selection-end-column="117" />
+        <state relative-caret-position="69">
+          <caret line="3" column="99" lean-forward="false" selection-start-line="3" selection-start-column="99" selection-end-line="3" selection-end-column="99" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fabfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-926">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local_settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-96">
-          <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/about/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2012-01-04-private-eye-scepticism-new-media.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-157">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="322">
-            <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_7.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/page.html">
+    <entry file="file://$PROJECT_DIR$/_posts/2012-07-18-discovery-week-diary-day-two.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
-          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <caret line="3" column="202" lean-forward="false" selection-start-line="3" selection-start-column="202" selection-end-line="3" selection-end-column="202" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/post.html">
+    <entry file="file://$PROJECT_DIR$/_posts/2012-10-18-responsive-design-at-the-guardian-an-introduction.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="109" lean-forward="false" selection-start-line="3" selection-start-column="109" selection-end-line="3" selection-end-column="109" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2013-05-01-google-glass-–-what-is-it-good-for?-|-matt-andrews.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="140" lean-forward="false" selection-start-line="3" selection-start-column="140" selection-end-line="3" selection-end-column="140" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2013-08-15-young-rewired-state-2013-mentoring-the-tech-stars-of-tomorrow.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="152" lean-forward="false" selection-start-line="3" selection-start-column="152" selection-end-line="3" selection-end-column="152" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-01-17-guardian-hack-day-january-2014-—-live-blog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-03-27-how-can-mozilla-turn-a-blind-eye-to-its-ceo's-support-of-prop-8-?.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="138" lean-forward="false" selection-start-line="3" selection-start-column="138" selection-end-line="3" selection-end-column="138" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-09-30-#dareconf-2014-review-people-skills-for-digital-workers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="117" lean-forward="false" selection-start-line="3" selection-start-column="117" selection-end-line="3" selection-end-column="117" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2015-02-27-guardian-hack-day-february-2015-–-liveblog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="8" column="1811" lean-forward="true" selection-start-line="8" selection-start-column="1811" selection-end-line="8" selection-end-column="1811" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-10-31-mozfest-2014-creative-chaos-–-in-the-best-possible-way.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="101" lean-forward="false" selection-start-line="3" selection-start-column="101" selection-end-line="3" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-07-15-guardian-hack-day-july-2014-—-live-blog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2013-12-20-dennis-rodman-is-'having-fun'-in-north-korea-at-the-expense-of-human-rights-|-matt-andrews.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="130" lean-forward="false" selection-start-line="3" selection-start-column="130" selection-end-line="3" selection-end-column="130" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2009-07-28-the-new-internet-the-death-of-culture.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts2/2013-03-01-how-to-be-a-digital-journalist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts2/2013-09-01-building-websites-using-html-css-and-javascript.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts2/2014-03-01-building-websites-using-html-css-and-javascript.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts2/2012-11-01-building-websites-using-html-css-and-javascript.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts2/2013-01-01-how-to-be-a-digital-journalist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="3" lean-forward="true" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts2/2013-06-01-building-websites-using-html-css-and-javascript.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts2/2014-09-01-building-websites-using-html-css-and-javascript.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts2/2016-02-01-coding-for-the-web-101.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="159" column="5" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="159" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/talks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="642">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2013-02-27-building-websites-using-html-css-and-javascript.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2013-03-23-how-to-be-a-digital-journalist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2013-06-04-building-websites-using-html-css-and-javascript.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-02-25-digital-journalism-bootcamp.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
-          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2011-01-19-broadcast-media-dumbing-down-or-catering-for-demand.html">
+    <entry file="file://$PROJECT_DIR$/_posts/2014-01-15-building-websites-using-html-css-and-javascript.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2011-05-01-on-deleting-facebook.html">
+    <entry file="file://$PROJECT_DIR$/_posts/2013-09-24-building-websites-using-html-css-and-javascript.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-04-16-building-websites-using-html-css-and-javascript.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-09-03-building-websites-using-html-css-and-javascript.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2016-02-18-coding-for-the-web-101.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-04-28-how-to-work-with-web-developers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2013-01-12-how-to-be-a-digital-journalist.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
@@ -621,91 +909,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2011-06-30-the-user-experience-of-flathunting.html">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="253">
+            <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2012-11-21-building-websites-using-html-css-and-javascript.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="92">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2012-05-30-the-medium-is-not-the-message.html">
+    <entry file="file://$PROJECT_DIR$/_posts/2014-01-23-surviving-the-multi-device-news-challenge.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="92">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#85#90#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2012-03-21-how-i-finally-understood-the-value-of-social.html">
+    <entry file="file://$PROJECT_DIR$/_posts/2013-05-10-responsive-design-at-the-guardian.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2009-07-28-the-new-internet-the-death-of-culture.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2011-10-16-when-celebrities-tweet-a-ricky-gervais-special.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="23" />
+        <state relative-caret-position="92">
+          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        <state relative-caret-position="374">
+          <caret line="48" column="40" lean-forward="false" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2011-06-19-on-student-journalism-and-digital-first.html">
+    <entry file="file://$PROJECT_DIR$/talks/canvasconf-2013/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="453">
+          <caret line="313" column="17" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="313" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2012-04-23-london-mayoral-manifestos-critiqued.html">
+    <entry file="file://$PROJECT_DIR$/_sass/syntax.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="637">
+          <caret line="59" column="67" lean-forward="false" selection-start-line="59" selection-start-column="67" selection-end-line="59" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2012-05-06-policing-love-anti-gay-marriage-campaign-nonsense.html">
+    <entry file="file://$PROJECT_DIR$/_sass/theme.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="6" selection-end-column="3" />
+        <state relative-caret-position="0">
+          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/matt.py">
+    <entry file="file://$PROJECT_DIR$/_posts/2013-10-10-responsive-design-at-the-guardian.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="617">
+          <caret line="215" column="46" lean-forward="false" selection-start-line="215" selection-start-column="46" selection-end-line="215" selection-end-column="46" />
+          <folding>
+            <element signature="e#3832#3839#0" expanded="false" />
+            <element signature="e#6966#6971#0" expanded="false" />
+            <element signature="e#12608#12615#0" expanded="false" />
+            <element signature="e#13218#13225#0" expanded="false" />
+            <element signature="e#13234#13241#0" expanded="false" />
+            <element signature="e#16676#16683#0" expanded="false" />
+            <element signature="e#16797#16804#0" expanded="false" />
+            <marker date="1493675343000" expanded="false" signature="20307:20311" ph="&lt;" />
+            <marker date="1493675343000" expanded="false" signature="20317:20321" ph="&gt;" />
+            <marker date="1493675343000" expanded="false" signature="21529:21536" ph="–" />
+            <marker date="1493675343000" expanded="false" signature="22456:22463" ph="–" />
+            <marker date="1493675343000" expanded="false" signature="22747:22754" ph="–" />
+            <marker date="1493675343000" expanded="false" signature="22776:22783" ph="–" />
+            <marker date="1493675343000" expanded="false" signature="23263:23270" ph="–" />
+            <marker date="1493675343000" expanded="false" signature="23292:23299" ph="–" />
+            <marker date="1493675343000" expanded="false" signature="28140:28147" ph="—" />
+            <marker date="1493675343000" expanded="false" signature="28226:28232" ph="•" />
+            <marker date="1493675343000" expanded="false" signature="28317:28322" ph="&amp;" />
+            <marker date="1493675343000" expanded="false" signature="29736:29743" ph="–" />
+          </folding>
         </state>
       </provider>
     </entry>
