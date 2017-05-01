@@ -1,0 +1,269 @@
+$spacingUnit: 20px;
+
+$tablet: 700px;
+$desktop: 900px;
+$wide: 1100px;
+
+$gutters: (
+    'default': 20px,
+    'tablet': 10%,
+    'desktop': 15%,
+    'wide': 20%
+);
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: 'Playfair Display', serif;
+}
+
+ul, li, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+p {
+    margin: 0;
+    margin-bottom: $spacingUnit;
+}
+
+.inner {
+    padding-left: map-get($gutters, 'default');
+    padding-right: map-get($gutters, 'default');
+
+    @media screen and (min-width: $tablet) {
+        padding-left: map-get($gutters, 'tablet');
+        padding-right: map-get($gutters, 'tablet');
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding-left: map-get($gutters, 'desktop');
+        padding-right: map-get($gutters, 'desktop');
+    }
+
+    @media screen and (min-width: $wide) {
+        padding-left: map-get($gutters, 'wide');
+        padding-right: map-get($gutters, 'wide');
+    }
+}
+
+body, p, li, input {
+    font-family: 'Crimson Text', serif;
+}
+
+.brand {
+    font-size: 50px;
+    line-height: 1;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+.header__inner {
+    padding-top: $spacingUnit;
+    padding-bottom: $spacingUnit;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: center;
+
+        > * {
+            flex-grow: 1;
+        }
+    }
+}
+
+nav {
+    $navItemGutter: $spacingUnit / 2;
+    margin-top: 12px; // align with header
+
+    @media screen and (min-width: $tablet) {
+        text-align: right;
+    }
+
+    li {
+        display: inline-block;
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+        margin-right: $navItemGutter;
+
+        &:last-child {
+            margin-right: 0;
+            &:after {
+                display: none;
+            }
+        }
+
+        &:after {
+            content: '•';
+            color: #b3bad6;
+            margin-left: $navItemGutter;
+        }
+
+        a {
+            color: #1b121d;
+            text-decoration: none;
+            &:hover {
+                color: #b3bad6;
+                border-bottom: 1px solid #b3bad6;
+                padding-bottom: 2px;
+            }
+        }
+    }
+}
+
+// via http://stackoverflow.com/a/34982673
+@function decimal-round ($number, $digits: 0, $mode: round) {
+    $n: 1;
+    // $number must be a number
+    @if type-of($number) != number {
+        @warn '#{ $number } is not a number.';
+        @return $number;
+    }
+    // $digits must be a unitless number
+    @if type-of($digits) != number {
+        @warn '#{ $digits } is not a number.';
+        @return $number;
+    } @else if not unitless($digits) {
+        @warn '#{ $digits } has a unit.';
+        @return $number;
+    }
+    @if $digits > 0 {
+        @for $i from 1 through $digits {
+            $n: $n * 10;
+        }
+    }
+    @if $mode == round {
+        @return round($number * $n) / $n;
+    } @else if $mode == ceil {
+        @return ceil($number * $n) / $n;
+    } @else if $mode == floor {
+        @return floor($number * $n) / $n;
+    } @else {
+        @warn '#{ $mode } is undefined keyword.';
+        @return $number;
+    }
+}
+
+@mixin responsive-ratio($x, $y) {
+    $padding: ( $y / $x ) * 100;
+    padding-bottom: unquote(decimal-round($padding, 2) + '%');
+}
+
+@mixin makeHeroImage($img, $width, $height) {
+    @include responsive-ratio($width, $height);
+    background-image: url($img);
+}
+
+.hero {
+    margin-top: 0;
+    position: relative;
+    height: 0;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include makeHeroImage('img/hero--wide2.jpg', 1366, 477);
+
+    .hero__inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.m-t { margin-top: $spacingUnit; }
+.m-b { margin-bottom: $spacingUnit; }
+.padded { padding: $spacingUnit; }
+
+@media screen and (min-width: $tablet) {
+
+    .flex {
+        display: flex;
+
+        & > .flex__item {
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 0;
+
+            &:first-child {
+                margin-right: $spacingUnit;
+            }
+            &:last-child {
+                margin-left: $spacingUnit;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #354450;
+    color: #ffffff;
+
+    .footer__inner {
+        padding-top: $spacingUnit;
+        padding-bottom: $spacingUnit;
+    }
+
+     p {
+         margin-bottom: 0;
+     }
+}
+
+.media {
+    overflow: hidden;
+
+    .media__img {
+        margin-right: $spacingUnit;
+        float: left;
+    }
+
+    .media__body {
+        overflow: hidden;
+    }
+
+}

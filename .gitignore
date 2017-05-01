@@ -1,3 +1,6 @@
 *.pyc
 ve/
 CACHE/
+.idea
+.sass-cache
+_site

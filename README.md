@@ -1,15 +1,15 @@
-mattandrews
-===========
+# Matt Andrews personal site
 
-Source for my personal URL.
+This is a jekyll site.
 
-This is a flask app. To run:
+Run `bundle exec jekyll serve` to serve a live-reloading site.
 
-    virtualenv ve
-    source ve/bin/activate
-    pip install -r requirements.txt
-    python matt.py
-    
-To deploy remotely, you'll need to uncomment the `local_settings.py` fields on the remote server.
+Run `JEKYLL_ENV=production jekyll build` to build for production.
 
-This feels a bit bizarre to describe the run process: if you're not me, you're very unlikely to want to run/deploy this site...
+# TODO
+- pull in RSS feeds
+    - http://www.theguardian.com/profile/matt-andrews/rss
+    - http://www.threechords.org/blog/feed
+- add teaching "posts"
+- remove supervisor/gunicorn/nginx config
+- add proper GA code

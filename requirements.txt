@@ -1,5 +1,0 @@
-gunicorn
-flask
-feedparser
-Flask-Cache
-fabric
