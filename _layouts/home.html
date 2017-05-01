@@ -15,10 +15,20 @@ layout: default
 
             <p>Hi, my name is Matt – welcome to my homepage. I'm a creative technologist currently at BBC's Digital Guerrillas team in Birmingham. Prior to that, I worked for five years as a client-side developer and manager at the Guardian in London. When I'm not writing HTML, CSS & JavaScript I'm a keen writer, musician, cyclist and homebrewer. I also speak at conferences and teach a variety of technical classes – more on these below.</p>
 
+            <h4>Threechords</h4>
             <ul>
-                {% for post in site.posts %}
+                {% for post in site.categories.threechords %}
                 <li>
                     <a href="{{ post.url }}">{{ post.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+
+            <h4>Guardian</h4>
+            <ul>
+                {% for post in site.categories.guardian %}
+                <li>
+                    <a href="{{ post.link }}">{{ post.title }}</a>
                 </li>
                 {% endfor %}
             </ul>
