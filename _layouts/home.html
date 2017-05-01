@@ -2,3 +2,31 @@
 layout: default
 ---
 
+<aside class="hero"><div class="hero__inner"></div></aside>
+<div class="inner m-t m-b">
+
+    <div class="flex">
+        <div class="flex__item">
+            <h2 class="m-b">About me</h2>
+
+            <p>Hi, my name is Matt – welcome to my homepage. I'm a creative technologist currently at BBC's Digital Guerrillas team in Birmingham. Prior to that, I worked for five years as a client-side developer and manager at the Guardian in London. When I'm not writing HTML, CSS & JavaScript I'm a keen writer, musician, cyclist and homebrewer. I also speak at conferences and teach a variety of technical classes – more on these below.</p>
+
+            <h3>Find me on the web</h3>
+
+            <p>Hi, my name is Matt – welcome to my homepage. I'm a creative technologist currently at BBC's Digital Guerrillas team in Birmingham. Prior to that, I worked for five years as a client-side developer and manager at the Guardian in London. When I'm not writing HTML, CSS & JavaScript I'm a keen writer, musician, cyclist and homebrewer. I also speak at conferences and teach a variety of technical classes – more on these below.</p>
+
+            <ul>
+                {% for post in site.posts %}
+                <li>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="flex__item">
+            hello
+        </div>
+    </div>
+
+
+</div>

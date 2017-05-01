@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37387850-ae83-4626-b125-74a5b9269ec6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/reset.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/default_settings.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fabfile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/filters.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/local_settings.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/mattandrews.iml" afterPath="$PROJECT_DIR$/.idea/mattandrews.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2015-02-25-debut.markdown" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/default.html" afterPath="$PROJECT_DIR$/_layouts/default.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/home.html" afterPath="$PROJECT_DIR$/_layouts/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/page.html" afterPath="$PROJECT_DIR$/_layouts/page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/post.html" afterPath="$PROJECT_DIR$/_layouts/post.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/talks/port80-2013/fonts/Merriweather/OFL.txt" afterPath="$PROJECT_DIR$/talks/port80-2013/fonts/Merriweather/OFL.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/talks/port80-2013/fonts/Merriweather_Sans/OFL.txt" afterPath="$PROJECT_DIR$/talks/port80-2013/fonts/Merriweather_Sans/OFL.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,15 +26,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="322">
-                <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-                <folding />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="matt.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/matt.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -48,19 +50,49 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>spoti</find>
-      <find>s</find>
-      <find>spotify</find>
-      <find>\$tablet\: 700px\;\n\/\/\$desktop\: 900px\;\n\/\/\$wide\: 1100px\;\n\/\/\n\/\/\$gutters\: \(\n\/\/    \'default\'\: 20px\,\n\/\/    \'tablet\'\: 10\%\,\n\/\/    \'desktop\'\: 15\%\,\n\/\/    \'wide\'\: 20\%\n\/\/\)\;\n\/\/\n\/\/\* \{\n\/\/    box\-sizing\: border\-box\;\n\/\/\}\n\/\/\n\/\/h1\, h2\, h3\, h4\, h5\, h6 \{\n\/\/    font\-size\: 16px\;\n\/\/    margin\: 0\;\n\/\/    padding\: 0\;\n\/\/    font\-weight\: normal\;\n\/\/\}\n\/\/\n\/\/ul\, li\, ol \{\n\/\/    list\-style\: none\;\n\/\/    padding\: 0\;\n\/\/    margin\: 0\;\n\/\/\}\n\/\/\n\/\/\n\/\/html\, body \{\n\/\/    margin\: 0\;\n\/\/    padding\: 0\;\n\/\/    height\: 100\%\;\n\/\/\}\n\/\/\n\/\/header\, main \{\n\/\/    padding\-left\: map\-get\(\$gutters\, \'default\'\)\;\n\/\/    padding\-right\: map\-get\(\$gutters\, \'default\'\)\;\n\/\/\n\/\/    \@media screen and \(min\-width\: \$tablet\) \{\n\/\/        padding\-left\: map\-get\(\$gutters\, \'tablet\'\)\;\n\/\/        padding\-right\: map\-get\(\$gutters\, \'tablet\'\)\;\n\/\/    \}\n\/\/\n\/\/    \@media screen and \(min\-width\: \$desktop\) \{\n\/\/        padding\-left\: map\-get\(\$gutters\, \'desktop\'\)\;\n\/\/        padding\-right\: map\-get\(\$gutters\, \'desktop\'\)\;\n\/\/    \}\n\/\/\n\/\/    \@media screen and \(min\-width\: \$wide\) \{\n\/\/        padding\-left\: map\-get\(\$gutters\, \'wide\'\)\;\n\/\/        padding\-right\: map\-get\(\$gutters\, \'wide\'\)\;\n\/\/    \}\n\/\/\}\n\/\/\n\/\/\n\/\/body \{\n\/\/    background\-color\: \#323131\;\n\/\/    font\-family\: \'Signika\'\, georgia\;\n\/\/    color\: \#ffffff\;\n\/\/\}\n\/\/\n\/\/a \{\n\/\/    color\: \#ffe313\;\n\/\/\}\n\/\/\n\/\/a\:hover \{\n\/\/    color\: \#fff2ae\;\n\/\/\}\n\/\/\n\/\/img \{\n\/\/    width\: 100\%\;\n\/\/    height\: auto\;\n\/\/\}\n\/\/\n\/\/\.logo \{\n\/\/    width\: auto\;\n\/\/    height\: 100px\;\n\/\/    margin\-top\: \-10px\;\n\/\/\}\n\/\/\n\/\/header \{\n\/\/    background\-color\: \#252525\;\n\/\/    height\: 80px\;\n\/\/    margin\-top\: 30px\;\n\/\/    margin\-bottom\: 80px\;\n\/\/\n\/\/    \@media screen and \(min\-width\: \$tablet\) \{\n\/\/        display\: flex\;\n\/\/        margin\-bottom\: 50px\;\n\/\/    \}\n\/\/\}\n\/\/\n\/\/\.nav \{\n\/\/    flex\-grow\: 1\;\n\/\/    align\-self\: center\;\n\/\/\n\/\/    \@media screen and \(min\-width\: \$tablet\) \{\n\/\/        margin\-left\: 20px\;\n\/\/    \}\n\/\/    \@media screen and \(min\-width\: \$desktop\) \{\n\/\/        margin\-left\: 40px\;\n\/\/    \}\n\/\/\}\n\/\/\n\/\/\.nav li \{\n\/\/    display\: inline\-block\;\n\/\/    font\-size\: 18px\;\n\/\/    border\-right\: 3px solid \#525252\;\n\/\/    margin\-right\: 10px\;\n\/\/    padding\-right\: 10px\;\n\/\/    margin\-bottom\: 10px\;\n\/\/    \@media screen and \(min\-width\: \$desktop\) \{\n\/\/        margin\-bottom\: 0\;\n\/\/        margin\-right\: 20px\;\n\/\/        padding\-right\: 20px\;\n\/\/    \}\n\/\/\}\n\/\/\n\/\/\.nav li\:last\-child \{\n\/\/    margin\-right\: 0\;\n\/\/    padding\-right\: 0\;\n\/\/    border\-right\: none\;\n\/\/\}\n\/\/\n\/\/\.nav li\.current a \{\n\/\/    border\-bottom\: 3px solid \#ffe313\;\n\/\/\}\n\/\/\n\/\/\.nav li a\:hover \{\n\/\/    border\-bottom\: 3px solid \#525252\;\n\/\/\}\n\/\/\n\/\/\.nav li a \{\n\/\/    color\: \#ffffff\;\n\/\/    text\-decoration\: none\;\n\/\/    padding\-bottom\: 7px\;\n\/\/\}\n\/\/\n\/\/\n\/\/section \{\n\/\/    \@media screen and \(min\-width\: \$tablet\) \{\n\/\/        display\: flex\;\n\/\/    \}\n\/\/\}\n\/\/\n\/\/aside \{\n\/\/    flex\-shrink\: 0\;\n\/\/    margin\-right\: 20px\;\n\/\/    width\: 100\%\;\n\/\/    \@media screen and \(min\-width\: \$tablet\) \{\n\/\/        width\: 200px\;\n\/\/    \}\n\/\/    \@media screen and \(min\-width\: \$desktop\) \{\n\/\/        width\: 280px\;\n\/\/    \}\n\/\/\}\n\/\/\n\/\/article \{\n\/\/\}\n\/\/\n\/\/\.next\-event \{\n\/\/    border\: 1px solid \#ffffff\;\n\/\/    margin\-bottom\: 20px\;\n\/\/\n\/\/    \&amp;\,\n\/\/    img \{\n\/\/        width\: 100\%\;\n\/\/        display\: block\;\n\/\/    \}\n\/\/\n\/\/    \@media screen and \(max\-width\: \$tablet\) \{\n\/\/        float\: left\;\n\/\/        width\: 160px\;\n\/\/        margin\-right\: 20px\;\n\/\/    \}\n\/\/\}\n\/\/\n\/\/small \{\n\/\/    font\-size\: 0\.8rem\;\n\/\/    opacity\: 0\.8\;\n\/\/\}\n\/\/\n\/\/\.caption \{\n\/\/    color\: \#999\;\n\/\/    font\-weight\: 100\;\n\/\/    font\-size\: 0\.8rem\;\n\/\/    margin\-bottom\: 1rem\;\n\/\/\}\n\/\/\n\/\/\n\/\/h1 \{\n\/\/    font\-size\: 2rem\;\n\/\/    border\-bottom\: 1px solid \#ffffff\;\n\/\/    padding\-bottom\: 0\.5rem\;\n\/\/    margin\-bottom\: 1\.5rem\;\n\/\/\}\n\/\/\n\/\/h1 span \{\n\/\/    display\: block\;\n\/\/    font\-size\: 1\.5rem\;\n\/\/    color\: \#eae4c0\;\n\/\/    margin\-top\: 5px\;\n\/\/\}\n\/\/\n\/\/h2 \{\n\/\/    color\: \#fff0ac\;\n\/\/    font\-size\: 1\.8rem\;\n\/\/    font\-weight\: 400\;\n\/\/    margin\-bottom\: 1rem\;\n\/\/    text\-shadow\: 3px 2px 4px \#000000\;\n\/\/\}\n\/\/\n\/\/h3 \{\n\/\/    font\-size\: 1\.6rem\;\n\/\/    border\-bottom\: 1px dotted \#565537\;\n\/\/\}\n\/\/\n\/\/h4 \{\n\/\/    font\-size\: 1\.4rem\;\n\/\/    color\: \#D9BCA3\;\n\/\/    border\-bottom\: 1px dotted \#D9BCA3\;\n\/\/    margin\-bottom\: 0\.3rem\;\n\/\/    padding\-bottom\: 0\.3rem\;\n\/\/\}\n\/\/\n\/\/h5 \{\n\/\/    font\-size\: 1\.0rem\;\n\/\/    margin\-bottom\: 0\.3rem\;\n\/\/    color\: rgba\(203\, 167\, 173\, 1\)\;\n\/\/    a \{\n\/\/        color\: inherit\;\n\/\/    \}\n\/\/\}\n\/\/\n\/\/h6 \{\n\/\/    font\-size\: 0\.8rem\;\n\/\/    line\-height\: 1\.5\;\n\/\/    margin\: 5px 0\;\n\/\/\}\n\/\/\n\/\/p \{\n\/\/    margin\-top\: 0\;\n\/\/    margin\-bottom\: 1\.5rem\;\n\/\/    line\-height\: 1\.5\;\n\/\/\}\n\/\/\n\/\/\.otr \{\n\/\/    text\-transform\: uppercase\;\n\/\/    font\-weight\: 900\;\n\/\/    color\: \#fff0ac\;\n\/\/    font\-size\: 1rem\;\n\/\/\}\n\/\/\n\/\/\.cta \{\n\/\/    background\-color\: \#683f80\;\n\/\/    color\: \#ffffff\;\n\/\/    padding\: 10px\;\n\/\/    text\-align\: center\;\n\/\/    border\: 1px solid \#47265a\;\n\/\/    border\-radius\: 3px\;\n\/\/    margin\: 0 0 20px 0\;\n\/\/    box\-shadow\: 0px 4px 13px rgba\(0\, 0\, 0\, 0\.37\)\;\n\/\/    position\: relative\;\n\/\/    cursor\: pointer\;\n\/\/    transition\: all 0\.2s ease\-in\-out\;\n\/\/    text\-decoration\: none\;\n\/\/    overflow\: hidden\;\n\/\/    line\-height\: 1\.5\;\n\/\/    display\: block\;\n\/\/\}\n\/\/\n\/\/\.cta\:hover \{\n\/\/    background\-color\: \#47265a\;\n\/\/    color\: \#f8dbff\;\n\/\/\}\n\/\/\n\/\/\.ampersand \{\n\/\/    color\: \#ffffff\;\n\/\/\}\n\/\/\n\/\/\.event\-list \{\n\/\/    display\: flex\;\n\/\/    flex\-wrap\: wrap\;\n\/\/\}\n\/\/\n\/\/\.event\-list li \{\n\/\/    padding\-right\: 20px\;\n\/\/    margin\-bottom\: 20px\;\n\/\/    width\: 50\%\;\n\/\/    \@media screen and \(min\-width\: \$tablet\) \{ width\: 33\%\;\}\n\/\/    \@media screen and \(min\-width\: \$desktop\) \{ width\: 25\%\;\}\n\/\/\}\n\/\/\n\/\/\.event\-list__cover \{\n\/\/    width\: 100\%\;\n\/\/    height\: auto\;\n\/\/    position\: relative\;\n\/\/    padding\-bottom\: 100\%\;\n\/\/    margin\-bottom\: 20px\;\n\/\/\n\/\/    img \{\n\/\/        position\: absolute\;\n\/\/        top\: 0\;\n\/\/        left\: 0\;\n\/\/        width\: 100\%\;\n\/\/        height\: 100\%\;\n\/\/    \}\n\/\/\}\n\/\/\n\/\/\.bulleted\,\n\/\/\.post ul \{\n\/\/    margin\: 0 0 1rem 0\;\n\/\/\}\n\/\/\n\/\/\.bulleted li\,\n\/\/\.post li \{\n\/\/    list\-style\-type\: square\;\n\/\/    margin\: 0 0 1rem 1rem\;\n\/\/    line\-height\: 1\.5\;\n\/\/\}\n\/\/\n\/\/footer \{\n\/\/    color\: \#cccccc\;\n\/\/    font\-size\: 0\.8rem\;\n\/\/    text\-align\: center\;\n\/\/    margin\: 20px 0\;\n\/\/    border\-top\: 1px solid \#666666\;\n\/\/    padding\-top\: 20px\;\n\/\/\}\n\/\/\n\/\/footer p \{\n\/\/    margin\-bottom\: 0\;\n\/\/\}\n\/\/\n\/\/\.float\-left \{\n\/\/    float\: left\;\n\/\/    margin\-right\: 1rem\;\n\/\/\}\n\/\/\n\/\/\.float\-right \{\n\/\/    float\: right\;\n\/\/    margin\-left\: 1rem\;\n\/\/\}\n\/\/\n\/\/\.float\-right\,\n\/\/\.float\-left \{\n\/\/    max\-width\: 200px\;\n\/\/    width\: auto\;\n\/\/\}\n\/\/\n\/\/\.clear\-left \{\n\/\/    clear\: left\;\n\/\/\}\n\/\/\n\/\/\.teaser \{\n\/\/    margin\-top\: 0\;\n\/\/    margin\-bottom\: 20px\;\n\/\/\}</find>
-      <find>r</find>
-      <find>record_titl</find>
-      <find>record_title</find>
-      <find>20px</find>
-      <find>herp</find>
-      <find>.brand</find>
-      <find>nav</find>
-      <find>header</find>
+      <find>\n  login\: admin</find>
+      <find>author\:\n\n  url\: \'\'</find>
+      <find>\nauthor_login\: admin\nauthor_email\: matt\@mattandrews\.info</find>
+      <find>status\: publish\npublished\: true</find>
+      <find>wordpress_id: 3</find>
+      <find>wordpress_id:</find>
+      <find>wordpress_id: \</find>
+      <find>wordpress_id: \d</find>
+      <find>wordpress_id: \d+</find>
+      <find>date_gmt: '</find>
+      <find>date_gmt: '.</find>
+      <find>date_gmt: '.*</find>
+      <find>date_gmt: '.*'</find>
+      <find>layout: post</find>
+      <find>\n\nwordpress_url</find>
+      <find>categories: wordpress</find>
+      <find>wordpress_url</find>
+      <find>layout\: post\n\n</find>
+      <find>layout: posttitle:</find>
+      <find>layout: post\ntitle</find>
+      <find>title::</find>
+      <find>\n\n\-\-\-</find>
+      <find>---</find>
+      <find>\---</find>
+      <find>\-\-\-</find>
+      <find>\\-\-\-</find>
+      <find>\\-\\-\-</find>
+      <find>\\-\\-\\-</find>
+      <find>layout: post\\ntitle</find>
+      <find>'---\n</find>
     </findStrings>
+    <replaceStrings>
+      <replace>categories: wordpress\nwordpress_url</replace>
+      <replace>categories: threechords</replace>
+      <replace>layout\: post</replace>
+      <replace>layout: post\ntitle:</replace>
+      <replace>title:</replace>
+      <replace>\-\-\-</replace>
+      <replace>\n\-\-\-</replace>
+      <replace />
+      <replace>'\n---\n</replace>
+      <replace>layout: post\ntitle</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/_site</dir>
     </dirStrings>
@@ -86,19 +118,22 @@
         <option value="$PROJECT_DIR$/_includes/head.html" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/index.md" />
-        <option value="$PROJECT_DIR$/_layouts/home.html" />
         <option value="$PROJECT_DIR$/_includes/cover_art.html" />
         <option value="$PROJECT_DIR$/TODO.md" />
-        <option value="$PROJECT_DIR$/_layouts/post.html" />
-        <option value="$PROJECT_DIR$/_layouts/page.html" />
         <option value="$PROJECT_DIR$/_includes/header.html" />
         <option value="$PROJECT_DIR$/_includes/footer.html" />
         <option value="$PROJECT_DIR$/_sass/theme.scss" />
-        <option value="$PROJECT_DIR$/_layouts/default.html" />
         <option value="$PROJECT_DIR$/default_settings.py" />
         <option value="$PROJECT_DIR$/deploy.sh" />
         <option value="$PROJECT_DIR$/fabfile.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/_layouts/post.html" />
+        <option value="$PROJECT_DIR$/_layouts/page.html" />
+        <option value="$PROJECT_DIR$/_layouts/default.html" />
+        <option value="$PROJECT_DIR$/_layouts/home.html" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_7.txt" />
+        <option value="$PROJECT_DIR$/_posts/2011-01-19-broadcast-media-dumbing-down-or-catering-for-demand.html" />
+        <option value="$PROJECT_DIR$/_posts/2009-07-28-the-new-internet-the-death-of-culture.html" />
       </list>
     </option>
   </component>
@@ -141,6 +176,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mattandrews" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mattandrews" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mattandrews" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -255,12 +304,12 @@
       <workItem from="1493478790486" duration="5727000" />
       <workItem from="1493631622166" duration="24000" />
       <workItem from="1493631664253" duration="33000" />
-      <workItem from="1493631717585" duration="458000" />
+      <workItem from="1493631717585" duration="2631000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20790000" />
+    <option name="totallyTimeSpent" value="22963000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -269,6 +318,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17829457" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980132" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -280,7 +330,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -313,48 +362,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_includes/record_title.html" />
-    <entry file="file://$PROJECT_DIR$/old/assets/css/reset.css" />
-    <entry file="file://$PROJECT_DIR$/dev/test.css" />
-    <entry file="file://$PROJECT_DIR$/dev/index.html" />
-    <entry file="file://$PROJECT_DIR$/guidelines.md" />
-    <entry file="file://$PROJECT_DIR$/about.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="138">
-            <caret line="6" column="94" lean-forward="false" selection-start-line="6" selection-start-column="94" selection-end-line="6" selection-end-column="94" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/old/index.html" />
-    <entry file="file://$PROJECT_DIR$/_includes/google-analytics.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/img/otr10_smaller.jpg" />
-    <entry file="file://$PROJECT_DIR$/assets/img/otr10.jpg" />
-    <entry file="file://$PROJECT_DIR$/_site/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3065">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/next_event.html" />
-    <entry file="file://$PROJECT_DIR$/_posts/2017-04-27-inherited-taste.markdown" />
-    <entry file="file://$PROJECT_DIR$/_posts/2017-03-23-introducing.markdown" />
     <entry file="file://$PROJECT_DIR$/_posts/2017-02-23-world-building.markdown" />
     <entry file="file://$PROJECT_DIR$/_posts/2017-01-26-genre-mashups.markdown" />
     <entry file="file://$PROJECT_DIR$/_posts/2016-11-29-word-of-mouth.markdown" />
@@ -366,6 +373,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="104" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -374,6 +382,7 @@
         <state split_layout="FIRST">
           <first_editor relative-caret-position="23">
             <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -407,20 +416,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -464,22 +459,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
           <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -556,10 +535,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/matt.py">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="132">
+          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2012-01-04-private-eye-scepticism-new-media.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-157">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -572,6 +570,142 @@
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_7.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2011-01-19-broadcast-media-dumbing-down-or-catering-for-demand.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2011-05-01-on-deleting-facebook.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2011-06-30-the-user-experience-of-flathunting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2012-05-30-the-medium-is-not-the-message.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2012-03-21-how-i-finally-understood-the-value-of-social.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2009-07-28-the-new-internet-the-death-of-culture.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2011-10-16-when-celebrities-tweet-a-ricky-gervais-special.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2011-06-19-on-student-journalism-and-digital-first.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2012-04-23-london-mayoral-manifestos-critiqued.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2012-05-06-policing-love-anti-gay-marriage-campaign-nonsense.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
