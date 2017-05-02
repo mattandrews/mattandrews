@@ -4,8 +4,7 @@ layout: default
 
 <aside class="hero"><div class="hero__inner"></div></aside>
 <div class="inner m-t m-b">
-    <!--2-->
-
+<!--3-->
     <div class="flex">
         <div class="flex__item">
             <h2 class="m-b">About me</h2>
@@ -35,13 +34,17 @@ layout: default
             </ul>
 
             <h4>Teaching</h4>
-            <ul>
-                {% for post in site.categories.teaching %}
-                <li>
-                    <a href="{{ post.url }}">{{ post.title }}</a>
-                </li>
-                {% endfor %}
-            </ul>
+            {% for post in site.categories.teaching %}
+                <h5>{{ post.title }}</h5>
+                <h6>{{ post.host }}</h6>
+                <p>{{ post.description }}</p>
+                <ul>
+                    {% for s in post.sessions %}
+                        <li>{{ s.start | date: "%e %B %Y" }}{% if s.end %} &ndash; {{ s.end | date: "%e %B %Y" }}{%
+                            endif %}</li>
+                    {% endfor %}
+                </ul>
+            {% endfor %}
 
             <h4>Talks</h4>
             <ul>
