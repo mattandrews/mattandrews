@@ -10,7 +10,7 @@ $gutters: (
     'default': 20px,
     'tablet': 10%,
     'desktop': 15%,
-    'wide': 20%
+    'wide': 25%
 );
 
 * {
@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     font-weight: normal;
     font-family: 'Playfair Display', serif;
+    margin-bottom: $spacingUnit / 2;
 }
 
 ul, li, ol {
@@ -38,9 +39,11 @@ html, body {
     height: 100%;
 }
 
-p {
+p, li {
     margin: 0;
     margin-bottom: $spacingUnit;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 .inner {
@@ -70,39 +73,78 @@ body, p, li, input {
 .brand {
     font-size: 50px;
     line-height: 1;
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+    a {
+        color: #333333;
+        text-decoration: none;
+    }
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: $spacingUnit / 2;
+    padding-bottom: $spacingUnit / 2;
 }
 
 h2 {
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: $spacingUnit;
 }
 
 h3 {
-    font-size: 24px;
-    font-weight: 700;
+    //font-size: 16px;
+    //font-weight: 400;
+    font-size: 18px;
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
 }
 
 h4 {
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 18px;
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
 }
 
 h5 {
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
 }
 
 h6 {
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 11px;
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
 }
 
+a {
+    color: #2298a7;
+    &:hover {
+        color: #5cc3d0;
+    }
+}
 
+ul, ol {
+    margin: $spacingUnit 0;
+}
+
+article ul,
+article ol {
+    li {
+        list-style-type: square;
+        margin-left: $spacingUnit * 2;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
 
 .header__inner {
     padding-top: $spacingUnit;
@@ -220,6 +262,7 @@ nav {
 
 .m-t { margin-top: $spacingUnit; }
 .m-b { margin-bottom: $spacingUnit; }
+.m-b-none { margin-bottom: 0; }
 .padded { padding: $spacingUnit; }
 
 @media screen and (min-width: $tablet) {
@@ -268,4 +311,37 @@ footer {
         overflow: hidden;
     }
 
+}
+
+img, video {
+    width: 100%;
+}
+
+iframe {
+    margin: auto;
+    display: block;
+    margin-bottom: $spacingUnit;
+}
+
+.shaded {
+    background-color: #ebf2f8;
+
+    .shaded__inner {
+        padding-top: $spacingUnit;
+        padding-bottom: $spacingUnit;
+    }
+}
+
+.caption {
+    color: #909090;
+    font-size: 14px;
+    margin: $spacingUnit / 2 0 $spacingUnit;
+}
+
+blockquote {
+    font-size: 25px;
+    line-height: 1.6;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #307cb5;
 }

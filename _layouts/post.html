@@ -2,4 +2,64 @@
 layout: default
 ---
 
-{{ content }}
+{% if page.reveal %}
+    <link rel="stylesheet" href="/assets/port80-2013/css/reveal.min.css">
+    <link rel="stylesheet" href="/assets/port80-2013/css/theme/matt.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="/assets/port80-2013/lib/css/tomorrow-night-bright.css">
+
+    <script>document.write('<link rel="stylesheet" href="/assets/port80-2013/css/print/' + ( window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">');</script>
+
+{% endif %}
+
+<div class="inner shaded">
+    <div class="shaded__inner">
+        <h1>{{ page.title }}</h1>
+        <h2>{{ page.subtitle }}</h2>
+        <h3 class="m-b-none">{{ page.event }} &bull; {{ page.date | date_to_string}}</h3>
+    </div>
+</div>
+
+<article class="inner m-t m-b">
+    {{ content }}
+</article>
+
+{% if page.reveal %}
+    <script src="/assets/port80-2013/lib/js/head.min.js"></script>
+    <script src="/assets/port80-2013/js/reveal.min.js"></script>
+
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+            rollingLinks: false,
+            dependencies: [
+                {
+                    src: '/assets/port80-2013/plugin/highlight/highlight.js', async: true, callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+                },
+                {
+                    src: '/assets/port80-2013/plugin/notes/notes.js', async: true, condition: function () {
+                    return !!document.body.classList;
+                }
+                }
+            ],
+            // The "normal" size of the presentation, aspect ratio will be preserved
+            // when the presentation is scaled to fit different resolutions. Can be
+            // specified using percentage units.
+            width: 960,
+            height: 700,
+
+            // Factor of the display size that should remain empty around the content
+            margin: 0.1,
+
+            // Bounds for smallest/largest possible scale to apply to content
+            minScale: 0.2,
+            maxScale: 1.0
+        });
+    </script>
+{% endif %}

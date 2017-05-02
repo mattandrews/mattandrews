@@ -1,0 +1,990 @@
+---
+layout: post
+categories: talks
+title: 'Responsive design at the Guardian'
+subtitle: How I learned to stop worrying and love the mobile web
+event: 'Port80 Conference 2013, Newport'
+date: 2013-05-10 00:00:00
+reveal: true
+---
+<p>Note: this talk uses animated slides which are below. For an article version of this talk, try a similar one I
+    gave at <a href="#">CanvasConf 2013</a>.</p>
+<div style="height: 600px;">
+    <div class="reveal">
+        <section class="slides">
+
+            <section>
+                <h1>Responsive design <br/>at the Guardian</h1>
+                <h3>or</h3>
+                <h2>How I learned to stop worrying <br/> and love the mobile web</h2>
+                <h4>with <strong>Matt Andrews</strong></h4>
+                <h4>client-side web developer</h4>
+                <img src="/assets/port80-2013/img/titlepiece.gif" alt="The Guardian" class="logo"/>
+                <h4><a href="http://www.twitter.com/mattpointblank">@mattpointblank</a></h4>
+                <aside class="notes">Welcome to the talk</aside>
+            </section>
+
+            <section>
+                <h1>Who is this guy?</h1>
+                <h2>(yeah, that’s right, animated slides. sue me.)</h2>
+                    <img src="/assets/port80-2013/img/matt-bike.jpg" alt="Me riding a bike, obviously"/>
+                    <aside class="notes">Who is this guy?</aside>
+            </section>
+
+            <section>
+                <h1>Matt Andrews: web developer</h1>
+                <h2>Working at the Guardian since summer 2010</h2>
+                <ul>
+                    <li>client-side developer</li>
+                    <li>helped build the new Guardian responsive mobile site</li>
+                    <li>also worked on the Guardian’s Facebook app</li>
+                    <li>currently working on our liveblogging platform</li>
+                    <li>interested in future of journalism and tech</li>
+                    <li>has beard</li>
+                </ul>
+                <aside class="notes">
+                    I’m a web developer at the Guardian who helped build the new responsive site etc. <br/>
+                    Now it’s time for everyone’s favourite words: audience participation.
+                </aside>
+                </aside>
+            </section>
+
+            <section>
+                <h1>First: a quick exercise</h1>
+                <h2>Don’t worry, minimal physical effort is required</h2>
+                <p class="fragment">Please <em class="highlight">raise your hand</em> if you’ve bought a newspaper <br/>in
+                    the last twelve months.</p>
+                <p class="fragment"><em class="highlight">Keep your hand up</em> if you’ve bought one in...</p>
+                <ul>
+                    <li class="fragment">the last month</li>
+                    <li class="fragment">the last week</li>
+                    <li class="fragment">the last day</li>
+                </ul>
+                <aside class="notes">
+                    Please raise your hand if you’ve bought a newspaper in the last twelve months.<br/>
+                    Keep them raised if you've bought one in the last month... week... day.<br/>
+                    ... anyone buy the Guardian? Good!
+                </aside>
+            </section>
+
+
+            <section>
+                <section>
+                    <h1>You’re not alone</h1>
+                    <h2>This isn’t exclusive to Port80 attendees:</h2>
+                    <p>UK newspaper circulation, 2000-2013</p>
+                    <img src="/assets/port80-2013/img/print-graph.png"
+                         alt="A chart showing the decline in print newspaper sales from 2000-2013"/>
+                    <p>Source: <a
+                            href="http://garstontowers.blogspot.co.uk/2013/04/graphs-of-uk-newspaper-circulation.html">Stuart
+                        Brandwood / ABCs</a></p>
+                    <aside class="notes">
+                        You're not alone -- newspaper sales are declining across the board, month-on-month.<br/>
+                        (just in case everyone still buys papers, switch to backup slide)
+                    </aside>
+                </section>
+
+                <section>
+                    <h1>You are alone</h1>
+                    <h2>(this slide to be used if everyone’s still buying newspapers)</h2>
+                    <img src="/assets/port80-2013/img/print-graph.png"
+                         alt="A chart showing the decline in print newspaper sales from 2000-2013"/>
+                    <p>Source: <a
+                            href="http://garstontowers.blogspot.co.uk/2013/04/graphs-of-uk-newspaper-circulation.html">Stuart
+                        Brandwood / ABCs</a></p>
+                </section>
+
+            </section>
+
+            <section>
+                <h1>It’s not all doom and gloom</h1>
+                <h2>We’ve just moved our news reading to the web</h2>
+                <p>UK news website daily unique visitors, May 2011 - March 2013</p>
+                <img src="/assets/port80-2013/img/web-graph-wide.png"
+                     alt="A chart showing the rise in traffic to digital news websites from May 2011 - March 2013"/>
+                <p>Source: <a href="http://www.guardian.co.uk/media/abcs">Guardian / ABCEs</a></p>
+                <aside class="notes">It's not all doom and gloom though -- traffic to newspaper websites is hugely
+                    increasing,
+                </aside>
+            </section>
+
+            <section>
+                <h3>therefore</h3>
+                <h1>Responsive design is more important than ever.</h1>
+                <h2>(and not just for news websites)</h2>
+                <p>That’s why we launched <a href="http://m.guardian.co.uk">m.guardian.co.uk</a>.</p>
+                <aside class="notes">So therefore: responsive design is more important than ever to the future of news
+                    organisations - we all know that of that website traffic, a huge chunk of it is mobile devices.
+                </aside>
+            </section>
+
+            <section>
+                <img src="/assets/port80-2013/img/mdot.png" alt="The Guardian's responsive mobile homepage"/>
+                <img src="/assets/port80-2013/img/mdot2.png"
+                     alt="An image gallery on the Guardian's responsive mobile website"/>
+                <aside class="notes">Here's a few pages from the Guardian's responsive site, for those who haven't seen it.
+                    It's quite a strong departure from what was there before and we've aimed to make it really quick and
+                    design-led.
+                </aside>
+            </section>
+
+            <section>
+                <img src="/assets/port80-2013/img/gu-desktop.png"/>
+            </section>
+
+            <section>
+                <h1>Why did we need to <br/>“go responsive”?</h1>
+                <h2>Three key reasons:</h2>
+                <ol>
+                    <li class="fragment">
+                        Third-party hell
+                        <span class="sublink">Dependent on external company to update site</span>
+                    </li>
+                    <li class="fragment">
+                        Template hell
+                        <span class="sublink">100+ templates, 600+ components: maintenance nightmare</span>
+                    </li>
+                    <li class="fragment">
+                        Rise of mobile
+                        <span class="sublink">Between 15-30% of Guardian traffic now mobile</span>
+                    </li>
+                </ol>
+                <aside class="notes">Okay, so why did the Guardian decide to "go responsive?": 1. third party hell, 2.
+                    template hell, 3. the rise of mobile.
+                </aside>
+            </section>
+
+            <section>
+                <h1>Five key techniques</h1>
+                <h2>How we built it &amp; what we learned</h2>
+                <ol>
+                    <li class="fragment">“Cutting the mustard” (&copy; <a
+                            href="http://responsivenews.co.uk/post/18948466399/cutting-the-mustard/">BBC</a>)
+                    </li>
+                    <li class="fragment">Progressive enhancement</li>
+                    <li class="fragment">Detect features, not devices</li>
+                    <li class="fragment">Swimlaning</li>
+                    <li class="fragment">No “big bang” releases</li>
+                </ol>
+                <aside class="notes">Today I'm going to go over five of the main techniques and methodologies we used to
+                    build the site. Some of these are specific to the Guardian but hopefully there's something for
+                    everybody, regardless of what you're doing with responsive design. Here's the five topics.
+                </aside>
+            </section>
+
+            <section>
+                <h1>1. The mustard</h1>
+                <h2>Specifically: cutting it.</h2>
+                <p>Not all browsers are created equal.</p>
+                <div class="fragment">
+                    <blockquote>an opportunity to wipe <br/>the client-side development <br/>slate clean</blockquote>
+                    <p>- Tom Maslen, BBC developer</p>
+                </div>
+                <div class="fragment">
+                    <blockquote>Pixel perfect is <br/>an anti-pattern.</blockquote>
+                    <p>- me</p>
+                </div>
+                <aside class="notes">"Cutting the mustard" is a term popularised by the BBC and referring to graded browser
+                    support. (show BBC quote) Rather than making everything work in every browser, it's about taking a more
+                    pragrmatic approach (show my quote). Trying to build everything to look exactly the same in every
+                    possible browser isn't just hard work, it's actually wasted work.
+                </aside>
+            </section>
+
+            <section>
+                <h1>Modern browsers</h1>
+                <h2>One test for the future</h2>
+                <pre><code class="javascript">isModernBrowser: (
+        'querySelector' in document &&
+        'addEventListener' in window &&
+        'localStorage' in window
+    )</code></pre>
+                <img class="fragment" src="/assets/port80-2013/img/modern-browsers.png"/>
+                <aside class="notes">Here's how we've been cutting the mustard to detect "modern" browsers: a simple
+                    javascript test for three key features: native DOM querying, native event listeners and support for
+                    localstorage. (show browsers) these are the browsers we end up with after that test:
+                </aside>
+            </section>
+
+            <section>
+                <p>HTML4 vs HTML5</p>
+                <img src="/assets/port80-2013/img/js-off.png"/>
+                <img src="/assets/port80-2013/img/js-on.png"/>
+                <aside class="notes">The BBC also termed these two experiences HTML4 and HTML5 which makes it much easier to
+                    explain it to senior management. We adopted those terms and here's how our site looks to those groups.
+                    It's not pixel-perfect but it's not dramatically different, either: the webfonts aren't there, images
+                    are lower quality and there's no ads or dropdown menus.
+                </aside>
+            </section>
+
+            <section>
+                <h1>Don’t punish your users</h1>
+                <pre><code class="html">&lt;script type="text/javascript" src="jquery.js"&gt;&lt;/script&gt;
+    &lt;!-- 35kb even when gzipped --&gt;</code></pre>
+                <pre><code class="javascript">$('.expand-section').click(function(){
+        doSomething();
+    });</code></pre>
+                <p>Do they still need to download polyfills for ancient browsers?</p>
+                <aside class="notes">The key here is not to punish your users: how many times have you written code like
+                    this? If you're no longer building sites that have to work in IE6, 7 and even 8, why make all your
+                    modern browsers download 35kb of polyfills?
+                </aside>
+            </section>
+
+            <section>
+                <h1>For modern browsers</h1>
+                <pre><code class="javascript">var expander = document.querySelector('.expand-section');
+    expander.addEventListener('click', function(){
+        doSomething();
+    });</code></pre>
+                <p>75%+ of Guardian mobile traffic is <br/>recent iOS and high-end Android devices.</p>
+                <p>Why make these devices download a bunch of JS they don’t need?</p>
+                <aside class="notes">The vast majority of the Guardian's mobile traffic "cuts the mustard": we don't want to
+                    make them download a bunch of javascript they don't need.
+                </aside>
+            </section>
+
+            <section>
+                <h1>ASSUMPTIONS.</h1>
+                <h2>You know who they make an ass of.</h2>
+                <p>This is a new web. Start afresh.</p>
+                <ul>
+                    <li class="fragment">Mobile first</li>
+                    <li class="fragment">
+                        Focus on performance
+                        <span class="sublink">More on this in the next section...</span>
+                    </li>
+                </ul>
+                <aside class="notes">This is all about assumptions: question them. Things that were previously accepted as
+                    truths about front-end web development are no longer true. You don't need to automatically throw jQuery
+                    at a page anymore. (click) build things mobile first and (click) performance first and these things
+                    become much more obvious.
+                </aside>
+            </section>
+
+            <section>
+                <h1>Five key techniques</h1>
+                <h2>How we built it &amp; what we learned</h2>
+                <ol>
+                    <li class="faded">“Cutting the mustard” (&copy; <a
+                            href="http://responsivenews.co.uk/post/18948466399/cutting-the-mustard/">BBC</a>)
+                    </li>
+                    <li>Progressive enhancement</li>
+                    <li class="faded">Detect features, not devices</li>
+                    <li class="faded">Swimlaning</li>
+                    <li class="faded">No “big bang” releases</li>
+                </ol>
+                <aside class="notes">Okay: next section is about progressive enhancement.</aside>
+            </section>
+
+            <section>
+                <h1>Obligatory Mitch Hedberg:</h1>
+                <blockquote>An escalator can <br/>never break &ndash; it can only become stairs.</blockquote>
+                <p>- Mitch Hedberg (a comedian, not a web developer)</p>
+                <aside class="notes">It's usually obligatory here to reference this brilliant Mitch Hedberg joke (read it!):
+                    now, Mitch was a comedian, not a web developer, but it seems like he hits perfectly here on the
+                    absurdity of not building things with progressive enhancement.
+                </aside>
+            </section>
+
+            <section>
+                <img src="/assets/port80-2013/img/escalator.jpg"/>
+                <p>Source: <a href="http://www.flickr.com/photos/breakfastpirate/2375709975/">Scott E. / Flickr</a></p>
+                <aside class="notes">All an escalator really is is some stairs which can be electronically "enhanced" to
+                    become moving ones, right? Building for the mobile web works the same way.
+                </aside>
+            </section>
+
+            <section>
+                <h1>2. Progressive enhancement</h1>
+                <h2>Once you’ve cut the mustard, what do you do with it?</h2>
+                <ul>
+                    <li>We now have two “buckets” of browser types</li>
+                    <li>The majority of them receive our “rich” experience</li>
+                    <li>But they’re still not all created equal</li>
+                </ul>
+                <aside class="notes">So once you've cut the mustard, what do you do with it? We have these two distinct
+                    browser groups, right? The majority of them will get our "rich" application with all the bells and
+                    whistles. But they're still not all created equal.
+                </aside>
+            </section>
+
+            <section>
+                <h1>Mobile first</h1>
+                <h2>What is your core content?</h2>
+                <p>We figured out what our “core” content was: <br/>what were the things that <em>had</em> to be there, no
+                    matter what?</p>
+                <p class="fragment">Anything non-core could be loaded in later <br/>via AJAX once the app was
+                    “bootstrapped”.</p>
+                <p class="fragment">Worth noting the potential SEO impact of this, though: some stuff won't be visible to
+                    spiders any more, but then your page will be quicker as a tradeoff.</p>
+                <aside class="notes">The very first thing to do here is figure out what your "core content" is. We looked at
+                    this as the things that had to be there, no matter what. Anything that didn't fit this bill could be
+                    loaded in later via AJAX. For us, this meant that on article pages, "core content" was a headline, an
+                    image, and the article body text. All the other stuff like related content, most read, adverts or
+                    football results, weren't as crucial and shouldn't block the core content. THis helped us keep page
+                    speed fast as our initial HTML was really lightweight.
+                </aside>
+            </section>
+
+            <section>
+                <h1>Responsive images</h1>
+                <h2>A problem looking for a hundred solutions</h2>
+                <ul>
+                    <li class="fragment">For now, we just assume everybody is on a slow connection</li>
+                    <li class="fragment">Therefore: everyone gets 140px wide thumbnails (even for large images)</li>
+                    <li class="fragment">If the browser passes our tests (more on this later), they get upgraded images</li>
+                    <li class="fragment"><strong class="highlight">Biggest barrier:</strong> our API (currently) only has
+                        images up to 460px wide.
+                    </li>
+                    <li class="fragment">(so yes, everybody downloads two images currently)</li>
+                    <li class="fragment">BBC exploring serving <strong>no images</strong> in HTML and adding via JS</li>
+                    <li class="fragment">We're currently experimenting with a dynamic image server for custom cropping</li>
+                </ul>
+                <aside class="notes">This also relates to images: responsive images is a really hot topic right now. There
+                    are dozens of solutions and none of them feel quite right. For now our strategy is as follows: (talk
+                    through)
+                </aside>
+            </section>
+
+            <section>
+                <h1>Webfonts: core?</h1>
+                <h2>You’d think so, but no.</h2>
+                <ul>
+                    <li>Remember: pixel-perfect is an anti-pattern</li>
+                    <li>Why maintain dozens of competing font formats?</li>
+                    <li>Pick the best formats (TTF and WOFF, for us) and give it to supporting browsers</li>
+                </ul>
+                <aside class="notes">I mentioned our webfonts earlier: these are also progressively enhanced. We don't
+                    consider them core to the user experience, they're just a nice-to-have, so we don't lose sleep trying to
+                    serve them to everybody. We pick the best-supported format (WOFF, in our case) and send it to browsers
+                    who support it.
+                </aside>
+            </section>
+
+            <section>
+                <h1>Webfont performance</h1>
+                <p>We fetch the fonts in the background on first pageload then store them as base64-encoded strings in
+                    localStorage.</p>
+                <p>This is primarily to avoid expensive HTTP requests on mobile for later visits (and because mobile caching
+                    is unreliable at the best of times)</p>
+                <aside class="notes">We were concerned about the performance of this on mobile: even just four weights of
+                    the typeface came to around 100kb. For that reason we fetch them in the background on the first pageload
+                    then store them in localstorage (because we don't trust the browser cache alone). This also avoids slow
+                    HTTP lookups on mobile devices for future visits.
+                </aside>
+            </section>
+
+            <section>
+                <h1>Icons and graphics</h1>
+                <h2>Simple retina images for UI components</h2>
+                <div class="fragment">
+                    <p>Auto-generated PNG sprite for non-retina displays:</p>
+                    <pre><code class="css">.i-search {
+        background-position: -313px -55px;
+        width: 14px;
+        height: 14px;
+    }</code></pre>
+                </div>
+                <div class="fragment">
+                    <p>...replaced with scalable SVG (where supported):</p>
+                    <pre><code class="css">.svg .i-search {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zd…E1LjM1NSwxNy4wMDQgMTEuMDgxLDEyLjczNCAxMi43MzUsMTEuMDc5Ii8+PC9nPjwvc3ZnPg==)
+    }</code></pre>
+                    <p class="fragment">Dump an image in the folder, run the script: BOOM. Retina images.</p>
+                    <p class="fragment">Try it yourself: <a
+                            href="https://github.com/guardian/frontend/blob/master/tools/sprites/README.md">Spricon</a>
+                        (based on Filament Group's GruntIcon plugin)</p>
+                    <aside class="notes">One of my favourite parts of our progressive enhancement strategy is our image
+                        sprites. One of our team wrote a brilliant PhantomJS script based off something by Filament Group.
+                        Essentially you throw an SVG image into a folder, run the script, then you get autogenerated CSS
+                        like this: (click). This works great for non-retina screens since it's a single PNG sprite, but for
+                        retina displays we get this: (click) -- we add a "svg" class to the body element if it's support and
+                        all the sprite images become progressively enhanced with base64 encoded versions of the images. You
+                        can use the script yourself on github.
+                    </aside>
+                </div>
+            </section>
+
+
+            <section>
+                <h1>Five key techniques</h1>
+                <h2>How we built it &amp; what we learned</h2>
+                <ol>
+                    <li class="faded">“Cutting the mustard” (&copy; <a
+                            href="http://responsivenews.co.uk/post/18948466399/cutting-the-mustard/">BBC</a>)
+                    </li>
+                    <li class="faded">Progressive enhancement</li>
+                    <li>Detect features, not devices</li>
+                    <li class="faded">Swimlaning</li>
+                    <li class="faded">No “big bang” releases</li>
+                </ol>
+                <aside class="notes">Up next is something really crucial to help with the progressive enhancement strategy:
+                    detecting features and not devices.
+                </aside>
+            </section>
+
+            <section>
+                <h1>Signs you’re doing it wrong</h1>
+                <div class="fragment">
+                    <p>This isn’t responsive design:</p>
+                    <pre><code class="css">@media only screen and (max-width: 320px) {
+        /* mobile-specific CSS goes here */
+    }</code></pre>
+                </div>
+                <div class="fragment">
+                    <p>This is even worse:</p>
+                    <pre><code class="html">&lt;link rel="stylesheet" type="text/css" href="iphone.css" /&gt;</code></pre>
+                    <p>Does your design <em>really</em> just happen to “break” at iOS device widths?</p>
+                </div>
+                <aside class="notes">First, here's some signs you're doing it wrong: (click) a media query based exactly on
+                    device widths? or even worse (click): "iphone.css". does your design really just happen to break at
+                    Apple device widths?
+                </aside>
+            </section>
+
+            <section>
+                <h1>3. Detect features, not devices</h1>
+                <h2>As with browsers, not all devices are created equal</h2>
+                <p>Do you really want to maintain a regular expression like this?</p>
+                <pre><code class="javascript">/Mobile|iP(hone|od|ad)|Android|BlackBerry|IEMobile|Kindle
+    |NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo
+    |Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/</code></pre>
+                <p class="fragment">Slight copout: we maintain a regular expression like this on guardian.co.uk (for
+                    now!)</p>
+                <aside class="notes">Detecting features over devices is the way forward: do you really want to have to
+                    maintain a horrible regular expression like this to detect mobiles? Slight cop-out here is that we
+                    maintain a horrible a regex like this at the Guardian... for now!
+                </aside>
+            </section>
+
+            <section>
+                <h1>Device size != network speed</h1>
+                <h2>We already know that “on the go” isn’t always true for mobile users</h2>
+                <aside class="notes">Fundamentally: we shouldn't be making decisions about the experience based on the
+                    device form factor alone. A good example is network speed: some people think that a mobile device means
+                    a slow connection. But we know that's not true:
+                </aside>
+            </section>
+
+            <section>
+                <h2>We’ve all been here:</h2>
+                <img src="/assets/port80-2013/img/iphone-couch.jpg"/>
+                <p>Source: <a href="http://www.flickr.com/photos/eelkedekker/5339625840/in/photostream">Eelke Dekker /
+                    Flickr</a></p>
+                <aside class="notes">We've all been here: too lazy to get a laptop or computer, but sitting on the couch
+                    reading Twitter via our wifi connection.
+                </aside>
+            </section>
+
+            <section>
+                <h2>... and we’ve also been here:</h2>
+                <img src="/assets/port80-2013/img/laptop-train.jpg"/>
+                <p>Source: <a href="http://www.flickr.com/photos/centralasian/4652243732/">Cea / Flickr</a></p>
+                <aside class="notes">Similarly, we've all been here too: using a laptop on the so-called "wifi" onboard a
+                    train. <br/>The width of the screen isn't a factor in its connection speed: don't make assumptions!
+                </aside>
+            </section>
+
+            <section>
+                <h1>Measuring connection speed</h1>
+                <h2>How we had to do it in the bad old days</h2>
+                <pre><code class="javascript">// at the top of your JS code:
+    var start = Date.now();
+    // your application code goes here, then:
+    var timeTaken = Date.now() - start;</code></pre>
+                <p class="fragment">This is bad because...</p>
+                <ul>
+                    <li class="fragment">it causes the <a href="http://en.wikipedia.org/wiki/Observer's_paradox">Observer’s
+                        Paradox</a> (adds overhead code to page)
+                    </li>
+                    <li class="fragment">it only starts timing once the JS payload arrives</li>
+                    <li class="fragment" it>uses the horrible joke that is JavaScript’s Date() object</li>
+                </ul>
+                <aside class="notes">This means that we need a better way of measuring connection speed. Here's one of the
+                    few options from the past: set a JS timer and stop it when the page has loaded. This is bad becase...
+                    (click and walk through)
+                </aside>
+            </section>
+
+            <section>
+                <h1>Enter: Navigation Timing API</h1>
+                <h2>The magical window.performance object</h2>
+                <p>Here’s what you can do today (albeit only in IE &gt; 9, desktop Safari, Opera, Android browser &gt; 4,
+                    iOS Safari &gt; 6):</p>
+                <pre class="fragment"><code class="javascript">var perf = window.performance;
+    var start = perf.timing.requestStart; // just before page is requested
+    var end = perf.timing.responseStart; // first byte received
+    var total_time = end - start;</code></pre>
+                <p class="fragment">Independent of render time (once connected), this tells us the effective network speed
+                    of the user’s device.</p>
+                <aside class="notes">Luckily, clever people have been thinking about this. We use something called the
+                    Navigation Timing API to give us accurate, independent information about the user's connection. This
+                    doesn't work everywhere yet, but thanks to Cutting the Mustard we don't need it to.
+                </aside>
+            </section>
+
+            <section>
+                <h1>What can I use that for?</h1>
+                <h2>Responsive images, perchance?</h2>
+                <pre><code class="javascript">if (total_time < 1000) {
+        // function to upgrade lo-res images to hi-res where appropriate
+        upgradeImages();
+    }</code></pre>
+                <p class="fragment">A small screen doesn’t always mean a small image: what about retina displays? Connection
+                    speed helps us decide what to deliver.</p>
+                <aside class="notes">So what can we actually use this for? If we know the effective network speed than we
+                    can choose to upgrade images to larger-resolution versions. We load all images, regardless of size, as
+                    thumbnails, then upgrade them if we have a larger one and the connection speed is high enough. Mobile
+                    first.
+                </aside>
+            </section>
+
+            <section>
+                <h1>Touch devices</h1>
+                <h2>Simple, right?</h2>
+                <pre><code class="javascript">function hasTouchScreen() {
+        return ('ontouchstart' in window) ||
+                 window.DocumentTouch &&
+                 document instanceof DocumentTouch;
+    }</code></pre>
+                <p class="fragment">Actual <a href="http://m.guardian.co.uk">m.guardian.co.uk</a> production code:</p>
+                <pre class="fragment"><code class="javascript">// only enable swiping for touch devices, duh.
+    if ( hasTouchScreen() ) {
+        // swipe-enabling code
+    } else {
+        // alternative ajax/keyboard nav code
+    }</code></pre>
+                <aside class="notes">Another area where you should avoid detecting devices: touch event support. We have a
+                    function like this (click) which detects if the browser supports touch events natively. We then use that
+                    test here (click) in our image galleries to enable swipe navigation. No problems here, right?
+                </aside>
+            </section>
+
+            <section>
+                <h1>Devices with keyboards AND touchscreens?!11</h1>
+                <h2>Thanks, Google.</h2>
+                <img src="/assets/port80-2013/img/chromebook-pixel.jpg"/>
+                <p>Source: <a
+                        href="http://www.bloomberg.com/news/2013-02-21/google-unveils-touch-enabled-screens-for-chromebook-computers.html">David
+                    Paul Morris / Bloomberg</a></p>
+                <p class="fragment">New <a href="http://msdn.microsoft.com/en-us/library/ie/hh673557(v=vs.85).aspx">Pointer
+                    Events API</a> could make this kind of thing easier.</p>
+                <aside class="notes">Actually, thanks to newer devices like the Chromebook Pixel, our code makes assumptions
+                    -- in this case, that a device can either have a keyboard or a touchscreen but not both. This is what
+                    future-friendly refers to: building things with an open outlook so when new things arrive you don't
+                    clobber someone. Our Pixel user will never get the fancy AJAX keyboard nav we wrote...
+                </aside>
+            </section>
+
+            <section>
+                <h1>A word on content</h1>
+                <h2>Do we need different content for different devices?</h2>
+                <p><span class="highlight">Warning:</span> mildly controversial opinion ahead.</p>
+                <div class="fragment">
+                    <blockquote>If a user is on a mobile device, we should show news about the latest iPhone more
+                        prominently
+                    </blockquote>
+                    <p>- a Guardian editor</p>
+                </div>
+                <aside class="notes">While we're talking about detecting features not devices, it's worth a quick aside
+                    about content. Some people are of the opinion that a different device requires different content. Now,
+                    there's probably times when this is definitely true, but in general we've been trying to question that a
+                    little. One Guardian editor made this suggestion when we were planning the new mobile site last year.
+                    (click and read).
+                </aside>
+            </section>
+
+            <section>
+                <h1>That sounds reasonable...</h1>
+                <h2>... right?</h2>
+                <p class="fragment">If I’m sitting at home listening to the <span class="highlight">Beatles</span> on vinyl,
+                    then go outside with my iPod, I don’t start listening to <span class="highlight">Justin Bieber</span>.
+                </p>
+                <p class="fragment">Your tastes don’t magically change when you switch device.</p>
+                <p class="fragment">If I care about the new iPhone, I want it to be prominent <br/><span class="highlight">whatever device I’m on</span>.
+                </p>
+                <p class="fragment">Mobile users aren’t some homogenous group. Personalise content to users by interest, not
+                    hardware.</p>
+                <aside class="notes">Sounds fair enough, right? I'm not so sure: (click and read points)</aside>
+            </section>
+
+            <section>
+                <h1>Five key techniques</h1>
+                <h2>How we built it &amp; what we learned</h2>
+                <ol>
+                    <li class="faded">“Cutting the mustard” (&copy; <a
+                            href="http://responsivenews.co.uk/post/18948466399/cutting-the-mustard/">BBC</a>)
+                    </li>
+                    <li class="faded">Progressive enhancement</li>
+                    <li class="faded">Detect features, not devices</li>
+                    <li>Swimlaning</li>
+                    <li class="faded">No “big bang” releases</li>
+                </ol>
+                <aside class="notes">Okay, after that brief rant let's return to the list of what we did. Next up is
+                    Swimlaning.
+                </aside>
+            </section>
+
+            <section>
+                <img src="/assets/port80-2013/img/swimlane.jpg"/>
+                <p>Source: <a href="http://www.flickr.com/photos/cantoni/4679568335/">Brian Cantoni / Flickr</a></p>
+                <aside class="notes">Swimlaning? A visual aid usually helps: when you're swimming competitively, you have
+                    these handy lanes marked out so you know where you're going. The nice part about the lanes is that apart
+                    from guiding you where to go, they also prevent you from swimming into your neighbour's lane and
+                    disrupting their front crawl.
+                </aside>
+            </section>
+
+            <section>
+                <h1>4. Swimlaning</h1>
+                <h2>Keeping apps in line</h2>
+                <p>Hugely important for large-scale apps</p>
+                <p>It means separating concerns so one part <br/>of the app can’t bring down another</p>
+                <p>A practical example:</p>
+                <aside class="notes">Hopefully the analogy with software development is clear, but to make it clear:
+                    swimlaning your application refers to building it so that concerns are separated -- one part of the app
+                    can't affect another unrelated part. This sounds like an obvious thing to do but it's surprising how
+                    often people get it wrong -- including the Guardian:
+                </aside>
+            </section>
+
+            <section>
+                <h1>How we broke guardian.co.uk</h1>
+                <h2>...by upgrading jQuery</h2>
+                <ul>
+                    <li class="fragment">In late 2011 we upgraded jQuery from 1.4.3 to 1.6.2</li>
+                    <li class="fragment">We forgot that jQuery made <span class="highlight">$.ajax</span> append a cachebust
+                        querystring by default in 1.6.2 (eg <span class="highlight">/get/comments/foo?_=5345334</span>)
+                    </li>
+                    <li class="fragment">All calls to our commenting platform began requesting uncached data</li>
+                    <li class="fragment">Our commenting platform fell over</li>
+                    <li class="fragment">... taking most of the site with it, because it wasn’t “swimlaned”</li>
+                    <li class="fragment">(luckily our emergency caches made this less visible to users)</li>
+                </ul>
+                <aside class="notes">We managed to break the entire Guardian site for a few hours a couple of years back by
+                    upgrading jQuery. This was a direct result of not properly swimlaning the code. Here's what happened:
+                    (click and walk through points).
+                </aside>
+            </section>
+
+            <section>
+                <h1>Are you at risk?</h1>
+                <p>Think about your own website for a moment. Do you have any hard dependencies?</p>
+                <ul>
+                    <li class="fragment">Are any of them external? (Twitter, Facebook, Google etc)</li>
+                    <li class="fragment">This could be a SPOF (Single Point of Failure)</li>
+                    <li class="fragment">Good tool for testing these at <a
+                            href="https://chrome.google.com/webstore/detail/spof-o-matic/plikhggfbplemddobondkeogomgoodeg">SPOF-O-Matic</a>
+                        and <a href="http://www.webpagetest.org/">WebPageTest</a>.
+                    </li>
+                </ul>
+                <aside class="notes">It's worth thinking about whether you're at risk -- do you have any external
+                    dependencies? If one part of your site went down would the whole thing go too? Like the core content
+                    decision from earlier, it's really valuable to have a strong idea what your most important stuff is.
+                    There's a great Chrome extension for testing SPOFS -- single points of failure.
+                </aside>
+            </section>
+
+            <section>
+                <h1>A swimlaned Guardian</h1>
+                <ul>
+                    <li>Each app (article, video, gallery, etc) has its own set of servers</li>
+                    <li>If one fails, everything else carries on regardless</li>
+                    <li>We enforce “one blocking call per page” to minimise risk</li>
+                </ul>
+                <aside class="notes">So how did we actually "swimlane" the new responsive site? First, we set up a separate
+                    application for each "template", if you like, of the site: articles, galleries, videos, homepage,
+                    sections, etc. We could deploy each of them separately and they were all on separate servers: if
+                    galleries broke, articles would still work. We also enforced "one blocking call per page" to make sure
+                    things were super fast.
+                </aside>
+            </section>
+
+            <section>
+                <h1>Deployments became painless</h1>
+                <h2>A simple command line tool made things trivial</h2>
+                <pre><code>$ gu deploy --prod --name gallery --build 123</code></pre>
+                <p class="fragment">Deploy everything individually: no need to bring down the entire site.</p>
+                <p class="fragment">Updating a line of CSS should be as easy to deploy as it is to write.</p>
+                <p class="fragment">(All of this makes use of Amazon’s EC2 API and a bit of Ruby)</p>
+                <aside class="notes">Another benefit of this was the ease of deployment. In the old days we'd have to bring
+                    down the entire CMS for 15 minutes if we wanted to tweak some CSS on article pages. Nowe have a
+                    one-liner to deploy anything anywhere.
+                </aside>
+            </section>
+
+            <section>
+                <h1>It’s not all hardware, though</h1>
+                <h2>In-code swimlaning protects you too</h2>
+                <p>Things like AMD-based JavaScript is a form of swimlaning:</p>
+                <pre><code class="javascript">require(['jquery'], function($){
+        $('body').css('font-family', 'comic-sans');
+    });</code></pre>
+                <p class="fragment">This copy of jQuery will never conflict with others, even if dodgy adverts load their
+                    own copies or someone in another application upgrades theirs.</p>
+                <aside class="notes">Swimlaning isn't just for hardware and deployment, though: it exists at a code level,
+                    too. Writing all of our JS to use AMD structures like this means that things like conflicts ansd global
+                    variables overriding one another are a thing of the past. Loading jQuery like this means that a dodgy
+                    advert or commercial widget can't clash with our own copy of it, for example.
+                </aside>
+            </section>
+
+            <section>
+                <h1>Swimlaned CSS</h1>
+                <h2>A bit harder to sandbox, but do-able</h2>
+                <p>We use <a href="http://www.smacss.com">Jonathan Snook’s SMACSS</a> to keep our CSS object-oriented.</p>
+                <p class="fragment">It means less of this:</p>
+                <pre class="fragment"><code class="css">body.tone-index #box .two-col h2,
+    body.tone-index #box #main-trailblock h2
+    {
+        padding-top: 4px;
+    }</code></pre>
+                <p class="fragment">And more of this: (SCSS syntax)</p>
+                <pre class="fragment"><code class="css">.sub-section-head {
+        border-bottom: 1px solid $mushroom;
+    }</code></pre>
+                <p class="fragment">Web Components might make this easier in future.</p>
+                <aside class="notes">You can also swimlane your CSS too, although this is a bit harder to sandbox. We use
+                    Jonathan Snook's SMACSS guidelines to structure code so we have less of this (click) and more of this
+                    (click).
+                </aside>
+            </section>
+
+            <section>
+                <h1>What couldn't we swimlane?</h1>
+                <h2>There's always one...</h2>
+                <p>Advertising: it's the bane of our lives.</p>
+                <p class="fragment">Ads render code like this:</p>
+                <aside class="notes">It's also worth quickly looking at advertising: the one thing we couldn't reliably
+                    swimlane. Ads can really affect our performance as they load blocking scripts, often using
+                    document.write, or they load their own analytics, jQuery, or a bunch of other things we don't want to
+                    send our users.
+                </aside>
+            </section>
+
+            <section>
+                <p>Genuine, production-quality advertising code</p>
+                <pre><code class="javascript">document.write('\n');
+    document.write('\n');
+    document.write('\n');
+    document.write('\n');
+    document.write('\n');
+    document.write('\n');
+    document.write('\n');
+    document.write('&lt;script type="text/javascript"&gt;\n');
+    document.write('//&lt;![CDATA[\n');
+    document.write('var filePath = "http://imageceu1.247realmedia.
+    com/RealMedia/ads/Creatives/Guardian/USAY_Compare_May12_PBR_ROS_Leader/banner468x60.
+    swf/1335778817";\n');
+    document.write('var TFSMFlash_PRETAG = "";\n');
+    document.write('var TFSMFlash_POSTTAG = "";\n');
+    document.write('var TFSMFlash_VERSION = "9";\n');
+    document.write('var TFSMFlash_WMODE = "opaque";\n');</code></pre>
+                <aside class="notes">This is some genuine ad code used on guardian.co.uk. It's horrendous.</aside>
+            </section>
+
+            <section>
+                <h1>Responsive ads?</h1>
+                <h2>Not until the ad networks catch up</h2>
+                <p class="fragment">We can't make all our ads for all our partners. <br/>We need the industry to catch up.
+                </p>
+                <p class="fragment">We've tried swimlaning ads by putting them inside &lt;iframe&gt;s &ndash; this worked
+                    for some but not all (many need to pop out of their container or interact with the DOM). This has
+                    partially worked for external ads, though.</p>
+                <p class="fragment">Ultimately we're still trying to figure this one out: a single dodgy ad can destroy all
+                    our hard work (and even get us blocked for malware by Chrome, occasionally...)</p>
+                <aside class="notes">I wish I had a slide here showcasing our amazing responsive advertising solution but
+                    sadly we're still figuring it out. (click) the ad industry needs to catch up with what we're doing -
+                    their code's still stuck in 1996. (click) We did try swimlaning ads by putting them in their own iframes
+                    but this doesn't always work - some of them need access to the parent page so they can pop out or
+                    expand. (click) ultimately we're still experimenting: a single dodgy ad can break our whole page so we
+                    need to get this right.
+                </aside>
+            </section>
+
+            <section>
+                <h1>Five key techniques</h1>
+                <h2>How we built it &amp; what we learned</h2>
+                <ol>
+                    <li class="faded">“Cutting the mustard” (&copy; <a
+                            href="http://responsivenews.co.uk/post/18948466399/cutting-the-mustard/">BBC</a>)
+                    </li>
+                    <li class="faded">Progressive enhancement</li>
+                    <li class="faded">Detect features, not devices</li>
+                    <li class="faded">Swimlaning</li>
+                    <li>No “big bang” releases</li>
+                    <aside class="notes">Last but not least, let's look at our final technique: no "big bang" releases
+                    </aside>
+                </ol>
+            </section>
+
+            <section>
+                <img src="/assets/port80-2013/img/big-bang.jpg"/>
+                <p>Source: <a href="http://www.flickr.com/photos/smswigart/5147001743/">Scott Swigart / Flickr</a></p>
+                <aside class="notes">What's a big bang? To me, it's something potentially disastrous and risky, a bit like
+                    this exploding car. You don't always know what will happen.
+                </aside>
+            </section>
+
+            <section>
+                <h1>5. No “big bang” releases</h1>
+                <h2>The creation of something where there was nothing before</h2>
+                <p>You’ve probably all been involved with one:</p>
+                <ul>
+                    <li class="fragment">Hard “launch date” deadline</li>
+                    <li class="fragment">No / little public exposure to the product/design before launch</li>
+                    <li class="fragment">Big expectation that everything is “perfect” up-front</li>
+                </ul>
+                <aside class="notes">More specifically: a big bang release is when you have a hard immovable deadline,
+                    hardly any public exposure of what you've been working on, and a big expectation that things will be
+                    "perfect" after the months of work you've put in. They almost never work out.
+                </aside>
+            </section>
+
+
+            <section>
+                <h1>Why is this a bad thing?</h1>
+                <ul>
+                    <li class="fragment">The web’s not meant to be “perfect” or “finished” (anti-pattern!)</li>
+                    <li class="fragment">A hard deadline is more of a challenge when working using Agile</li>
+                    <li class="fragment">If you spend a year building something before putting it in front of users you’ve
+                        already failed
+                    </li>
+                </ul>
+                <aside class="notes">Why are they so bad? Well... (click and walk through: "perfect" is an anti-pattern;
+                    hard deadline isn't very Agile; if you spend a year before showing users you've already failed
+                </aside>
+            </section>
+
+            <section>
+                <p>We did our beta testing in public:</p>
+                <img src="/assets/port80-2013/img/early-design.jpg"/>
+                <p>Left: early design (approx April 2012), right: current design (May 2013)</p>
+                <aside class="notes">We avoided this by working in the public almost as soon as we had a working demo. Here
+                    a before-and-after of our first public code at beta.guardian.co.uk. We still do this today.
+                </aside>
+            </section>
+
+            <section>
+                <h1>beta.guardian.co.uk</h1>
+                <h2>Working in the open for the win</h2>
+                <ul>
+                    <li class="fragment">Easy to show to senior stakeholders</li>
+                    <li class="fragment">Gathered important user feedback early on</li>
+                    <li class="fragment">Stress-tested the system before launch</li>
+                    <li class="fragment">We heard from edge case users directly</li>
+                </ul>
+                <aside class="notes">What's so great about putting all your half-working code in the public eye? Well:
+                    (click and walk through)
+                </aside>
+            </section>
+
+            <section>
+                <h1>Testing is hard.</h1>
+                <h2>(...and even harder if you wait till launch day)</h2>
+                <ul>
+                    <li class="fragment">It’s impractical to try to test responsive designs on every possible device that
+                        might access them
+                    </li>
+                    <li class="fragment">We optimised for the most common devices (according to analytics)...</li>
+                    <li class="fragment">...then relied on RUM (Real User Monitoring) to tell us the rest</li>
+                </ul>
+                <aside class="notes">On that last point: it's impossible to test everything for a responsive site. Too many
+                    devices, browsers, connections and features mean you'll be there foreveer. We optimised for the most
+                    common devices that accessed the site and relied on RUM -- real user monitoring -- to tell us anything
+                    we missed. It's worked really well for us.
+                </aside>
+            </section>
+
+            <section>
+                <h1>The upshot of all of this?</h1>
+                <h2>No surprises on go-live day. <br/>Everything went exactly as we expected it to. </h2>
+                <p class="fragment">(woohoo!)</p>
+                <aside class="notes">The upshot of the "no big bang" rule: our launch day was really low key and went
+                    exactly as we expected. (click) Woohoo!
+                </aside>
+            </section>
+
+            <section>
+                <img src="/assets/port80-2013/img/traffic.png" style="width: 100% !important;"/>
+            </section>
+
+            <section>
+                <h1>Some closing thoughts</h1>
+                <h2>If you remember nothing else, remember these four points:</h2>
+                <aside class="notes">Okay, I'd like to wrap up with some closing thoughts about our processes. If you
+                    remember nothing else, these four points should help.
+                </aside>
+            </section>
+
+            <section>
+                <h1>1. Focus on what is “core” for your application / website</h1>
+                <h2>...and make it really, really quick.</h2>
+                <p class="fragment">Anything non-core can come later.</p>
+                <aside class="notes">#1. Focus on what's “core” for your application or website. Anything non-core can come
+                    later.
+                </aside>
+            </section>
+
+            <section>
+                <h1>2. Don’t be afraid to <br/>build multiple experiences</h1>
+                <h2>Segment your users and build around features, <br/>not in spite of them.</h2>
+                <p class="fragment">Cutting the mustard is a really valuable technique and bakes progressive enhancement
+                    into the site from the very beginning. Don’t get hung up on “pixel perfect” everywhere.</p>
+                <aside class="notes">#2. Build components, not pages. Get your designers to design things in reusable blocks
+                    and components, not an entire page at three different breakpoints. Building this way saved us hours and
+                    made refactoring much easier.
+                </aside>
+            </section>
+
+            <section>
+                <h1>3. Release early &amp; often</h1>
+                <h2>Don’t spend forever with your code behind locked doors</h2>
+                <p class="fragment">It’s an oldie but a goodie. “Perfect” is boring. Shipping is cool.</p>
+                <aside class="notes">#3: Release early and often. It's a cliche but it's true: don't sit around chasing
+                    perfection, get something working out ASAP and iterate on it.
+                </aside>
+            </section>
+
+            <section>
+                <h1>4. Question assumptions</h1>
+                <h2>This is a new web. Start from scratch.</h2>
+                <p class="fragment">...including responsive design itself. It won’t always be like it is today!</p>
+                <aside class="notes">and finally: question assumptions. This is a new web: start from scratch. And this
+                    includes responsive design itself: it won't be around forever and something new will likely replace it
+                    in the not too distant future. Be ready for that!
+                </aside>
+            </section>
+
+            <section>
+                <h1>The end</h1>
+                <h2>A couple of notes</h2>
+                <ul>
+                    <li class="fragment">Open source: all the responsive code is <a
+                            href="https://github.com/guardian/frontend">public on Github</a>.
+                    </li>
+                    <li class="fragment">This presentation: <a href="https://mattandrews.info/talks/port80-2013/">mattandrews.info/talks/port80-2013/</a>
+                    </li>
+                    <li class="fragment">We're hiring! Looking for <a href="http://www.guardian.co.uk/workforus">front-end
+                        and back-end developers</a>.
+                    </li>
+                    <li class="fragment">You can find me at <a
+                            href="http://www.twitter.com/mattpointblank">@mattpointblank</a> on twitter
+                    </li>
+                </ul>
+                <aside class="notes">A few closing shoutouts: all the code is open source and you can find it on GitHub. If
+                    you're looking for a new role, the Guardian is hiring developers: come and talk to me later or look on
+                    our website.
+                </aside>
+            </section>
+
+            <section>
+                <h1>Any questions?</h1>
+                <h2>No, I don't know Charlie Brooker</h2>
+                <aside class="notes">Well, that's all from me - are there any questions?</aside>
+            </section>
+
+        </section>
+    </div>
+</div>

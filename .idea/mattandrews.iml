@@ -5,6 +5,8 @@
       <excludeFolder url="file://$MODULE_DIR$/.sass-cache" />
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
       <excludeFolder url="file://$MODULE_DIR$/_site" />
+      <excludeFolder url="file://$MODULE_DIR$/assets/port80-2013" />
+      <excludeFolder url="file://$MODULE_DIR$/talks" />
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
     </content>

@@ -1,0 +1,161 @@
+---
+layout: post
+categories: talks
+title: 'Making Desktop Apps With Electron'
+subtitle: Building applications using JavaScript
+event: 'Hydrahack Birmingham'
+date: 2017-03-14 00:00:00
+---
+
+<p>My team were exploring auto-generating animations from audio files. We were wondering if it was possible, given a voice recording, to automatically output a video of some lips "speaking" the words.</p>
+
+<p>With a bit of searching I came across <a href="https://github.com/DanielSWolf/rhubarb-lip-sync">Rhubarb</a>, a great library for generating "mouth shapes" (eg. letters corresponding to commonly-understood lip positions in animation). I wrote a Node app to take an audio file, generate mouth shapes, then feed these shapes into <a href="https://ffmpeg.org/">ffmpeg</a> using some pre-created lip images, in order to output a video.</p>
+
+<p>The results looked like this:</p>
+
+<video class="slide" controls="controls">
+    <source src="/assets/img/hydrahack/trump.mp4" type="video/mp4" />
+</video>
+<p class="caption">Donald Trump "speaking"</p>
+
+<p>This was all fine, but it was less than usable for the non-technical members of my team. Here's what they would have had to do to generate this output:</p>
+
+{% highlight shell %}
+$ /usr/bin/ruby -e "$(curl -fsSL $HOMEBREW_URL)"
+$ brew install node ffmpeg
+$ node app.js -t speech.txt -s speech.wav -o out.mp4 -i shape-name
+{% endhighlight %}
+
+<p>If you're not a developer and not comfortable using the terminal, this isn't much fun. Passing arguments and parameters can be confusing at the best of times. Clearly something else was needed.</p>
+
+<h2>Enter Electron</h2>
+
+<p>I'd already heard of <a href="http://electron.atom.io">Electron</a> &ndash; I'd been using <a href="https://atom.io/">Atom</a> for a year or two, which I knew was built on top of it. If you're not familiar, it's effectively a bundled up browser (Chrome, via Chromium) which has access to the wider filesystem than a regular browser. Electron lets you write an app for multiple desktop platforms in HTML, CSS and JavaScript.</p>
+
+<p>I was able to quickly put together this simple app in less than half a day's work:</p>
+
+<img src="/assets/img/hydrahack/electron.png" class="slide" />
+<p class="caption">Version 0.1 of my Electron app</p>
+
+<p>In order to get off the ground with Electron, some code similar to this will give you a super-basic "Hello, world!":</p>
+
+<h4>main.js</h4>
+{% highlight javascript %}
+const {app, BrowserWindow} = require('electron');
+const path = require('path');
+const url = require('url');
+
+function createWindow () {
+    let win = new BrowserWindow({width: 800, height: 600});
+    win.loadURL(url.format({
+        pathname: path.join(__dirname, 'index.html'),
+        protocol: 'file:',
+        slashes: true
+    }));
+}
+
+app.on('ready', createWindow);</code></pre>
+{% endhighlight %}
+
+<p class="caption">Note: I've stripped a few things for brevity here, eg. window management. See the <a href="https://electron.atom.io/docs/tutorial/quick-start/">Echo docs</a> for more code samples.</p>
+
+<p>This is enough to get you up and running &ndash; it'll load up a file called <code>index.html</code> that's in the same directory as that code (inside <code>main.js</code>). When you add a <code>"main": "main.js"</code> entry to your <code>package.json</code> file, you can run <code>electron .</code> and you'll get a running app you can demo:</p>
+
+<img src="/assets/img/hydrahack/helloworld.png" class="slide" />
+<p class="caption">The most basic app you can start with Electron</p>
+
+<h2>Distribution</h2>
+<p>After you get over the initial excitement of making a real, proper desktop app (it shows up in the dock! It's got an icon! You can minimise it!), you might be wondering how to make a distributable version of it, so everyone can see your "Hello, world!" glory.</p>
+
+<p>If you install <a href="https://github.com/electron-userland/electron-packager">electron-packager</a> you can run the command below and output four apps for all the platforms Electron supports: Windows, Linux, OS X and Mac App Store.</p>
+
+{% highlight shell %}
+$ npm install -g electron-packager
+$ electron-packager . --icon icon.icns --platform all
+{% endhighlight %}
+
+<h2>Processes in Electron</h2>
+
+<p>Electron has two main processes where your code runs:</p>
+
+<h3>Main process</h3>
+<p>This is the part shown above &ndash; it's effectively the "server-side" of your app. Here you can manipulate the filesystem, load dependencies, manage configuration and do any background tasks your app needs. In mine, I go and fetch the <code>ffmpeg</code> binaries (eg. specific to the user's platform) at runtime.</p>
+
+<h3>Renderer process</h3>
+<p>The Renderer can be thought of as the "client-side" of your app. Here's the browser window where your HTML, CSS and JavaScript is executed. There are a few conventions that are different from a browser &ndash; for exampler, my app needed a file picker input. I started off using the standard HTML one but discovered that this didn't work as expected after packaging. Luckily Atom has a (more powerful) <a href="https://github.com/electron/electron/blob/master/docs/api/dialog.md">internal one</a> you can use.</p>
+
+<h3>Communicating between processes</h3>
+<p>Once I'd got my app to show a UI onscreen for picking files and added some basic form validation, I needed to make a <code>&lt;button&gt;</code> element in the renderer process which would kick off my video task in the main process. To do this, you can use the <a href="https://github.com/electron/electron/blob/master/docs/api/ipc-renderer.md">ipc-renderer module</a> for standard event emitting.</p>
+
+<h4>Main process</h4>
+{% highlight javascript %}
+const { ipcMain } = require('electron');
+
+// publish
+window.webContents.send('event-from-main', {
+    data: 'bar'
+});
+
+// subscribe
+ipcMain.on('event-from-renderer', (event, arg1) => {
+    console.log('Message from renderer', arg1);
+});
+{% endhighlight %}
+
+<h4>Renderer process</h4>
+
+{% highlight javascript %}
+const { ipcRenderer } = require('electron');
+
+// subscribe
+ipcRenderer.on('event-from-main', (event, arg1) => {
+    console.log('Message from main', arg1);
+});
+
+// publish
+ipcRenderer.send('event-from-renderer', {
+    data: 'foo'
+});
+{% endhighlight %}
+
+<p>This code (above) will use standard pub/sub methods so you can communicate asynchronously between your process and bind events.</p>
+
+<h2>Why make a desktop app?</h2>
+<p>Okay, awesome &ndash; you can package up HTML into a desktop app. But why do you want to do this? Perhaps you might not have to!</p>
+
+<h3>Reasons to <em>not</em> make a desktop app</h3>
+<ul>
+    <li>You’re bundling your existing website into an app</li>
+    <li>You’re bundling your existing website into an app</li>
+    <li>You’re bundling your existing website into an app</li>
+    <li>You’re bundling your existing website into an app</li>
+    <li>You’re bundling your existing website into an app</li>
+    <li>You’re bundling your existing website into an app</li>
+</ul>
+
+<p>Come on. If you just package up an existing website into a desktop app, all you've done is invented a worse version of the web browser. Nobody needs this product and it'll just look lazy and pointless.</p>
+
+<h3>Reasons to make a desktop app</h3>
+
+<p>Assuming you're not bundling a website into an app, here are some good reasons for making a desktop app with Electron:</p>
+<ul>
+    <li>You need access to the filesystem (eg. browser limitations)</li>
+    <li>You’re making a GUI for a command-line app</li>
+    <li>You don’t want to learn existing desktop UI techniques</li>
+    <li>You probably already know most of the techniques (HTML/CSS/JS)</li>
+    <li>You’re building for an offline/deployed environment</li>
+</ul>
+
+<h2>Conclusions</h2>
+<p>So, Electron is pretty cool for the right tool. In my case, it meant I could take a command-line app and package it into a nice-looking, easily distributable desktop app which can be used by non-tech users without having to explain to them how (and why) to install <code>brew</code>, <code>node</code> and <code>ffmpeg</code> (and that's before we get to using my app itself).</p>
+
+<p>There are some concerns &ndash; apps built with Electron have a large-ish footprint (my app for OS X is 294mb for a couple of hundred lines of code. Arguably this matters less as performance (in terms of file weight) is less of a worry for a packaged app, but it's still more bloated than traditional desktop app output. That said, in order to build one of those, you'd have to learn some brand new things from scratch, and they're unlikely to look as native as Electron apps do, on each platform. Atom also gets criticised for being slower than competitors. For me, these weren't issues &ndash; this app was definitely more user-friendly than my CLI version, even if it sacrificed some speed to get there.</p>
+
+<p>If you want to know more, check out the official <a href="http://electron.atom.io">Electron docs</a> and see what you can build.</p>
+
+
+<h5 class="spacer">&mdash; Matt Andrews</h5>
+<h6><a href="https://mattandrews.info">mattandrews.info</a> &bull; <a href="http://www.twitter.com/mattpointblank">@mattpointblank</a></h6>
+
+<h4>Notes</h4>
+<p>Many thanks to <a href="https://twitter.com/kathpreston1?lang=en">Kath Preston</a> (from <a href="https://twitter.com/383project">383</a>) for organising Hydrahack where I gave this lightning talk.</p>
