@@ -168,10 +168,15 @@ nav {
         text-align: right;
     }
 
+    ul {
+        margin: 0;
+    }
+
     li {
         display: inline-block;
         font-family: 'Playfair Display', serif;
         font-size: 20px;
+        margin: 0;
         margin-right: $navItemGutter;
 
         &:last-child {

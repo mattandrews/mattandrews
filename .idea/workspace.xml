@@ -2,101 +2,297 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37387850-ae83-4626-b125-74a5b9269ec6" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2009-07-28-the-new-internet-the-death-of-culture.html" afterPath="$PROJECT_DIR$/_posts/threechords/2009-07-28-the-new-internet-the-death-of-culture.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2010-12-16-switching-to-google-hosted-jquery.html" afterPath="$PROJECT_DIR$/_posts/guardian/2010-12-16-switching-to-google-hosted-jquery.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2011-01-19-broadcast-media-dumbing-down-or-catering-for-demand.html" afterPath="$PROJECT_DIR$/_posts/threechords/2011-01-19-broadcast-media-dumbing-down-or-catering-for-demand.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2011-01-23-apple-tv-and-all-that-could-have-been.html" afterPath="$PROJECT_DIR$/_posts/threechords/2011-01-23-apple-tv-and-all-that-could-have-been.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2011-02-02-reality-tv-escapism-from-the-flaws-of-er-reality.html" afterPath="$PROJECT_DIR$/_posts/threechords/2011-02-02-reality-tv-escapism-from-the-flaws-of-er-reality.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2011-03-06-why-microsoft-will-never-regain-developers-trust.html" afterPath="$PROJECT_DIR$/_posts/threechords/2011-03-06-why-microsoft-will-never-regain-developers-trust.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2011-03-11-sxsw-2011-how-we-made-our-interactive-band-tracker.html" afterPath="$PROJECT_DIR$/_posts/guardian/2011-03-11-sxsw-2011-how-we-made-our-interactive-band-tracker.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2011-03-15-sxsw-2011-music-and-hack-days-where-the-girls-aren't.html" afterPath="$PROJECT_DIR$/_posts/guardian/2011-03-15-sxsw-2011-music-and-hack-days-where-the-girls-aren't.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2011-04-11-the-arrogance-of-google-and-their-quest-to-store-everything.html" afterPath="$PROJECT_DIR$/_posts/threechords/2011-04-11-the-arrogance-of-google-and-their-quest-to-store-everything.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2011-05-01-on-deleting-facebook.html" afterPath="$PROJECT_DIR$/_posts/threechords/2011-05-01-on-deleting-facebook.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2011-05-16-portal-2-missed-opportunities.html" afterPath="$PROJECT_DIR$/_posts/threechords/2011-05-16-portal-2-missed-opportunities.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2011-06-06-how-not-to-make-me-download-your-mobile-app.html" afterPath="$PROJECT_DIR$/_posts/threechords/2011-06-06-how-not-to-make-me-download-your-mobile-app.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2011-06-19-on-student-journalism-and-digital-first.html" afterPath="$PROJECT_DIR$/_posts/threechords/2011-06-19-on-student-journalism-and-digital-first.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2011-06-30-the-user-experience-of-flathunting.html" afterPath="$PROJECT_DIR$/_posts/threechords/2011-06-30-the-user-experience-of-flathunting.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2011-08-16-the-only-thing-mindless-about-the-riots-is-the-response.html" afterPath="$PROJECT_DIR$/_posts/threechords/2011-08-16-the-only-thing-mindless-about-the-riots-is-the-response.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2011-09-23-facebook-f8-because-everyone-wants-to-know-everything.html" afterPath="$PROJECT_DIR$/_posts/threechords/2011-09-23-facebook-f8-because-everyone-wants-to-know-everything.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2011-10-16-when-celebrities-tweet-a-ricky-gervais-special.html" afterPath="$PROJECT_DIR$/_posts/threechords/2011-10-16-when-celebrities-tweet-a-ricky-gervais-special.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2011-11-03-the-class-struggle-revolution-and-alan-sugar.html" afterPath="$PROJECT_DIR$/_posts/threechords/2011-11-03-the-class-struggle-revolution-and-alan-sugar.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2011-11-15-business-designed.html" afterPath="$PROJECT_DIR$/_posts/guardian/2011-11-15-business-designed.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2011-12-05-my-favourite-film-the-goonies.html" afterPath="$PROJECT_DIR$/_posts/guardian/2011-12-05-my-favourite-film-the-goonies.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2011-12-07-music-hack-day-london-2011-a-developer's-view.html" afterPath="$PROJECT_DIR$/_posts/guardian/2011-12-07-music-hack-day-london-2011-a-developer's-view.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2012-01-04-private-eye-scepticism-new-media.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-01-04-private-eye-scepticism-new-media.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2012-01-23-the-love-affair-of-the-tech-nerd-with-themselves.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-01-23-the-love-affair-of-the-tech-nerd-with-themselves.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2012-03-12-one-click-to-achieve-absolute-apathy.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-03-12-one-click-to-achieve-absolute-apathy.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2012-03-21-how-i-finally-understood-the-value-of-social.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-03-21-how-i-finally-understood-the-value-of-social.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2012-04-23-london-mayoral-manifestos-critiqued.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-04-23-london-mayoral-manifestos-critiqued.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2012-04-24-web-cookies-eprivacy-directive-alternatives-and-workaround.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-04-24-web-cookies-eprivacy-directive-alternatives-and-workaround.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2012-04-25-twitters-ukopenhouse-london-notes.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-04-25-twitters-ukopenhouse-london-notes.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2012-05-06-policing-love-anti-gay-marriage-campaign-nonsense.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-05-06-policing-love-anti-gay-marriage-campaign-nonsense.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2012-05-30-the-medium-is-not-the-message.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-05-30-the-medium-is-not-the-message.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2012-06-16-applying-web-developer-role-cv-dos-and-donts.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-06-16-applying-web-developer-role-cv-dos-and-donts.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2012-06-18-victims-of-our-own-design-digital-consumption-killing-creativity.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-06-18-victims-of-our-own-design-digital-consumption-killing-creativity.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2012-06-24-the-internet-isnt-killing-journalism-journalists-are.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-06-24-the-internet-isnt-killing-journalism-journalists-are.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2012-07-12-talking-on-topic-i-try-menshn-so-you-dont-have-to.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-07-12-talking-on-topic-i-try-menshn-so-you-dont-have-to.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2012-07-16-discovery-week-diary-day-one.html" afterPath="$PROJECT_DIR$/_posts/guardian/2012-07-16-discovery-week-diary-day-one.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2012-07-18-discovery-week-diary-day-two.html" afterPath="$PROJECT_DIR$/_posts/guardian/2012-07-18-discovery-week-diary-day-two.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2012-08-20-the-internet-the-worlds-first-true-meritocracy.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-08-20-the-internet-the-worlds-first-true-meritocracy.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2012-09-17-menshn-v2-reviewed.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-09-17-menshn-v2-reviewed.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2012-09-24-two-pounds-a-month-broadband-levy-worst-idea-ever.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-09-24-two-pounds-a-month-broadband-levy-worst-idea-ever.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2012-10-18-responsive-design-at-the-guardian-an-introduction.html" afterPath="$PROJECT_DIR$/_posts/guardian/2012-10-18-responsive-design-at-the-guardian-an-introduction.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2012-11-21-building-websites-using-html-css-and-javascript.html" afterPath="$PROJECT_DIR$/_posts/teaching/2012-11-21-building-websites-using-html-css-and-javascript.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2012-12-28-a-resolution-breaking-a-very-british-curse.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-12-28-a-resolution-breaking-a-very-british-curse.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2013-01-03-diversity-in-tech-still-an-issue-2013.html" afterPath="$PROJECT_DIR$/_posts/threechords/2013-01-03-diversity-in-tech-still-an-issue-2013.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2013-01-06-what-will-the-future-make-of-us.html" afterPath="$PROJECT_DIR$/_posts/threechords/2013-01-06-what-will-the-future-make-of-us.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2013-01-12-how-to-be-a-digital-journalist.html" afterPath="$PROJECT_DIR$/_posts/teaching/2013-01-12-how-to-be-a-digital-journalist.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2013-02-10-parisian-vignettes.html" afterPath="$PROJECT_DIR$/_posts/threechords/2013-02-10-parisian-vignettes.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2013-02-27-building-websites-using-html-css-and-javascript.html" afterPath="$PROJECT_DIR$/_posts/teaching/2013-02-27-building-websites-using-html-css-and-javascript.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2013-03-08-imagine-journalism-in-ten-years-time.html" afterPath="$PROJECT_DIR$/_posts/threechords/2013-03-08-imagine-journalism-in-ten-years-time.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2013-03-19-why-journalism-is-like-pro-cycling.html" afterPath="$PROJECT_DIR$/_posts/threechords/2013-03-19-why-journalism-is-like-pro-cycling.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2013-03-23-how-to-be-a-digital-journalist.html" afterPath="$PROJECT_DIR$/_posts/teaching/2013-03-23-how-to-be-a-digital-journalist.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2013-05-01-google-glass-–-what-is-it-good-for?-|-matt-andrews.html" afterPath="$PROJECT_DIR$/_posts/guardian/2013-05-01-google-glass-–-what-is-it-good-for?-|-matt-andrews.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2013-05-10-responsive-design-at-the-guardian.html" afterPath="$PROJECT_DIR$/_posts/talks/2013-05-10-responsive-design-at-the-guardian.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2013-06-03-homebrew-beer-for-busy-people.html" afterPath="$PROJECT_DIR$/_posts/threechords/2013-06-03-homebrew-beer-for-busy-people.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2013-06-04-building-websites-using-html-css-and-javascript.html" afterPath="$PROJECT_DIR$/_posts/teaching/2013-06-04-building-websites-using-html-css-and-javascript.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2013-07-16-the-web-less-engine-more-gas.html" afterPath="$PROJECT_DIR$/_posts/threechords/2013-07-16-the-web-less-engine-more-gas.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2013-07-22-how-web-developers-work-and-what-they-wish-you-knew.html" afterPath="$PROJECT_DIR$/_posts/teaching/2013-07-22-how-web-developers-work-and-what-they-wish-you-knew.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2013-08-15-young-rewired-state-2013-mentoring-the-tech-stars-of-tomorrow.html" afterPath="$PROJECT_DIR$/_posts/guardian/2013-08-15-young-rewired-state-2013-mentoring-the-tech-stars-of-tomorrow.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2013-09-24-building-websites-using-html-css-and-javascript.html" afterPath="$PROJECT_DIR$/_posts/teaching/2013-09-24-building-websites-using-html-css-and-javascript.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2013-10-10-responsive-design-at-the-guardian.html" afterPath="$PROJECT_DIR$/_posts/talks/2013-10-10-responsive-design-at-the-guardian.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2013-12-08-tech-half-life-its-okay-to-be-wrong.html" afterPath="$PROJECT_DIR$/_posts/threechords/2013-12-08-tech-half-life-its-okay-to-be-wrong.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2013-12-20-dennis-rodman-is-'having-fun'-in-north-korea-at-the-expense-of-human-rights-|-matt-andrews.html" afterPath="$PROJECT_DIR$/_posts/guardian/2013-12-20-dennis-rodman-is-'having-fun'-in-north-korea-at-the-expense-of-human-rights-|-matt-andrews.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2014-01-15-building-websites-using-html-css-and-javascript.html" afterPath="$PROJECT_DIR$/_posts/teaching/2014-01-15-building-websites-using-html-css-and-javascript.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2014-01-17-guardian-hack-day-january-2014-—-live-blog.html" afterPath="$PROJECT_DIR$/_posts/guardian/2014-01-17-guardian-hack-day-january-2014-—-live-blog.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2014-01-23-surviving-the-multi-device-news-challenge.html" afterPath="$PROJECT_DIR$/_posts/talks/2014-01-23-surviving-the-multi-device-news-challenge.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2014-01-27-lessons-learned-self-publishing-for-kindle-and-print-simultaneously.html" afterPath="$PROJECT_DIR$/_posts/threechords/2014-01-27-lessons-learned-self-publishing-for-kindle-and-print-simultaneously.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2014-02-25-digital-journalism-bootcamp.html" afterPath="$PROJECT_DIR$/_posts/teaching/2014-02-25-digital-journalism-bootcamp.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2014-03-06-building-websites-using-html-css-and-javascript.html" afterPath="$PROJECT_DIR$/_posts/teaching/2014-03-06-building-websites-using-html-css-and-javascript.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2014-03-11-why-do-we-think-developers-are-special.html" afterPath="$PROJECT_DIR$/_posts/threechords/2014-03-11-why-do-we-think-developers-are-special.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2014-03-27-how-can-mozilla-turn-a-blind-eye-to-its-ceo's-support-of-prop-8-?.html" afterPath="$PROJECT_DIR$/_posts/guardian/2014-03-27-how-can-mozilla-turn-a-blind-eye-to-its-ceo's-support-of-prop-8-?.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2014-04-16-building-websites-using-html-css-and-javascript.html" afterPath="$PROJECT_DIR$/_posts/teaching/2014-04-16-building-websites-using-html-css-and-javascript.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2014-04-28-how-to-work-with-web-developers.html" afterPath="$PROJECT_DIR$/_posts/teaching/2014-04-28-how-to-work-with-web-developers.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2014-06-17-in-defence-of-reddit.html" afterPath="$PROJECT_DIR$/_posts/threechords/2014-06-17-in-defence-of-reddit.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2014-07-15-guardian-hack-day-july-2014-—-live-blog.html" afterPath="$PROJECT_DIR$/_posts/guardian/2014-07-15-guardian-hack-day-july-2014-—-live-blog.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2014-08-15-how-animated-gif-selfies-fixed-our-teams-morale.html" afterPath="$PROJECT_DIR$/_posts/threechords/2014-08-15-how-animated-gif-selfies-fixed-our-teams-morale.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2014-09-03-building-websites-using-html-css-and-javascript.html" afterPath="$PROJECT_DIR$/_posts/teaching/2014-09-03-building-websites-using-html-css-and-javascript.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2014-09-12-london-i-love-you-but-youre-bringing-me-down.html" afterPath="$PROJECT_DIR$/_posts/threechords/2014-09-12-london-i-love-you-but-youre-bringing-me-down.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2014-09-30-#dareconf-2014-review-people-skills-for-digital-workers.html" afterPath="$PROJECT_DIR$/_posts/guardian/2014-09-30-#dareconf-2014-review-people-skills-for-digital-workers.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2014-10-01-book-review-javascript-jquery-by-jon-duckett.html" afterPath="$PROJECT_DIR$/_posts/threechords/2014-10-01-book-review-javascript-jquery-by-jon-duckett.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2014-10-31-mozfest-2014-creative-chaos-–-in-the-best-possible-way.html" afterPath="$PROJECT_DIR$/_posts/guardian/2014-10-31-mozfest-2014-creative-chaos-–-in-the-best-possible-way.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2015-02-05-humans-and-algorithms.html" afterPath="$PROJECT_DIR$/_posts/threechords/2015-02-05-humans-and-algorithms.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2015-02-18-an-apology.html" afterPath="$PROJECT_DIR$/_posts/threechords/2015-02-18-an-apology.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2015-02-27-guardian-hack-day-february-2015-–-liveblog.html" afterPath="$PROJECT_DIR$/_posts/guardian/2015-02-27-guardian-hack-day-february-2015-–-liveblog.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2015-06-05-past-present-and-future.html" afterPath="$PROJECT_DIR$/_posts/threechords/2015-06-05-past-present-and-future.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2015-09-10-learnings-so-far-after-leaving-my-old-job.html" afterPath="$PROJECT_DIR$/_posts/threechords/2015-09-10-learnings-so-far-after-leaving-my-old-job.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2015-12-20-my-atom-setup.html" afterPath="$PROJECT_DIR$/_posts/threechords/2015-12-20-my-atom-setup.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2016-02-18-coding-for-the-web-101.html" afterPath="$PROJECT_DIR$/_posts/teaching/2016-02-18-coding-for-the-web-101.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2016-03-08-a-resolution-on-communication.html" afterPath="$PROJECT_DIR$/_posts/threechords/2016-03-08-a-resolution-on-communication.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2016-10-09-debunking-private-eyes-gobsmacking-genderrace-accusations.html" afterPath="$PROJECT_DIR$/_posts/threechords/2016-10-09-debunking-private-eyes-gobsmacking-genderrace-accusations.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2017-03-23-five-things-ive-learned-being-on-an-innovation-team.html" afterPath="$PROJECT_DIR$/_posts/threechords/2017-03-23-five-things-ive-learned-being-on-an-innovation-team.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/mattandrews.iml" afterPath="$PROJECT_DIR$/.idea/mattandrews.iml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/canvasconf-2013/assets/css/tigerstyle.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/canvasconf-2013/assets/img/28days.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/canvasconf-2013/assets/img/chromebook-pixel.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/canvasconf-2013/assets/img/duckboat-fire1.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/canvasconf-2013/assets/img/duckboat-fire2.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/canvasconf-2013/assets/img/duckboat-fire3.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/canvasconf-2013/assets/img/ducktour1.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/canvasconf-2013/assets/img/ducktour2.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/canvasconf-2013/assets/img/ducktour3.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/canvasconf-2013/assets/img/edge-rendering.m4v" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/canvasconf-2013/assets/img/laptop-train.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/canvasconf-2013/assets/img/metrics-nextgen.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/canvasconf-2013/assets/img/metrics-r2.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/canvasconf-2013/assets/img/mobile-sites.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/canvasconf-2013/assets/img/new-design.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/canvasconf-2013/assets/img/one-direction.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/canvasconf-2013/assets/img/phone-couch.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/canvasconf-2013/assets/img/roads.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/canvasconf-2013/assets/img/styleguide.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/canvasconf-2013/assets/img/swimlane.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/canvasconf-2013/assets/img/the-beatles.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/canvasconf-2013/assets/img/ux-process.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/canvasconf-2013/assets/img/waterworld.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/canvasconf-2013/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hackshackersberlin-2014/assets/css/tigerstyle.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hackshackersberlin-2014/assets/img/hhber.009.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hackshackersberlin-2014/assets/img/hhber.012.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hackshackersberlin-2014/assets/img/hhber.025.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hackshackersberlin-2014/assets/img/hhber.027.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hackshackersberlin-2014/assets/img/hhber.028.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hackshackersberlin-2014/assets/img/hhber.029.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hackshackersberlin-2014/assets/img/hhber.032.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hackshackersberlin-2014/assets/img/hhber.038.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hackshackersberlin-2014/assets/img/hhber.046.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hackshackersberlin-2014/assets/img/hhber.048.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hackshackersberlin-2014/assets/img/hhber.049.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hackshackersberlin-2014/assets/img/hhber.050.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hackshackersberlin-2014/assets/img/hhber.052.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hackshackersberlin-2014/assets/img/hhber.056.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hackshackersberlin-2014/assets/img/hhber.057.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hackshackersberlin-2014/assets/img/hhber.058.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hackshackersberlin-2014/assets/img/hhber.059.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hackshackersberlin-2014/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hackshackersbirmingham-2015/assets/css/tigerstyle.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hackshackersbirmingham-2015/assets/img/HHBrum.007.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hackshackersbirmingham-2015/assets/img/HHBrum.008.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hackshackersbirmingham-2015/assets/img/HHBrum.015.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hackshackersbirmingham-2015/assets/img/HHBrum.022.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hackshackersbirmingham-2015/assets/img/HHBrum.026.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hackshackersbirmingham-2015/assets/img/HHBrum.032.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hackshackersbirmingham-2015/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hydrahack-march-2017/img/electron.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hydrahack-march-2017/img/helloworld.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hydrahack-march-2017/img/platforms.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hydrahack-march-2017/img/trump.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/hydrahack-march-2017/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/ignitebrum3/assets/css/tigerstyle.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/ignitebrum3/assets/img/IgniteBrum.001.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/ignitebrum3/assets/img/IgniteBrum.002.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/ignitebrum3/assets/img/IgniteBrum.004.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/ignitebrum3/assets/img/IgniteBrum.005.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/ignitebrum3/assets/img/IgniteBrum.007.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/ignitebrum3/assets/img/IgniteBrum.008.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/ignitebrum3/assets/img/IgniteBrum.009.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/ignitebrum3/assets/img/IgniteBrum.011.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/ignitebrum3/assets/img/IgniteBrum.013.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/ignitebrum3/assets/img/IgniteBrum.015.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/ignitebrum3/assets/img/IgniteBrum.017.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/ignitebrum3/assets/img/IgniteBrum.019.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/ignitebrum3/assets/img/IgniteBrum.020.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/ignitebrum3/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/css/print/paper.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/css/print/pdf.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/css/reveal.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/css/reveal.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/css/theme/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/css/theme/beige.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/css/theme/default.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/css/theme/matt.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/css/theme/moon.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/css/theme/night.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/css/theme/serif.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/css/theme/simple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/css/theme/sky.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/css/theme/solarized.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/css/theme/source/beige.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/css/theme/source/default.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/css/theme/source/moon.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/css/theme/source/night.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/css/theme/source/serif.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/css/theme/source/simple.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/css/theme/source/sky.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/css/theme/source/solarized.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/css/theme/template/mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/css/theme/template/settings.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/css/theme/template/theme.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/fonts/Merriweather/Merriweather-Black.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/fonts/Merriweather/Merriweather-Bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/fonts/Merriweather/Merriweather-Light.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/fonts/Merriweather/Merriweather-Regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/fonts/Merriweather/OFL.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/fonts/Merriweather_Sans/MerriweatherSans-Bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/fonts/Merriweather_Sans/MerriweatherSans-ExtraBold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/fonts/Merriweather_Sans/MerriweatherSans-Light.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/fonts/Merriweather_Sans/MerriweatherSans-Regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/fonts/Merriweather_Sans/OFL.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/fonts/UbuntuMono/UbuntuMono-Bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/fonts/UbuntuMono/UbuntuMono-BoldItalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/fonts/UbuntuMono/UbuntuMono-Italic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/fonts/UbuntuMono/UbuntuMono-Regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/img/all-devices.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/img/big-bang.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/img/chromebook-pixel.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/img/components.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/img/early-design.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/img/escalator.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/img/gu-desktop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/img/gu-logo-g.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/img/gu-logo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/img/iphone-couch.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/img/js-off.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/img/js-on.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/img/laptop-train.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/img/matt-bike.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/img/mdot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/img/mdot2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/img/modern-browsers.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/img/print-graph.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/img/sprite.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/img/swimlane.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/img/templates.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/img/titlepiece.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/img/traffic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/img/web-graph-wide.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/img/web-graph.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/js/reveal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/js/reveal.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/lib/css/tomorrow-night-bright.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/lib/css/zenburn.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/lib/font/league_gothic-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/lib/font/league_gothic-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/lib/font/league_gothic-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/lib/font/league_gothic-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/lib/font/league_gothic_license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/lib/js/classList.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/lib/js/head.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/lib/js/html5shiv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/plugin/highlight/highlight.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/plugin/notes/notes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/plugin/notes/notes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/plugin/print-pdf/print-pdf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/css/print/paper.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/css/print/pdf.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/css/reveal.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/css/reveal.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/css/theme/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/css/theme/beige.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/css/theme/default.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/css/theme/moon.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/css/theme/night.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/css/theme/serif.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/css/theme/simple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/css/theme/sky.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/css/theme/solarized.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/css/theme/source/beige.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/css/theme/source/default.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/css/theme/source/moon.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/css/theme/source/night.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/css/theme/source/serif.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/css/theme/source/simple.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/css/theme/source/sky.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/css/theme/source/solarized.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/css/theme/template/mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/css/theme/template/settings.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/css/theme/template/theme.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/js/reveal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/js/reveal.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/lib/css/zenburn.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/lib/font/league_gothic-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/lib/font/league_gothic-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/lib/font/league_gothic-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/lib/font/league_gothic-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/lib/font/league_gothic_license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/lib/js/classList.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/lib/js/head.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/lib/js/html5shiv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/plugin/highlight/highlight.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/plugin/markdown/example.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/plugin/markdown/example.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/plugin/markdown/markdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/plugin/markdown/showdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/plugin/multiplex/client.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/plugin/multiplex/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/plugin/multiplex/master.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/plugin/notes-server/client.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/plugin/notes-server/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/plugin/notes-server/notes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/plugin/notes/notes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/plugin/notes/notes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/plugin/postmessage/example.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/plugin/postmessage/postmessage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/plugin/print-pdf/print-pdf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/plugin/remotes/remotes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/plugin/search/search.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/reveal.js/plugin/zoom-js/zoom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/port80-2013/template stats.rtf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/talks/talkstyle.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.jekyll-metadata" afterPath="$PROJECT_DIR$/.jekyll-metadata" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/header.html" afterPath="$PROJECT_DIR$/_includes/header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/home.html" afterPath="$PROJECT_DIR$/_layouts/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/post.html" afterPath="$PROJECT_DIR$/_layouts/post.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/guardian/2010-12-16-switching-to-google-hosted-jquery.html" afterPath="$PROJECT_DIR$/_posts/guardian/2010-12-16-switching-to-google-hosted-jquery.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/guardian/2011-03-11-sxsw-2011-how-we-made-our-interactive-band-tracker.html" afterPath="$PROJECT_DIR$/_posts/guardian/2011-03-11-sxsw-2011-how-we-made-our-interactive-band-tracker.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/guardian/2011-03-15-sxsw-2011-music-and-hack-days-where-the-girls-aren't.html" afterPath="$PROJECT_DIR$/_posts/guardian/2011-03-15-sxsw-2011-music-and-hack-days-where-the-girls-aren't.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/guardian/2011-11-15-business-designed.html" afterPath="$PROJECT_DIR$/_posts/guardian/2011-11-15-business-designed.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/guardian/2011-12-05-my-favourite-film-the-goonies.html" afterPath="$PROJECT_DIR$/_posts/guardian/2011-12-05-my-favourite-film-the-goonies.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/guardian/2011-12-07-music-hack-day-london-2011-a-developer's-view.html" afterPath="$PROJECT_DIR$/_posts/guardian/2011-12-07-music-hack-day-london-2011-a-developer's-view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/guardian/2012-07-16-discovery-week-diary-day-one.html" afterPath="$PROJECT_DIR$/_posts/guardian/2012-07-16-discovery-week-diary-day-one.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/guardian/2012-07-18-discovery-week-diary-day-two.html" afterPath="$PROJECT_DIR$/_posts/guardian/2012-07-18-discovery-week-diary-day-two.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/guardian/2012-10-18-responsive-design-at-the-guardian-an-introduction.html" afterPath="$PROJECT_DIR$/_posts/guardian/2012-10-18-responsive-design-at-the-guardian-an-introduction.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/guardian/2013-05-01-google-glass-–-what-is-it-good-for?-|-matt-andrews.html" afterPath="$PROJECT_DIR$/_posts/guardian/2013-05-01-google-glass-–-what-is-it-good-for?-|-matt-andrews.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/guardian/2013-08-15-young-rewired-state-2013-mentoring-the-tech-stars-of-tomorrow.html" afterPath="$PROJECT_DIR$/_posts/guardian/2013-08-15-young-rewired-state-2013-mentoring-the-tech-stars-of-tomorrow.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/guardian/2013-12-20-dennis-rodman-is-'having-fun'-in-north-korea-at-the-expense-of-human-rights-|-matt-andrews.html" afterPath="$PROJECT_DIR$/_posts/guardian/2013-12-20-dennis-rodman-is-'having-fun'-in-north-korea-at-the-expense-of-human-rights-|-matt-andrews.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/guardian/2014-01-17-guardian-hack-day-january-2014-—-live-blog.html" afterPath="$PROJECT_DIR$/_posts/guardian/2014-01-17-guardian-hack-day-january-2014-—-live-blog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/guardian/2014-03-27-how-can-mozilla-turn-a-blind-eye-to-its-ceo's-support-of-prop-8-?.html" afterPath="$PROJECT_DIR$/_posts/guardian/2014-03-27-how-can-mozilla-turn-a-blind-eye-to-its-ceo's-support-of-prop-8-?.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/guardian/2014-07-15-guardian-hack-day-july-2014-—-live-blog.html" afterPath="$PROJECT_DIR$/_posts/guardian/2014-07-15-guardian-hack-day-july-2014-—-live-blog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/guardian/2014-09-30-#dareconf-2014-review-people-skills-for-digital-workers.html" afterPath="$PROJECT_DIR$/_posts/guardian/2014-09-30-#dareconf-2014-review-people-skills-for-digital-workers.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/guardian/2014-10-31-mozfest-2014-creative-chaos-–-in-the-best-possible-way.html" afterPath="$PROJECT_DIR$/_posts/guardian/2014-10-31-mozfest-2014-creative-chaos-–-in-the-best-possible-way.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/guardian/2015-02-27-guardian-hack-day-february-2015-–-liveblog.html" afterPath="$PROJECT_DIR$/_posts/guardian/2015-02-27-guardian-hack-day-february-2015-–-liveblog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2009-07-28-the-new-internet-the-death-of-culture.html" afterPath="$PROJECT_DIR$/_posts/threechords/2009-07-28-the-new-internet-the-death-of-culture.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2011-01-19-broadcast-media-dumbing-down-or-catering-for-demand.html" afterPath="$PROJECT_DIR$/_posts/threechords/2011-01-19-broadcast-media-dumbing-down-or-catering-for-demand.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2011-01-23-apple-tv-and-all-that-could-have-been.html" afterPath="$PROJECT_DIR$/_posts/threechords/2011-01-23-apple-tv-and-all-that-could-have-been.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2011-02-02-reality-tv-escapism-from-the-flaws-of-er-reality.html" afterPath="$PROJECT_DIR$/_posts/threechords/2011-02-02-reality-tv-escapism-from-the-flaws-of-er-reality.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2011-03-06-why-microsoft-will-never-regain-developers-trust.html" afterPath="$PROJECT_DIR$/_posts/threechords/2011-03-06-why-microsoft-will-never-regain-developers-trust.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2011-04-11-the-arrogance-of-google-and-their-quest-to-store-everything.html" afterPath="$PROJECT_DIR$/_posts/threechords/2011-04-11-the-arrogance-of-google-and-their-quest-to-store-everything.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2011-05-01-on-deleting-facebook.html" afterPath="$PROJECT_DIR$/_posts/threechords/2011-05-01-on-deleting-facebook.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2011-05-16-portal-2-missed-opportunities.html" afterPath="$PROJECT_DIR$/_posts/threechords/2011-05-16-portal-2-missed-opportunities.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2011-06-06-how-not-to-make-me-download-your-mobile-app.html" afterPath="$PROJECT_DIR$/_posts/threechords/2011-06-06-how-not-to-make-me-download-your-mobile-app.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2011-06-19-on-student-journalism-and-digital-first.html" afterPath="$PROJECT_DIR$/_posts/threechords/2011-06-19-on-student-journalism-and-digital-first.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2011-06-30-the-user-experience-of-flathunting.html" afterPath="$PROJECT_DIR$/_posts/threechords/2011-06-30-the-user-experience-of-flathunting.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2011-08-16-the-only-thing-mindless-about-the-riots-is-the-response.html" afterPath="$PROJECT_DIR$/_posts/threechords/2011-08-16-the-only-thing-mindless-about-the-riots-is-the-response.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2011-09-23-facebook-f8-because-everyone-wants-to-know-everything.html" afterPath="$PROJECT_DIR$/_posts/threechords/2011-09-23-facebook-f8-because-everyone-wants-to-know-everything.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2011-10-16-when-celebrities-tweet-a-ricky-gervais-special.html" afterPath="$PROJECT_DIR$/_posts/threechords/2011-10-16-when-celebrities-tweet-a-ricky-gervais-special.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2011-11-03-the-class-struggle-revolution-and-alan-sugar.html" afterPath="$PROJECT_DIR$/_posts/threechords/2011-11-03-the-class-struggle-revolution-and-alan-sugar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2012-01-04-private-eye-scepticism-new-media.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-01-04-private-eye-scepticism-new-media.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2012-01-23-the-love-affair-of-the-tech-nerd-with-themselves.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-01-23-the-love-affair-of-the-tech-nerd-with-themselves.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2012-03-12-one-click-to-achieve-absolute-apathy.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-03-12-one-click-to-achieve-absolute-apathy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2012-03-21-how-i-finally-understood-the-value-of-social.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-03-21-how-i-finally-understood-the-value-of-social.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2012-04-23-london-mayoral-manifestos-critiqued.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-04-23-london-mayoral-manifestos-critiqued.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2012-04-24-web-cookies-eprivacy-directive-alternatives-and-workaround.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-04-24-web-cookies-eprivacy-directive-alternatives-and-workaround.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2012-04-25-twitters-ukopenhouse-london-notes.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-04-25-twitters-ukopenhouse-london-notes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2012-05-06-policing-love-anti-gay-marriage-campaign-nonsense.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-05-06-policing-love-anti-gay-marriage-campaign-nonsense.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2012-05-30-the-medium-is-not-the-message.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-05-30-the-medium-is-not-the-message.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2012-06-16-applying-web-developer-role-cv-dos-and-donts.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-06-16-applying-web-developer-role-cv-dos-and-donts.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2012-06-18-victims-of-our-own-design-digital-consumption-killing-creativity.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-06-18-victims-of-our-own-design-digital-consumption-killing-creativity.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2012-06-24-the-internet-isnt-killing-journalism-journalists-are.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-06-24-the-internet-isnt-killing-journalism-journalists-are.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2012-07-12-talking-on-topic-i-try-menshn-so-you-dont-have-to.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-07-12-talking-on-topic-i-try-menshn-so-you-dont-have-to.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2012-08-20-the-internet-the-worlds-first-true-meritocracy.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-08-20-the-internet-the-worlds-first-true-meritocracy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2012-09-17-menshn-v2-reviewed.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-09-17-menshn-v2-reviewed.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2012-09-24-two-pounds-a-month-broadband-levy-worst-idea-ever.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-09-24-two-pounds-a-month-broadband-levy-worst-idea-ever.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2012-12-28-a-resolution-breaking-a-very-british-curse.html" afterPath="$PROJECT_DIR$/_posts/threechords/2012-12-28-a-resolution-breaking-a-very-british-curse.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2013-01-03-diversity-in-tech-still-an-issue-2013.html" afterPath="$PROJECT_DIR$/_posts/threechords/2013-01-03-diversity-in-tech-still-an-issue-2013.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2013-01-06-what-will-the-future-make-of-us.html" afterPath="$PROJECT_DIR$/_posts/threechords/2013-01-06-what-will-the-future-make-of-us.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2013-02-10-parisian-vignettes.html" afterPath="$PROJECT_DIR$/_posts/threechords/2013-02-10-parisian-vignettes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2013-03-08-imagine-journalism-in-ten-years-time.html" afterPath="$PROJECT_DIR$/_posts/threechords/2013-03-08-imagine-journalism-in-ten-years-time.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2013-03-19-why-journalism-is-like-pro-cycling.html" afterPath="$PROJECT_DIR$/_posts/threechords/2013-03-19-why-journalism-is-like-pro-cycling.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2013-06-03-homebrew-beer-for-busy-people.html" afterPath="$PROJECT_DIR$/_posts/threechords/2013-06-03-homebrew-beer-for-busy-people.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2013-07-16-the-web-less-engine-more-gas.html" afterPath="$PROJECT_DIR$/_posts/threechords/2013-07-16-the-web-less-engine-more-gas.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2013-12-08-tech-half-life-its-okay-to-be-wrong.html" afterPath="$PROJECT_DIR$/_posts/threechords/2013-12-08-tech-half-life-its-okay-to-be-wrong.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2014-01-27-lessons-learned-self-publishing-for-kindle-and-print-simultaneously.html" afterPath="$PROJECT_DIR$/_posts/threechords/2014-01-27-lessons-learned-self-publishing-for-kindle-and-print-simultaneously.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2014-03-11-why-do-we-think-developers-are-special.html" afterPath="$PROJECT_DIR$/_posts/threechords/2014-03-11-why-do-we-think-developers-are-special.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2014-06-17-in-defence-of-reddit.html" afterPath="$PROJECT_DIR$/_posts/threechords/2014-06-17-in-defence-of-reddit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2014-08-15-how-animated-gif-selfies-fixed-our-teams-morale.html" afterPath="$PROJECT_DIR$/_posts/threechords/2014-08-15-how-animated-gif-selfies-fixed-our-teams-morale.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2014-09-12-london-i-love-you-but-youre-bringing-me-down.html" afterPath="$PROJECT_DIR$/_posts/threechords/2014-09-12-london-i-love-you-but-youre-bringing-me-down.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2014-10-01-book-review-javascript-jquery-by-jon-duckett.html" afterPath="$PROJECT_DIR$/_posts/threechords/2014-10-01-book-review-javascript-jquery-by-jon-duckett.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2015-02-05-humans-and-algorithms.html" afterPath="$PROJECT_DIR$/_posts/threechords/2015-02-05-humans-and-algorithms.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2015-02-18-an-apology.html" afterPath="$PROJECT_DIR$/_posts/threechords/2015-02-18-an-apology.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2015-06-05-past-present-and-future.html" afterPath="$PROJECT_DIR$/_posts/threechords/2015-06-05-past-present-and-future.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2015-09-10-learnings-so-far-after-leaving-my-old-job.html" afterPath="$PROJECT_DIR$/_posts/threechords/2015-09-10-learnings-so-far-after-leaving-my-old-job.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2015-12-20-my-atom-setup.html" afterPath="$PROJECT_DIR$/_posts/threechords/2015-12-20-my-atom-setup.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2016-03-08-a-resolution-on-communication.html" afterPath="$PROJECT_DIR$/_posts/threechords/2016-03-08-a-resolution-on-communication.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2016-10-09-debunking-private-eyes-gobsmacking-genderrace-accusations.html" afterPath="$PROJECT_DIR$/_posts/threechords/2016-10-09-debunking-private-eyes-gobsmacking-genderrace-accusations.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/threechords/2017-03-23-five-things-ive-learned-being-on-an-innovation-team.html" afterPath="$PROJECT_DIR$/_posts/threechords/2017-03-23-five-things-ive-learned-being-on-an-innovation-team.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sass/theme.scss" afterPath="$PROJECT_DIR$/_sass/theme.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about/index.html" afterPath="$PROJECT_DIR$/about/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -114,31 +310,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="2014-11-06-north-korea-hermit-kingdom.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/talks/2014-11-06-north-korea-hermit-kingdom.html">
+      <file leaf-file-name="theme.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_sass/theme.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="3" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="3" />
+            <state relative-caret-position="407">
+              <caret line="178" column="18" lean-forward="false" selection-start-line="178" selection-start-column="18" selection-end-line="178" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2015-01-25-fermis-paradox.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/talks/2015-01-25-fermis-paradox.html">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_layouts/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2014-04-30-how-to-brew-beer.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/talks/2014-04-30-how-to-brew-beer.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+            <state relative-caret-position="419">
+              <caret line="22" column="50" lean-forward="false" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -148,15 +334,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>royal col</find>
-      <find>royal coll</find>
-      <find>img/canvas2013</find>
-      <find>ismodner</find>
-      <find>{% highlight javascript %}</find>
-      <find>categories: guardian</find>
-      <find>categories: teaching</find>
-      <find>categories: t</find>
-      <find>categories: tal</find>
       <find>categories: talk</find>
       <find>javascr</find>
       <find>categories: talks</find>
@@ -178,6 +355,15 @@
       <find>captio</find>
       <find>&lt;pre</find>
       <find>icons and gr</find>
+      <find>nav</find>
+      <find>categories: threechords\npublished: false</find>
+      <find>categories: threechords\\npublished: false</find>
+      <find>categories: threechords</find>
+      <find>categories: g</find>
+      <find>categories: gua</find>
+      <find>categories: guar</find>
+      <find>categories: guardi</find>
+      <find>categories: guardian</find>
     </findStrings>
     <replaceStrings>
       <replace>categories: wordpress\nwordpress_url</replace>
@@ -187,9 +373,11 @@
       <replace>title:</replace>
       <replace>\-\-\-</replace>
       <replace>\n\-\-\-</replace>
-      <replace />
       <replace>'\n---\n</replace>
       <replace>layout: post\ntitle</replace>
+      <replace />
+      <replace>categories: threechords\npublished: false</replace>
+      <replace>categories: guardian\npublished: false</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/_site</dir>
@@ -207,10 +395,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/default_settings.py" />
-        <option value="$PROJECT_DIR$/deploy.sh" />
-        <option value="$PROJECT_DIR$/fabfile.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/_layouts/page.html" />
         <option value="$PROJECT_DIR$/_layouts/default.html" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_7.txt" />
@@ -245,7 +429,6 @@
         <option value="$PROJECT_DIR$/_posts/talks/2017-03-14-making-desktop-apps-with-electron.html" />
         <option value="$PROJECT_DIR$/_includes/header.html" />
         <option value="$PROJECT_DIR$/_posts/talks/2016-06-01-why-you-should-quit-your-job.html" />
-        <option value="$PROJECT_DIR$/_sass/theme.scss" />
         <option value="$PROJECT_DIR$/_posts/talks/2015-11-24-the-blossoming-of-the-web.html" />
         <option value="$PROJECT_DIR$/_posts/talks/2014-01-23-surviving-the-multi-device-news-challenge.html" />
         <option value="$PROJECT_DIR$/_posts/talks/2013-10-10-responsive-design-at-the-guardian.html" />
@@ -254,10 +437,15 @@
         <option value="$PROJECT_DIR$/_layouts/post.html" />
         <option value="$PROJECT_DIR$/assets/port80-2013/index.html" />
         <option value="$PROJECT_DIR$/_posts/talks/2013-05-10-responsive-design-at-the-guardian.html" />
-        <option value="$PROJECT_DIR$/_layouts/home.html" />
         <option value="$PROJECT_DIR$/_posts/talks/2014-04-30-how-to-brew-beer.html" />
         <option value="$PROJECT_DIR$/_posts/talks/2014-11-06-north-korea-hermit-kingdom.html" />
         <option value="$PROJECT_DIR$/_posts/talks/2015-01-25-fermis-paradox.html" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/_sass/theme.scss" />
+        <option value="$PROJECT_DIR$/_posts/threechords/2017-03-23-five-things-ive-learned-being-on-an-innovation-team.html" />
+        <option value="$PROJECT_DIR$/_posts/threechords/2009-07-28-the-new-internet-the-death-of-culture.html" />
+        <option value="$PROJECT_DIR$/_posts/guardian/2010-12-16-switching-to-google-hosted-jquery.html" />
+        <option value="$PROJECT_DIR$/_layouts/home.html" />
       </list>
     </option>
   </component>
@@ -333,79 +521,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="talks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mattandrews" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mattandrews" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="talks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="port80-2013" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mattandrews" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mattandrews" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mattandrews" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mattandrews" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="port80-2013" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mattandrews" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mattandrews" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="port80-2013" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -420,24 +536,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="_posts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mattandrews" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mattandrews" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_posts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="talks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -568,12 +666,12 @@
       <workItem from="1493631664253" duration="33000" />
       <workItem from="1493631717585" duration="8788000" />
       <workItem from="1493717145967" duration="2040000" />
-      <workItem from="1493733943456" duration="5194000" />
+      <workItem from="1493733943456" duration="5556000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36354000" />
+    <option name="totallyTimeSpent" value="36716000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -626,54 +724,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/guardian/2012-07-16-discovery-week-diary-day-one.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/guardian/2012-07-18-discovery-week-diary-day-two.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/guardian/2014-07-15-guardian-hack-day-july-2014-—-live-blog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/guardian/2015-02-27-guardian-hack-day-february-2015-–-liveblog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="2" column="27" lean-forward="true" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/guardian/2014-10-31-mozfest-2014-creative-chaos-–-in-the-best-possible-way.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/guardian/2014-09-30-#dareconf-2014-review-people-skills-for-digital-workers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/guardian/2014-03-27-how-can-mozilla-turn-a-blind-eye-to-its-ceo's-support-of-prop-8-?.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
@@ -914,14 +964,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/theme.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="345" column="19" lean-forward="false" selection-start-line="345" selection-start-column="19" selection-end-line="345" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/talks/2017-03-14-making-desktop-apps-with-electron.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -978,14 +1020,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/talks/2013-05-10-responsive-design-at-the-guardian.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -1012,10 +1046,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/talks/2014-04-30-how-to-brew-beer.html">
+    <entry file="file://$PROJECT_DIR$/_posts/talks/2015-01-25-fermis-paradox.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        <state relative-caret-position="138">
+          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1028,10 +1062,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/talks/2015-01-25-fermis-paradox.html">
+    <entry file="file://$PROJECT_DIR$/_posts/talks/2014-04-30-how-to-brew-beer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        <state relative-caret-position="207">
+          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6401">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="207">
+            <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/threechords/2017-03-23-five-things-ive-learned-being-on-an-innovation-team.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/guardian/2010-12-16-switching-to-google-hosted-jquery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/threechords/2009-07-28-the-new-internet-the-death-of-culture.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/theme.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="178" column="18" lean-forward="false" selection-start-line="178" selection-start-column="18" selection-end-line="178" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/threechords/2013-06-03-homebrew-beer-for-busy-people.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="22" column="50" lean-forward="false" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
           <folding />
         </state>
       </provider>
