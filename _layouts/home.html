@@ -38,6 +38,7 @@ layout: default
             {% for post in site.categories.teaching %}
                 <h5>{{ post.title }}</h5>
                 <h6>{{ post.host }}</h6>
+                <img src="/assets/img/{{ post.image }}" width="100" />
                 <p>{{ post.description }}</p>
                 <ul>
                     {% for s in post.sessions %}
