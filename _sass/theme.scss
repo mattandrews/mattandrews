@@ -10,7 +10,7 @@ $gutters: (
     'default': 20px,
     'tablet': 10%,
     'desktop': 15%,
-    'wide': 25%
+    'wide': 20%
 );
 
 * {
@@ -135,7 +135,8 @@ ul, ol {
 }
 
 article ul,
-article ol {
+article ol,
+.bulleted {
     li {
         list-style-type: square;
         margin-left: $spacingUnit * 2;
@@ -266,6 +267,7 @@ nav {
 }
 
 .m-t { margin-top: $spacingUnit; }
+.m-t-none { margin-top: 0; }
 .m-b { margin-bottom: $spacingUnit; }
 .m-b-none { margin-bottom: 0; }
 .padded { padding: $spacingUnit; }
@@ -274,18 +276,43 @@ nav {
 
     .flex {
         display: flex;
+        margin-left: -$spacingUnit * 2;
+
+        &.flex--2-up {
+            flex-wrap: wrap;
+            & > .flex__item {
+                flex-basis: calc(50% - #{$spacingUnit * 2});
+                max-width: calc(50% - #{$spacingUnit * 2});
+            }
+        }
+
+        &.flex--3-up {
+            flex-wrap: wrap;
+            & > .flex__item {
+                flex-basis: calc(33% - #{$spacingUnit * 2});
+                max-width: calc(33% - #{$spacingUnit * 2});
+            }
+        }
+
+        &.flex--4-up {
+            flex-wrap: wrap;
+            & > .flex__item {
+                flex-basis: calc(25% - #{$spacingUnit * 2});
+                max-width: calc(25% - #{$spacingUnit * 2});
+            }
+        }
 
         & > .flex__item {
             flex-grow: 1;
             flex-shrink: 0;
             flex-basis: 0;
+            margin-left: $spacingUnit * 2;
+            word-wrap: break-word;
 
-            &:first-child {
-                margin-right: $spacingUnit;
+            &.flex__item--major {
+                flex-grow: 2;
             }
-            &:last-child {
-                margin-left: $spacingUnit;
-            }
+
         }
     }
 }
@@ -308,9 +335,17 @@ footer {
     overflow: hidden;
 
     .media__img {
-        margin-right: $spacingUnit;
+        margin-right: $spacingUnit * 2;
         float: left;
+        width: 220px;
+
+        &.media__img--right {
+            margin-right: 0;
+            margin-left: $spacingUnit * 2;
+            float: right;
+        }
     }
+
 
     .media__body {
         overflow: hidden;
@@ -349,4 +384,30 @@ blockquote {
     padding-left: 5%;
     padding-right: 5%;
     color: #307cb5;
+}
+
+.big-header {
+    padding-top: $spacingUnit;
+    padding-bottom: $spacingUnit;
+
+    span {
+        float: right;
+        font-size: 14px;
+        margin-top: 6px;
+    }
+}
+
+.text-right {
+    @media screen and (min-width: $tablet) {
+        text-align: right;
+    }
+}
+
+.bordered {
+    border: 1px solid #cccccc;
+}
+
+.minor {
+    font-size: 14px;
+    color: #999999;
 }

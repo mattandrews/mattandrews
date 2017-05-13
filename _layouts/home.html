@@ -1,77 +1,131 @@
 ---
 layout: default
 ---
-
+<!--lol-->
 <aside class="hero"><div class="hero__inner"></div></aside>
 <div class="inner m-t m-b">
-<!--3-->
     <div class="flex">
-        <div class="flex__item">
+        <div class="flex__item flex__item--major">
             <h2 class="m-b">About me</h2>
-
-            <p>Hi, my name is Matt – welcome to my homepage. I'm a creative technologist currently at BBC's Digital Guerrillas team in Birmingham. Prior to that, I worked for five years as a client-side developer and manager at the Guardian in London. When I'm not writing HTML, CSS & JavaScript I'm a keen writer, musician, cyclist and homebrewer. I also speak at conferences and teach a variety of technical classes – more on these below.</p>
-
-            <h3>Find me on the web</h3>
-
-            <p>Hi, my name is Matt – welcome to my homepage. I'm a creative technologist currently at BBC's Digital Guerrillas team in Birmingham. Prior to that, I worked for five years as a client-side developer and manager at the Guardian in London. When I'm not writing HTML, CSS & JavaScript I'm a keen writer, musician, cyclist and homebrewer. I also speak at conferences and teach a variety of technical classes – more on these below.</p>
-
-            <h4>Threechords</h4>
-            <ul>
-                {% for post in site.categories.threechords %}
-                <li>
-                    <a href="{{ post.wordpress_url }}">{{ post.title }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-
-            <h4>Guardian</h4>
-            <ul>
-                {% for post in site.categories.guardian %}
-                <li>
-                    <a href="{{ post.link }}">{{ post.title }}</a>
-                    <img src="/assets/img/{{ post.image }}" width="100" />
-                </li>
-                {% endfor %}
-            </ul>
-
-            <h4>Teaching</h4>
-            {% for post in site.categories.teaching %}
-                <h5>{{ post.title }}</h5>
-                <h6>{{ post.host }}</h6>
-                <img src="/assets/img/{{ post.image }}" width="100" />
-                <p>{{ post.description }}</p>
-                <ul>
-                    {% for s in post.sessions %}
-                        <li>{{ s.start | date: "%e %B %Y" }}{% if s.end %} &ndash; {{ s.end | date: "%e %B %Y" }}{%
-                            endif %}</li>
-                    {% endfor %}
-                </ul>
-            {% endfor %}
-
-            <h4>Talks</h4>
-            <ul>
-                {% for post in site.categories.talks %}
-                <li>
-                    <a href="{{ post.url }}">{{ post.title }}</a>
-                    <img src="/assets/img/{{ post.image }}" width="100" />
-                </li>
-                {% endfor %}
-            </ul>
-
-            <h4>Portfolio</h4>
-            <ul>
-                {% for post in site.categories.portfolio %}
-                <li>
-                    {% if post.link %}<a href="{{ post.link }}">{% endif %}{{ post.title }}{% if post.link %}</a>{% endif %}
-                    <img src="/assets/img/{{ post.image }}" width="100" />
-                </li>
-                {% endfor %}
-            </ul>
+            <p>I'm a software developer, a writer, a cyclist and a brewer. I've worked at <a href="https://www.theguardian.com/profile/matt-andrews">the Guardian</a> for five years, at <a href="http://www.bbc.co.uk/blogs/academy/authors/a44fa683-8fba-4696-8ffc-6f48afbe4764">the BBC</a> for two, and am currently at the Big Lottery Fund. These days I'm a full-stack developer and enjoy making things in JavaScript, Python and more. When I'm not writing code I can be found <a href="https://www.strava.com/athletes/259213">riding my bike</a>, brewing beer, playing boardgames or <a href="/writing">writing things</a>. Feel free to drop me a line at <a href="mailto:matt@mattandrews.info">matt@mattandrews.info</a> or call me on 07533953151.</p>
         </div>
         <div class="flex__item">
-            hello
+            <h2 class="m-b">Find me on the web</h2>
+            <ul class="bulleted">
+                <li>Twitter: <a href="https://twitter.com/mattpointblank">@mattpointblank</a></li>
+                <li>Github: <a href="https://github.com/mattandrews">mattandrews</a></li>
+                <li>Instagram: <a href="https://www.instagram.com/mattpointblank/">mattpointblank</a></li>
+                <li>StackOverflow: <a href="http://stackoverflow.com/users/176615/matt-andrews">Matt Andrews</a></li>
+            </ul>
         </div>
     </div>
+</div>
 
+<h2 class="m-b inner big-header shaded" id="talks">My talks and presentations <span><a href="/talks">View all</a></span></h2>
 
+<div class="inner m-t m-b">
+    <div class="flex">
+        <div class="flex__item">
+            <ul class="m-t-none">
+                {% for post in site.categories.talks limit: 3 %}
+                <li class="media">
+                    <a href="{{ post.url }}">
+                        <h3>{{ post.title }}</h3>
+                    </a>
+                    <h5>{{ post.subtitle }} ({{ post.event }} &bull; {{ post.date | date_to_string}})</h5>
+                    <a class="media__img media__img--right" href="{{ post.url }}">
+                        <img src="/assets/img/{{ post.image }}" width="100" />
+                    </a>
+                    <div class="media__body">
+                        <p>{{ post.intro }}</p>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+            <h3>&bull; <a href="/talks">View all of my talks and presentations</a></h3>
+        </div>
+    </div>
+</div>
+
+<h2 class="m-b inner big-header shaded" id="writing">My writing <span><a href="/writing">View all</a></span></h2>
+
+<div class="inner m-t m-b">
+    <div class="flex">
+        <div class="flex__item">
+            <ul class="flex flex--3-up">
+                {% assign loopindex = 0 %}
+                {% for post in site.posts %}
+                    {% if loopindex < 6 %}
+                        {% if post.categories contains "threechords" or post.categories contains "guardian" %}
+                        {% assign loopindex = loopindex | plus: 1 %}
+                            <li class="flex__item">
+                                {% if post.categories contains "threechords" %}
+                                    <h3><a href="{{ post.wordpress_url }}">{{ post.title }}</a></h3>
+                                    <h5>threechords.org blog &bull; {{ post.date | date_to_string}}</h5>
+                                    <p>{{ post.content | strip_html | truncatewords:45 }} <a href="{{ post.wordpress_url }}">keep reading</a></p>
+                                {% else if post.categories contains "guardian" %}
+                                    <h3><a href="{{ post.link }}">{{ post.title }}</a></h3>
+                                    <h5>The Guardian &bull; {{ post.date | date_to_string}}</h5>
+                                    <a href="{{ post.link }}"><img src="/assets/img/{{ post.image }}" width="100" /></a>
+                                    <p>{{ post.content | strip_html | truncatewords:20 }} <a href="{{ post.link }}">keep reading</a></p>
+                                {% endif %}
+                            </li>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <h3>&bull; <a href="/writing">View all of my writing</a></h3>
+        </div>
+    </div>
+</div>
+
+<h2 class="m-b inner big-header shaded" id="work">My portfolio <span><a href="/portfolio">View all</a></span></h2>
+
+<div class="inner m-t m-b">
+    <div class="flex">
+        <div class="flex__item">
+            <ul class="flex flex--4-up">
+                {% for post in site.categories.portfolio limit: 8 %}
+                    <li class="flex__item">
+                        <h3>{% if post.link %}<a href="{{ post.link }}">{% endif %}{{ post.title }}{% if post.link %}</a>{% endif %}</h3>
+                        {% if post.link %}<a href="{{ post.link }}">{% endif %}
+                        <img src="/assets/img/{{ post.image }}" width="100" class="bordered" />
+                        {% if post.link %}</a>{% endif %}
+                        <p>{{ post.content }}</p>
+                    </li>
+                {% endfor %}
+            </ul>
+            <h3>&bull; <a href="/portfolio">View all of my work</a></h3>
+        </div>
+    </div>
+</div>
+
+<h2 class="m-b inner big-header shaded" id="teaching">My teaching</h2>
+
+<div class="inner m-t m-b">
+    <div class="flex">
+        <div class="flex__item">
+            <ul class="flex flex--2-up">
+                {% for post in site.categories.teaching %}
+                    <li class="flex__item media">
+                        <div class="media__img media__img--right">
+                            <img src="/assets/img/{{ post.image }}" width="100" class="bordered" />
+                        </div>
+                        <div class="media__body">
+                            <h3>{{ post.title }}</h3>
+                            <h5>{{ post.host }}</h5>
+                        </div>
+                        <p>{{ post.description }}</p>
+                        <h4>Dates taught</h4>
+                        <p class="minor">
+                            {% for s in post.sessions %}
+                            {{ s.start | date: "%e %B %Y" }}{% if s.end %} &ndash; {{ s.end | date: "%e %B %Y" }}{% endif %}
+                            {% if forloop.last == false %}&bull;{% endif %}
+                            {% endfor %}
+                        </p>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
 </div>

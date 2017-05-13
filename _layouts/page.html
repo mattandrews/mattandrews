@@ -2,4 +2,63 @@
 layout: default
 ---
 
-{{ content }}
+<div class="inner shaded">
+    <div class="shaded__inner">
+        <h1>{{ page.title }}</h1>
+        <h2>{{ page.subtitle }}</h2>
+    </div>
+</div>
+
+<article class="inner m-t m-b">
+    {% if page.type == 'writing' %}
+        <div class="flex flex--3-up">
+            {% for writing in site.posts %}
+                {% if writing.categories contains "threechords" or writing.categories contains "guardian" %}
+                    <div class="flex__item">
+                        {% if writing.categories contains "threechords" %}
+                            <h3><a href="{{ writing.wordpress_url }}">{{ writing.title }}</a></h3>
+                            <h5>threechords.org blog &bull; {{ writing.date | date_to_string}}</h5>
+                            <p>{{ writing.content | strip_html | truncatewords:45 }} <a href="{{ writing.wordpress_url }}">keep reading</a></p>
+                        {% else if writing.categories contains "guardian" %}
+                            <h3><a href="{{ writing.link }}">{{ writing.title }}</a></h3>
+                            <h5>The Guardian &bull; {{ writing.date | date_to_string}}</h5>
+                            <a href="{{ writing.link }}"><img src="/assets/img/{{ writing.image }}" width="100" /></a>
+                            <p>{{ writing.content | strip_html | truncatewords:20 }} <a href="{{ writing.link }}">keep reading</a></p>
+                        {% endif %}
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    {% if page.type == 'talks' %}
+        {% for talk in site.categories.talks %}
+            <div class="media">
+                <a href="{{ talk.url }}">
+                    <h3>{{ talk.title }}</h3>
+                </a>
+                <h5>{{ talk.subtitle }} ({{ talk.event }} &bull; {{ talk.date | date_to_string}})</h5>
+                <a class="media__img media__img--right" href="{{ talk.url }}">
+                    <img src="/assets/img/{{ talk.image }}" width="100" />
+                </a>
+                <div class="media__body">
+                    <p>{{ talk.intro }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+
+    {% if page.type == 'portfolio' %}
+        <div class="flex flex--3-up non-textual">
+            {% for work in site.categories.portfolio %}
+                <div class="flex__item">
+                    <h3>{% if work.link %}<a href="{{ work.link }}">{% endif %}{{ work.title }}{% if work.link %}</a>{% endif %}</h3>
+                    {% if work.link %}<a href="{{ work.link }}">{% endif %}
+                    <img src="/assets/img/{{ work.image }}" width="100" class="bordered" />
+                    {% if work.link %}</a>{% endif %}
+                    <p>{{ work.content }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+</article>

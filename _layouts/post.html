@@ -22,7 +22,10 @@ layout: default
 </div>
 
 <article class="inner m-t m-b">
-    {{ content }}
+    {{ content  }}
+    {% if page.intro %}
+        <p>{{ page.intro}}</p>
+    {% endif %}
     {% if page.youtube %}
         <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ page.youtube }}" frameborder="0" allowfullscreen></iframe>
     {% endif %}
