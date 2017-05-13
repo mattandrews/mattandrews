@@ -1,3 +1,4 @@
-$(document).ready(function() {
-    $("article").fitVids();
+fluidvids.init({
+    selector: ['iframe', 'object'], // runs querySelectorAll()
+    players: ['www.youtube.com'] // players to support
 });
