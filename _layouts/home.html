@@ -57,6 +57,16 @@ layout: default
                 </li>
                 {% endfor %}
             </ul>
+
+            <h4>Portfolio</h4>
+            <ul>
+                {% for post in site.categories.portfolio %}
+                <li>
+                    {% if post.link %}<a href="{{ post.link }}">{% endif %}{{ post.title }}{% if post.link %}</a>{% endif %}
+                    <img src="/assets/img/{{ post.image }}" width="100" />
+                </li>
+                {% endfor %}
+            </ul>
         </div>
         <div class="flex__item">
             hello
