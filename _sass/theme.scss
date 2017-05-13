@@ -103,6 +103,7 @@ h3 {
     font-size: 18px;
     font-family: 'Crimson Text', serif;
     font-weight: 600;
+    display: inline-block;
 }
 
 h4 {
@@ -335,14 +336,22 @@ footer {
     overflow: hidden;
 
     .media__img {
-        margin-right: $spacingUnit * 2;
         float: left;
-        width: 220px;
+        width: 120px;
+        margin-right: $spacingUnit;
+
+        @media screen and (min-width: $tablet) {
+            margin-right: $spacingUnit * 2;
+            width: 220px;
+        }
 
         &.media__img--right {
             margin-right: 0;
-            margin-left: $spacingUnit * 2;
             float: right;
+            margin-left: $spacingUnit;
+            @media screen and (min-width: $tablet) {
+                margin-left: $spacingUnit * 2;
+            }
         }
     }
 

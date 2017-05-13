@@ -8,5 +8,6 @@ Run `JEKYLL_ENV=production jekyll build` to build for production.
 
 # TODO
 - add meta tags for FB etc
+- favicon
 - add URL redirects for old pages in nginx
 - remove supervisor/gunicorn/nginx config
