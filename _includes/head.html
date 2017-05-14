@@ -6,12 +6,12 @@
     <title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
-    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/main.css" | absolute_url }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="{{ "/assets/img/favicon.ico" | absolute_url }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 
     <meta content="{{ site.title }}" property="og:site_name">
     {% if page.title %}
