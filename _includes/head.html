@@ -13,6 +13,32 @@
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="{{ "/assets/img/favicon.ico" | absolute_url }}" />
 
+    <meta content="{{ site.title }}" property="og:site_name">
+    {% if page.title %}
+    <meta content="{{ page.title }}" property="og:title">
+    {% else %}
+    <meta content="{{ site.title }}" property="og:title">
+    {% endif %}
+    {% if page.title %}
+    <meta content="article" property="og:type">
+    {% else %}
+    <meta content="website" property="og:type">
+    {% endif %}
+    {% if page.intro %}
+    <meta content="{{ page.intro}}" property="og:description">
+    {% else %}
+    <meta content="{{ site.description }}" property="og:description">
+    {% endif %}
+    {% if page.url %}
+    <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+    {% endif %}
+
+    {% if page.image %}
+        {% assign path = page.image | prepend: '/assets/img/' %}
+        <meta content="{{ path | absolute_url }}" property="og:image">
+    {% endif %}
+
+
     {% if jekyll.environment == 'production' %}
         {% include google-analytics.html %}
     {% endif %}
